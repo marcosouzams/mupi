@@ -219,153 +219,159 @@ const CasesPage = () => {
         </div>
       </section>
 
-      {/* Cases with Horizontal Filters */}
+      {/* Cases com Filtros: horizontal em mobile/tablet, barra lateral sticky em desktop */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 min-h-[1000px]">
         <div className="max-w-7xl mx-auto">
-          {/* Mobile & Desktop Horizontal Filters */}
-          <div className="mb-8">
-            <h3 className="text-lg font-urbancat-st font-bold text-[#191927] mb-4 text-center lg:text-left">
-              {t('cases.filters.filterBySector')}
-            </h3>
-            <div className="flex overflow-x-auto scrollbar-hide gap-3 pb-2">
-              {translatedSectors.map((sector) => (
-                <button
-                  key={sector.id}
-                  onClick={() => setSelectedSector(sector.id)}
-                  className={`flex-shrink-0 flex items-center space-x-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
-                    selectedSector === sector.id
-                      ? 'bg-[#5667fe] text-white shadow-lg'
-                      : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
-                  }`}
-                >
-                  <span>{sector.name}</span>
-                  <span className={`text-xs px-2 py-0.5 rounded-full ${
-                    selectedSector === sector.id
-                      ? 'bg-white/20 text-white'
-                      : 'bg-gray-100 text-gray-500'
-                  }`}>
-                    {sector.count}
-                  </span>
-                </button>
-              ))}
-            </div>
-          </div>
+          {/* Layout responsivo: grid em telas grandes */}
+          <div className="lg:grid lg:grid-cols-[260px_1fr] lg:gap-8">
+            {/* Filtros - horizontal em mobile/tablet, sidebar sticky em desktop */}
+            <aside className="mb-8 lg:mb-0 lg:sticky lg:top-32 lg:self-start">
+              <h3 className="text-lg font-urbancat-st font-bold text-[#191927] mb-4 text-center lg:text-left">
+                {t('cases.filters.filterBySector')}
+              </h3>
+              {/* Mobile/Tablet: horizontal, Desktop: vertical */}
+              <div className="flex overflow-x-auto scrollbar-hide gap-3 pb-2 lg:flex-col lg:overflow-x-visible lg:gap-2 lg:pb-0">
+                {translatedSectors.map((sector) => (
+                  <button
+                    key={sector.id}
+                    onClick={() => setSelectedSector(sector.id)}
+                    className={`flex-shrink-0 flex items-center space-x-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
+                      selectedSector === sector.id
+                        ? 'bg-[#5667fe] text-white shadow-lg'
+                        : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200'
+                    } lg:w-full lg:justify-between`}
+                  >
+                    <span>{sector.name}</span>
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                      selectedSector === sector.id
+                        ? 'bg-white/20 text-white'
+                        : 'bg-gray-100 text-gray-500'
+                    }`}>
+                      {sector.count}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </aside>
 
-          {/* Cases List - Optimized for Mobile */}
-          <div className="space-y-6 lg:space-y-8">
-            {filteredCases.map((caseItem) => {
-              const translatedCase = getTranslatedCaseData(caseItem, t);
-              return (
-              <article 
-                key={caseItem.id}
-                className="relative h-64 sm:h-72 lg:h-80 rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-xl transition-all duration-500"
-                onClick={() => handleCaseClick(caseItem.slug)}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                  <Image 
-                    src={caseItem.image}
-                    alt={translatedCase.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20"></div>
-                  {/* Additional bottom gradient for text readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                </div>
-
-                {/* Content Overlay */}
-                <div className="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
-                  {/* Top Section */}
-                  <div className="flex items-start justify-between">
-                    {/* Category Badge */}
-                    <div className="flex items-center space-x-3">
-                      <span className="bg-[#5667fe] text-white px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs font-medium">
-                        {translatedCase.category}
-                      </span>
+            {/* Lista de Cases */}
+            <div>
+              <div className="space-y-6 lg:space-y-8">
+                {filteredCases.map((caseItem) => {
+                  const translatedCase = getTranslatedCaseData(caseItem, t);
+                  return (
+                  <article 
+                    key={caseItem.id}
+                    className="relative h-64 sm:h-72 lg:h-80 rounded-xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-xl transition-all duration-500"
+                    onClick={() => handleCaseClick(caseItem.slug)}
+                  >
+                    {/* Background Image */}
+                    <div className="absolute inset-0">
+                      <Image 
+                        src={caseItem.image}
+                        alt={translatedCase.title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      {/* Gradient Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20"></div>
+                      {/* Additional bottom gradient for text readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     </div>
-                  </div>
 
-                  {/* Bottom Section */}
-                  <div className="space-y-2 sm:space-y-3">
-                    {/* Title */}
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-urbancat-st font-bold text-white leading-tight transition-colors duration-300">
-                      {translatedCase.shortTitle}
-                    </h3>
-                    
-                    {/* Description */}
-                    <p className="text-white/85 text-sm sm:text-base leading-relaxed font-inter max-w-xl lg:max-w-2xl line-clamp-2 sm:line-clamp-none">
-                      {translatedCase.description}
-                    </p>
-
-                    {/* Tags and Logo Row */}
-                    <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 sm:gap-0 mt-3 sm:mt-4">
-                      {/* Tags */}
-                      <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                        <span className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 sm:px-2.5 sm:py-1 rounded-full text-xs font-medium">
-                          {caseItem.solution}
-                        </span>
-                        <span className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 sm:px-2.5 sm:py-1 rounded-full text-xs font-medium">
-                          {caseItem.client}
-                        </span>
+                    {/* Content Overlay */}
+                    <div className="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                      {/* Top Section */}
+                      <div className="flex items-start justify-between">
+                        {/* Category Badge */}
+                        <div className="flex items-center space-x-3">
+                          <span className="bg-[#5667fe] text-white px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs font-medium">
+                            {translatedCase.category}
+                          </span>
+                        </div>
                       </div>
 
-                      {/* Company Logo */}
-                      <div className="flex-shrink-0 sm:ml-4">
-                        <div className="w-10 h-6 sm:w-12 sm:h-8 flex items-center justify-center">
-                          <Image
-                            src={caseItem.logo}
-                            alt={`${caseItem.client} logo`}
-                            width={48}
-                            height={32}
-                            className="object-contain max-w-full max-h-full opacity-80"
-                          />
+                      {/* Bottom Section */}
+                      <div className="space-y-2 sm:space-y-3">
+                        {/* Title */}
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-urbancat-st font-bold text-white leading-tight transition-colors duration-300">
+                          {translatedCase.shortTitle}
+                        </h3>
+                        
+                        {/* Description */}
+                        <p className="text-white/85 text-sm sm:text-base leading-relaxed font-inter max-w-xl lg:max-w-2xl line-clamp-2 sm:line-clamp-none">
+                          {translatedCase.description}
+                        </p>
+
+                        {/* Tags and Logo Row */}
+                        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 sm:gap-0 mt-3 sm:mt-4">
+                          {/* Tags */}
+                          <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                            <span className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 sm:px-2.5 sm:py-1 rounded-full text-xs font-medium">
+                              {caseItem.solution}
+                            </span>
+                            <span className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 sm:px-2.5 sm:py-1 rounded-full text-xs font-medium">
+                              {caseItem.client}
+                            </span>
+                          </div>
+
+                          {/* Company Logo */}
+                          <div className="flex-shrink-0 sm:ml-4">
+                            <div className="w-10 h-6 sm:w-12 sm:h-8 flex items-center justify-center">
+                              <Image
+                                src={caseItem.logo}
+                                alt={`${caseItem.client} logo`}
+                                width={48}
+                                height={32}
+                                className="object-contain max-w-full max-h-full opacity-80"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* CTA Button - Hidden on mobile, shown on hover on desktop */}
+                        <div className="hidden sm:block pt-3">
+                          <button
+                            onClick={() => handleCaseClick(caseItem.slug)}
+                            className="inline-flex items-center space-x-2 bg-[#5667fe] hover:bg-[#5667fe]/90 text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium group/btn text-xs backdrop-blur-sm"
+                          >
+                            <span>{t('cases.caseCard.viewFullCase')}</span>
+                            <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform duration-200" />
+                          </button>
                         </div>
                       </div>
                     </div>
 
-                    {/* CTA Button - Hidden on mobile, shown on hover on desktop */}
-                    <div className="hidden sm:block pt-3">
-                      <button
-                        onClick={() => handleCaseClick(caseItem.slug)}
-                        className="inline-flex items-center space-x-2 bg-[#5667fe] hover:bg-[#5667fe]/90 text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium group/btn text-xs backdrop-blur-sm"
-                      >
-                        <span>{t('cases.caseCard.viewFullCase')}</span>
-                        <ArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform duration-200" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Hover Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#5667fe]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </article>
-              );
-            })}
-          </div>
-
-          {/* Empty State */}
-          {filteredCases.length === 0 && (
-            <div className="text-center py-16">
-              <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Filter className="w-12 h-12 text-gray-400" />
+                    {/* Hover Effect Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#5667fe]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </article>
+                  );
+                })}
               </div>
-              <h3 className="text-xl font-urbancat-st font-bold text-gray-700 mb-2">
-                {t('cases.emptyState.title')}
-              </h3>
-              <p className="text-gray-500 font-inter mb-4">
-                {t('cases.emptyState.description')}
-              </p>
-              <button
-                onClick={() => setSelectedSector('todos')}
-                className="inline-flex items-center space-x-2 text-[#5667fe] hover:text-[#5667fe]/80 font-medium text-sm transition-colors duration-300"
-              >
-                <span>{t('cases.emptyState.viewAll')}</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+
+              {/* Empty State */}
+              {filteredCases.length === 0 && (
+                <div className="text-center py-16">
+                  <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Filter className="w-12 h-12 text-gray-400" />
+                  </div>
+                  <h3 className="text-xl font-urbancat-st font-bold text-gray-700 mb-2">
+                    {t('cases.emptyState.title')}
+                  </h3>
+                  <p className="text-gray-500 font-inter mb-4">
+                    {t('cases.emptyState.description')}
+                  </p>
+                  <button
+                    onClick={() => setSelectedSector('todos')}
+                    className="inline-flex items-center space-x-2 text-[#5667fe] hover:text-[#5667fe]/80 font-medium text-sm transition-colors duration-300"
+                  >
+                    <span>{t('cases.emptyState.viewAll')}</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
       </section>
 
