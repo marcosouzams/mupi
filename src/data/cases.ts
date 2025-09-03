@@ -42,6 +42,7 @@ export const sectors: Sector[] = [
 ];
 
 // Helper function para obter setores traduzidos
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getTranslatedSectors = (t: any): Sector[] => {
   return sectors.map(sector => ({
     ...sector,
@@ -177,6 +178,7 @@ export const getRelatedCases = (currentSlug: string, limit: number = 3): Case[] 
 };
 
 // Helper function para obter dados traduzidos de um case
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getTranslatedCaseData = (caseItem: Case, t: any) => {
   try {
     // Tenta buscar cada propriedade individualmente

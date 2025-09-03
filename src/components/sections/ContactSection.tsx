@@ -18,6 +18,8 @@ export const ContactSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    const sectionElement = sectionRef.current;
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -34,13 +36,13 @@ export const ContactSection = () => {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (sectionElement) {
+      observer.observe(sectionElement);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (sectionElement) {
+        observer.unobserve(sectionElement);
       }
     };
   }, [hasAnimated]);

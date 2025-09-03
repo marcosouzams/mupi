@@ -1,6 +1,6 @@
 'use client';
 
-import { TrendingUp, RefreshCw, Target, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
@@ -16,21 +16,6 @@ export const WhyMupiSection = () => {
   const { t: tCases } = useTranslation('cases');
   const router = useRouter();
   const featuredCases = getFeaturedCases();
-
-  const features = [
-    {
-      icon: <TrendingUp className="w-8 h-8" />,
-      key: "growth"
-    },
-    {
-      icon: <RefreshCw className="w-8 h-8" />,
-      key: "development"
-    },
-    {
-      icon: <Target className="w-8 h-8" />,
-      key: "perfection"
-    }
-  ];
 
   const handleCaseClick = (slug: string) => {
     router.push(`/cases/${slug}`);

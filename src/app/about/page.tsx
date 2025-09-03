@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, MapPin, Calendar, Target, Eye, Heart, Users, Brain, Shield, TrendingUp, Headphones } from 'lucide-react';
+import { ArrowRight, Target, Users, Brain, Shield, TrendingUp, Headphones } from 'lucide-react';
 import Image from 'next/image';
 
 export default function AboutPage() {
@@ -22,6 +22,9 @@ export default function AboutPage() {
 
   // Intersection Observer para animações
   useEffect(() => {
+    const storyElement = storyRef.current;
+    const valuesElement = valuesRef.current;
+    
     const observerStory = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -46,12 +49,12 @@ export default function AboutPage() {
       { threshold: 0.1, rootMargin: '-50px' }
     );
 
-    if (storyRef.current) observerStory.observe(storyRef.current);
-    if (valuesRef.current) observerValues.observe(valuesRef.current);
+    if (storyElement) observerStory.observe(storyElement);
+    if (valuesElement) observerValues.observe(valuesElement);
 
     return () => {
-      if (storyRef.current) observerStory.unobserve(storyRef.current);
-      if (valuesRef.current) observerValues.unobserve(valuesRef.current);
+      if (storyElement) observerStory.unobserve(storyElement);
+      if (valuesElement) observerValues.unobserve(valuesElement);
     };
   }, [hasStoryAnimated, hasValuesAnimated]);
 
@@ -164,7 +167,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {(t('values.list', { returnObjects: true }) as any[]).map((value: any, index: number) => {
+            {(t('values.list', { returnObjects: true }) as Array<{number: string, title: string, description: string}>).map((value: {number: string, title: string, description: string}, index: number) => {
               const icons = [Target, Users, Brain, Shield, TrendingUp, Headphones];
               const IconComponent = icons[index % icons.length];
               

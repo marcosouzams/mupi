@@ -4,6 +4,7 @@ import React from 'react';
 import { ArrowRight, Calendar, GraduationCap, Users, Headphones, Shield, UserCheck, Database } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export const ProductsSection = () => {
   const { t } = useTranslation('products');
@@ -180,9 +181,11 @@ export const ProductsSection = () => {
                   {/* Right side - Logo */}
                   <div className="lg:col-span-4 flex items-center justify-center">
                     {products[selectedProduct].logo !== "/api/placeholder/120/60" ? (
-                      <img
+                      <Image
                         src={products[selectedProduct].logo}
                         alt={t(`products.items.${products[selectedProduct].key}.title`)}
+                        width={240}
+                        height={160}
                         className="max-w-full max-h-40 w-auto object-contain"
                       />
                     ) : (

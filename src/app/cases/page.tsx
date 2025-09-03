@@ -10,14 +10,13 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { cases, sectors, getFeaturedCases, getCasesBySector, getTranslatedSectors, getTranslatedCaseData } from '@/data/cases';
+import { getFeaturedCases, getCasesBySector, getTranslatedSectors, getTranslatedCaseData } from '@/data/cases';
 
 const CasesPage = () => {
   const router = useRouter();
   const { t } = useTranslation('cases');
-  const [swiperInstance, setSwiperInstance] = useState<any>(null);
+  const [swiperInstance, setSwiperInstance] = useState<{slidePrev: () => void, slideNext: () => void} | null>(null);
   const [selectedSector, setSelectedSector] = useState<string>('todos');
-  const [showFilters, setShowFilters] = useState<boolean>(false);
 
   // Animation states for CTA section
   const [isCtaVisible, setIsCtaVisible] = useState(false);
@@ -32,6 +31,8 @@ const CasesPage = () => {
 
   // Intersection Observer for CTA section
   useEffect(() => {
+    const ctaElement = ctaSectionRef.current;
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -48,13 +49,13 @@ const CasesPage = () => {
       }
     );
 
-    if (ctaSectionRef.current) {
-      observer.observe(ctaSectionRef.current);
+    if (ctaElement) {
+      observer.observe(ctaElement);
     }
 
     return () => {
-      if (ctaSectionRef.current) {
-        observer.unobserve(ctaSectionRef.current);
+      if (ctaElement) {
+        observer.unobserve(ctaElement);
       }
     };
   }, [hasCtaAnimated]);
