@@ -1,0 +1,132 @@
+{
+  "rimcCase": {
+    "meta": {
+      "backButton": "Voltar para Cases",
+      "category": "Cartórios",
+      "author": "Por admin",
+      "date": "15 de agosto de 2025",
+      "readingTime": "6 min de leitura"
+    },
+    "header": {
+      "title": "Transformação Digital no 1º Registro de Imóveis de Montes Claros"
+    },
+    "overview": {
+      "title": "Visão Geral do Projeto",
+      "description1": "O 1º Registro de Imóveis de Montes Claros (1RIMC) é uma das mais importantes instituições cartoriais da região norte de Minas Gerais, responsável por garantir a segurança jurídica de milhares de transações imobiliárias. Em busca da modernização e melhoria da experiência do cliente, o cartório implementou duas soluções integradas da Mupi Systems.",
+      "description2": "Esta transformação digital envolveu a implementação do eAgenda para agendamento de atendimentos presenciais e virtuais, e do Meu Atendimento Virtual para gestão presencial de senhas e controle de filas, criando um ecossistema completo de atendimento ao cliente.",
+      "description3": "O projeto representa um marco na modernização dos serviços cartoriais, demonstrando como a tecnologia pode transformar processos tradicionais em experiências eficientes e centradas no cliente.",
+      "projectInfo": {
+        "title": "Informações do Projeto",
+        "client": "Cliente:",
+        "clientName": "1º Registro de Imóveis de Montes Claros",
+        "duration": "Duração:",
+        "durationValue": "Implementação contínua",
+        "category": "Categoria:",
+        "categoryValue": "Cartórios",
+        "solution": "Soluções:",
+        "solutionValue": "eAgenda + Meu Atendimento Virtual"
+      }
+    },
+    "objective": {
+      "title": "Objetivo",
+      "description": "Modernizar completamente o atendimento cartorial do 1RIMC através da implementação de soluções digitais integradas, permitindo agendamento online de atendimentos presenciais e virtuais, além de otimizar o controle de filas e senhas para proporcionar uma experiência mais eficiente e organizada aos clientes."
+    },
+    "approach": {
+      "title": "Abordagem",
+      "description": "A estratégia adotada foi implementar uma solução híbrida que combinasse as capacidades do eAgenda para agendamentos online com o Meu Atendimento Virtual para gestão presencial. Esta abordagem integrada permite ao cartório oferecer múltiplas modalidades de atendimento mantendo uma gestão eficiente de filas.",
+      "hybridService": {
+        "title": "Atendimento Híbrido",
+        "description": "Combinação de agendamentos online e gestão presencial em uma única plataforma integrada"
+      },
+      "digitalManagement": {
+        "title": "Gestão Digitalizada",
+        "description": "Controle digital de senhas e filas para otimizar o fluxo de atendimento"
+      }
+    },
+    "challenges": {
+      "title": "Desafios e Soluções Implementadas",
+      "challenge1": {
+        "title": "1. Integração de Múltiplas Plataformas",
+        "description": "O maior desafio foi integrar harmoniosamente o eAgenda com o Meu Atendimento Virtual, garantindo que ambas as plataformas funcionassem de forma coordenada. Era essencial que os agendamentos online se sincronizassem perfeitamente com o sistema de senhas presencial, evitando conflitos e garantindo uma experiência fluida. A solução envolveu o desenvolvimento de APIs personalizadas que permitiram a comunicação em tempo real entre os sistemas, resultando em uma operação unificada e eficiente."
+      },
+      "challenge2": {
+        "title": "2. Gestão de Atendimentos Presenciais e Virtuais",
+        "description": "O cartório precisava oferecer flexibilidade aos clientes, permitindo tanto atendimentos presenciais quanto virtuais. O eAgenda foi configurado para suportar ambas as modalidades, com diferentes tipos de serviços e horários específicos. Para os atendimentos virtuais, foi implementado um sistema de videoconferência integrado, enquanto os presenciais continuaram utilizando o controle de senhas do Meu Atendimento Virtual. Esta dualidade exigiu uma interface intuitiva que guiasse o cliente na escolha da modalidade mais adequada às suas necessidades."
+      },
+      "challenge3": {
+        "title": "3. Controle de Fluxo de Clientes",
+        "description": "Em um ambiente cartorial, o controle preciso do fluxo de clientes é fundamental para evitar aglomerações e garantir atendimento eficiente. O Meu Atendimento Virtual foi implementado com painéis digitais que exibem em tempo real as senhas chamadas, tempo médio de espera e posição na fila. Além disso, o sistema permite que os funcionários gerenciem prioridades, pausem atendimentos quando necessário e redistribuam a carga de trabalho entre diferentes guichês, proporcionando flexibilidade operacional."
+      },
+      "challenge4": {
+        "title": "4. Modernização de Processos Tradicionais",
+        "description": "Cartórios tradicionalmente operam com processos manuais estabelecidos há décadas. A digitalização desses processos exigiu não apenas implementação tecnológica, mas também treinamento da equipe e adaptação de procedimentos internos. Foi desenvolvido um programa de capacitação para os funcionários, criados manuais operacionais digitais e estabelecidas novas rotinas que aproveitassem ao máximo as funcionalidades das plataformas implementadas."
+      },
+      "challenge5": {
+        "title": "5. Experiência do Usuário em Ambiente Cartorial",
+        "description": "Clientes de cartórios têm perfis diversos, desde jovens tecnologicamente fluentes até idosos menos familiarizados com tecnologia. A interface do eAgenda foi adaptada para ser extremamente intuitiva, com opções claras e processo de agendamento simplificado. Para o Meu Atendimento Virtual, foram instalados totens de autoatendimento com interfaces touch amigáveis, além de manter atendimento humano para quem precisasse de auxílio, garantindo inclusão digital completa."
+      }
+    },
+    "tools": {
+      "title": "Ferramentas Utilizadas",
+      "mainPlatformTitle": "Plataforma Principal",
+      "eAgendaPlatform": "eAgenda - Agendamento Online",
+      "virtualService": "Meu Atendimento Virtual - Gestão de Filas",
+      "functionalitiesTitle": "Funcionalidades",
+      "digitalTickets": "Sistema de Senhas Digitais",
+      "callPanels": "Painéis de Chamada",
+      "integratedVirtual": "Atendimento Virtual Integrado"
+    },
+    "results": {
+      "title": "Resultados",
+      "description": "A implementação das soluções da Mupi Systems no 1RIMC resultou em uma transformação completa da experiência de atendimento, posicionando o cartório como referência em modernização do setor.",
+      "hybridService": {
+        "title": "Atendimento Híbrido",
+        "description": "Agendamentos presenciais e virtuais unificados"
+      },
+      "efficientManagement": {
+        "title": "Gestão Eficiente",
+        "description": "Controle digital de senhas e filas implementado"
+      },
+      "reducedWaiting": {
+        "title": "Redução de Espera",
+        "description": "Otimização significativa do tempo de atendimento"
+      },
+      "completeModernization": {
+        "title": "Modernização Completa",
+        "description": "Digitalização dos processos de atendimento"
+      },
+      "conclusion": {
+        "title": "Conclusão",
+        "description": "O projeto realizado no 1º Registro de Imóveis de Montes Claros representa um marco na modernização dos serviços cartoriais brasileiros. A integração bem-sucedida entre eAgenda e Meu Atendimento Virtual demonstra como soluções tecnológicas podem transformar processos tradicionais sem perder a qualidade e segurança que caracterizam o setor cartorial. Este case serve como modelo para outros cartórios que buscam modernizar seus atendimentos, provando que é possível conciliar tradição, segurança jurídica e inovação tecnológica para oferecer uma experiência superior aos clientes."
+      }
+    },
+    "sidebar": {
+      "challengesTitle": "Principais Desafios",
+      "challenge1": {
+        "title": "Integração de Plataformas",
+        "description": "Sincronização entre eAgenda e Meu Atendimento Virtual"
+      },
+      "challenge2": {
+        "title": "Atendimento Híbrido",
+        "description": "Gestão conjunta de atendimentos presenciais e virtuais"
+      },
+      "challenge3": {
+        "title": "Controle de Fluxo",
+        "description": "Otimização digital do controle de senhas e filas"
+      },
+      "challenge4": {
+        "title": "Modernização de Processos",
+        "description": "Digitalização de procedimentos cartoriais tradicionais"
+      },
+      "challenge5": {
+        "title": "Experiência do Usuário",
+        "description": "Interface acessível para diversos perfis de clientes"
+      }
+    },
+    "cta": {
+      "title": "Modernize seu cartório conosco",
+      "description": "Descubra como nossas soluções podem transformar o atendimento do seu cartório com tecnologia de ponta.",
+      "button": "Falar com especialista"
+    }
+  }
+}

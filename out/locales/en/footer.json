@@ -1,0 +1,37 @@
+{
+  "footer": {
+    "description": "We transform ideas into innovative digital solutions, offering SaaS platforms that drive business growth.",
+    "socialMedia": "Social Media",
+    "products": "Products",
+    "company": "Company",
+    "support": "Support",
+    "copyright": "All rights reserved.",
+    "links": {
+      "products": {
+        "eagenda": "eAgenda",
+        "minhaSala": "Minha Sala Virtual",
+        "meuAtendimento": "Meu Atendimento Virtual",
+        "atendeAqui": "Atende Aqui",
+        "eQualifica": "eQualifica",
+        "eTalentos": "eTalentos",
+        "sigVirtual": "SIG-Virtual"
+      },
+      "company": {
+        "about": "About us",
+        "partners": "Partners",
+        "careers": "Careers",
+        "blog": "Blog"
+      },
+      "support": {
+        "helpCenter": "Help Center",
+        "documentation": "Documentation",
+        "systemStatus": "System Status",
+        "contact": "Contact"
+      },
+      "legal": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Use"
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "rimcCase": {
+    "meta": {
+      "backButton": "Volver a Casos",
+      "category": "Oficinas de Registro",
+      "author": "Por admin",
+      "date": "15 de agosto de 2025",
+      "readingTime": "6 min de lectura"
+    },
+    "header": {
+      "title": "Transformación Digital en el 1º Registro de Inmuebles de Montes Claros"
+    },
+    "overview": {
+      "title": "Visión General del Proyecto",
+      "description1": "El 1º Registro de Inmuebles de Montes Claros (1RIMC) es una de las instituciones registrales más importantes de la región norte de Minas Gerais, responsable de garantizar la seguridad jurídica de miles de transacciones inmobiliarias. En busca de la modernización y mejora de la experiencia del cliente, el registro implementó dos soluciones integradas de Mupi Systems.",
+      "description2": "Esta transformación digital involucró la implementación de eAgenda para citas presenciales y virtuales, y de Meu Atendimento Virtual para gestión presencial de contraseñas y control de colas, creando un ecosistema completo de atención al cliente.",
+      "description3": "El proyecto representa un hito en la modernización de los servicios registrales, demostrando cómo la tecnología puede transformar procesos tradicionales en experiencias eficientes y centradas en el cliente.",
+      "projectInfo": {
+        "title": "Información del Proyecto",
+        "client": "Cliente:",
+        "clientName": "1º Registro de Inmuebles de Montes Claros",
+        "duration": "Duración:",
+        "durationValue": "Implementación continua",
+        "category": "Categoría:",
+        "categoryValue": "Oficinas de Registro",
+        "solution": "Soluciones:",
+        "solutionValue": "eAgenda + Meu Atendimento Virtual"
+      }
+    },
+    "objective": {
+      "title": "Objetivo",
+      "description": "Modernizar completamente la atención registral del 1RIMC a través de la implementación de soluciones digitales integradas, permitiendo citas en línea de atenciones presenciales y virtuales, además de optimizar el control de colas y contraseñas para proporcionar una experiencia más eficiente y organizada a los clientes."
+    },
+    "approach": {
+      "title": "Enfoque",
+      "description": "La estrategia adoptada fue implementar una solución híbrida que combinara las capacidades de eAgenda para citas en línea con Meu Atendimento Virtual para gestión presencial. Este enfoque integrado permite al registro ofrecer múltiples modalidades de atención manteniendo una gestión eficiente de colas.",
+      "hybridService": {
+        "title": "Servicio Híbrido",
+        "description": "Combinación de citas en línea y gestión presencial en una única plataforma integrada"
+      },
+      "digitalManagement": {
+        "title": "Gestión Digitalizada",
+        "description": "Control digital de contraseñas y colas para optimizar el flujo de atención"
+      }
+    },
+    "challenges": {
+      "title": "Desafíos y Soluciones Implementadas",
+      "challenge1": {
+        "title": "1. Integración de Múltiples Plataformas",
+        "description": "El mayor desafío fue integrar armoniosamente eAgenda con Meu Atendimento Virtual, garantizando que ambas plataformas funcionaran de manera coordinada. Era esencial que las citas en línea se sincronizaran perfectamente con el sistema de contraseñas presencial, evitando conflictos y garantizando una experiencia fluida. La solución involucró el desarrollo de APIs personalizadas que permitieron la comunicación en tiempo real entre sistemas, resultando en una operación unificada y eficiente."
+      },
+      "challenge2": {
+        "title": "2. Gestión de Atenciones Presenciales y Virtuales",
+        "description": "El registro necesitaba ofrecer flexibilidad a los clientes, permitiendo tanto atenciones presenciales como virtuales. eAgenda fue configurado para soportar ambas modalidades, con diferentes tipos de servicios y horarios específicos. Para las atenciones virtuales, se implementó un sistema de videoconferencia integrado, mientras que las presenciales continuaron utilizando el control de contraseñas de Meu Atendimento Virtual. Esta dualidad exigió una interfaz intuitiva que guiara al cliente en la elección de la modalidad más adecuada a sus necesidades."
+      },
+      "challenge3": {
+        "title": "3. Control de Flujo de Clientes",
+        "description": "En un ambiente registral, el control preciso del flujo de clientes es fundamental para evitar aglomeraciones y garantizar atención eficiente. Meu Atendimento Virtual fue implementado con paneles digitales que muestran en tiempo real las contraseñas llamadas, tiempo promedio de espera y posición en la cola. Además, el sistema permite que los funcionarios gestionen prioridades, pausen atenciones cuando sea necesario y redistribuyan la carga de trabajo entre diferentes ventanillas, proporcionando flexibilidad operacional."
+      },
+      "challenge4": {
+        "title": "4. Modernización de Procesos Tradicionales",
+        "description": "Los registros tradicionalmente operan con procesos manuales establecidos hace décadas. La digitalización de estos procesos exigió no solo implementación tecnológica, sino también entrenamiento del equipo y adaptación de procedimientos internos. Se desarrolló un programa de capacitación para los funcionarios, se crearon manuales operacionales digitales y se establecieron nuevas rutinas que aprovecharan al máximo las funcionalidades de las plataformas implementadas."
+      },
+      "challenge5": {
+        "title": "5. Experiencia del Usuario en Ambiente Registral",
+        "description": "Los clientes de registros tienen perfiles diversos, desde jóvenes tecnológicamente fluentes hasta personas mayores menos familiarizadas con tecnología. La interfaz de eAgenda fue adaptada para ser extremadamente intuitiva, con opciones claras y proceso de citas simplificado. Para Meu Atendimento Virtual, se instalaron tótems de autoservicio con interfaces táctiles amigables, además de mantener atención humana para quien necesitara ayuda, garantizando inclusión digital completa."
+      }
+    },
+    "tools": {
+      "title": "Herramientas Utilizadas",
+      "mainPlatformTitle": "Plataforma Principal",
+      "eAgendaPlatform": "eAgenda - Citas En Línea",
+      "virtualService": "Meu Atendimento Virtual - Gestión de Colas",
+      "functionalitiesTitle": "Funcionalidades",
+      "digitalTickets": "Sistema de Contraseñas Digitales",
+      "callPanels": "Paneles de Llamada",
+      "integratedVirtual": "Servicio Virtual Integrado"
+    },
+    "results": {
+      "title": "Resultados",
+      "description": "La implementación de las soluciones de Mupi Systems en 1RIMC resultó en una transformación completa de la experiencia de atención, posicionando al registro como referencia en modernización del sector.",
+      "hybridService": {
+        "title": "Servicio Híbrido",
+        "description": "Citas presenciales y virtuales unificadas"
+      },
+      "efficientManagement": {
+        "title": "Gestión Eficiente",
+        "description": "Control digital de contraseñas y colas implementado"
+      },
+      "reducedWaiting": {
+        "title": "Reducción de Espera",
+        "description": "Optimización significativa del tiempo de atención"
+      },
+      "completeModernization": {
+        "title": "Modernización Completa",
+        "description": "Digitalización de los procesos de atención"
+      },
+      "conclusion": {
+        "title": "Conclusión",
+        "description": "El proyecto realizado en el 1º Registro de Inmuebles de Montes Claros representa un hito en la modernización de los servicios registrales brasileños. La integración exitosa entre eAgenda y Meu Atendimento Virtual demuestra cómo las soluciones tecnológicas pueden transformar procesos tradicionales sin perder la calidad y seguridad que caracterizan al sector registral. Este caso sirve como modelo para otros registros que buscan modernizar sus atenciones, probando que es posible conciliar tradición, seguridad jurídica e innovación tecnológica para ofrecer una experiencia superior a los clientes."
+      }
+    },
+    "sidebar": {
+      "challengesTitle": "Principales Desafíos",
+      "challenge1": {
+        "title": "Integración de Plataformas",
+        "description": "Sincronización entre eAgenda y Meu Atendimento Virtual"
+      },
+      "challenge2": {
+        "title": "Servicio Híbrido",
+        "description": "Gestión conjunta de atenciones presenciales y virtuales"
+      },
+      "challenge3": {
+        "title": "Control de Flujo",
+        "description": "Optimización digital del control de contraseñas y colas"
+      },
+      "challenge4": {
+        "title": "Modernización de Procesos",
+        "description": "Digitalización de procedimientos registrales tradicionales"
+      },
+      "challenge5": {
+        "title": "Experiencia del Usuario",
+        "description": "Interfaz accesible para diversos perfiles de clientes"
+      }
+    },
+    "cta": {
+      "title": "Moderniza tu registro con nosotros",
+      "description": "Descubre cómo nuestras soluciones pueden transformar la atención de tu registro con tecnología de punta.",
+      "button": "Hablar con especialista"
+    }
+  }
+}

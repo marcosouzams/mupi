@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "badge": "Transformação Digital",
+    "subtitle": "Nossas soluções digitais transcendem o código, gerando transformações reais que impulsionam o futuro dos negócios.",
+    "cta_platforms": "Conheça as nossas plataformas",
+    "cta_cases": "Ver nossos cases",
+    "stats": {
+      "projects": "Projetos entregues",
+      "clients": "Clientes ativos", 
+      "experience": "De experiência"
+    }
+  }
+}

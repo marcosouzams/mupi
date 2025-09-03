@@ -197,7 +197,27 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
   if (!isI18nReady) {
     return (
       <div className="min-h-screen bg-[#191927] flex items-center justify-center">
-        <div className="text-white">Carregando...</div>
+        <div className="flex space-x-2">
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0s' }}></span>
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+        </div>
+        <style jsx>{`
+          .dot {
+            display: inline-block;
+          }
+          @keyframes bounce {
+            0%, 80%, 100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-16px);
+            }
+          }
+          .animate-bounce {
+            animation: bounce 1.2s infinite;
+          }
+        `}</style>
       </div>
     );
   }

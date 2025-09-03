@@ -1,0 +1,141 @@
+{
+  "bienalCase": {
+    "meta": {
+      "backButton": "Back to Cases",
+      "category": "Events",
+      "author": "By admin",
+      "date": "June 26, 2025",
+      "readingTime": "8 min read"
+    },
+    "header": {
+      "title": "Scheduling Challenges at Bienal do Livro Rio 2025"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "description1": "The Bienal do Livro Rio is one of Brazil's largest literary events, attracting thousands of visitors eager for new stories and experiences. In its 2025 edition, Mupi Systems had the privilege of actively participating, providing expertise in online scheduling for one of the most popular attractions: the Escape Rooms.",
+      "description2": "This publication details our contribution, the inherent challenges of high-volume scheduling in large-scale events, and how the eAgenda platform stands out as an efficient solution.",
+      "description3": "Events like the Bienal do Livro Rio present a unique and challenging scenario for online scheduling. High demand and the ephemeral nature of attractions require a platform that not only manages appointments but is also capable of handling access peaks and complex rules.",
+      "projectInfo": {
+        "title": "Project Information",
+        "client": "Client:",
+        "clientName": "Bienal do Livro Rio",
+        "duration": "Duration:",
+        "durationValue": "7 days",
+        "category": "Category:",
+        "categoryValue": "Events",
+        "solution": "Solution:",
+        "solutionValue": "eAgenda"
+      }
+    },
+    "objective": {
+      "title": "Objective",
+      "description": "Develop a robust and scalable online scheduling solution to manage the Escape Rooms at Bienal do Livro Rio 2025, ensuring a smooth experience for thousands of simultaneous visitors and implementing specific control and validation rules."
+    },
+    "approach": {
+      "title": "Approach",
+      "description": "Our approach focused on creating a scalable architecture capable of handling access peaks and implementing complex business rules specific to the event. The eAgenda platform was configured to meet the unique needs of the Fair, offering effective solutions for each identified challenge.",
+      "architecture": {
+        "title": "Scalable Architecture",
+        "description": "System prepared to support thousands of simultaneous accesses with stability and speed"
+      },
+      "rules": {
+        "title": "Custom Rules",
+        "description": "Implementation of event-specific validations and access controls"
+      }
+    },
+    "challenges": {
+      "title": "Detailed Challenges and Solutions",
+      "challenge1": {
+        "title": "1. High Volume Access and Simultaneous Scheduling",
+        "description": "One of the biggest obstacles in popular events is the massive volume of accesses and appointments that occur in a short time span. Thousands of users try to secure their spot in attractions like Escape Rooms simultaneously, which can overwhelm less robust systems, resulting in slowness, errors, and a frustrating user experience. The eAgenda platform was designed to support this load, using a scalable architecture that ensures the necessary stability and speed even during peak moments. This allowed the Bienal do Livro Rio to offer a smooth and efficient scheduling process, even with high demand for Escape Rooms."
+      },
+      "challenge2": {
+        "title": "2. Booking Limitation per User (CPF and Email)",
+        "description": "To ensure that the largest possible number of visitors had the opportunity to participate in Escape Rooms, it was crucial to implement a system that limited the number of bookings per individual. The eAgenda platform allowed the configuration of rules that prevented duplicate or excessive bookings by CPF and email. This functionality is vital to prevent fraud and ensure fair distribution of slots, ensuring the experience was accessible to a broader audience and that slots weren't monopolized by few users."
+      },
+      "challenge3": {
+        "title": "3. Age Restrictions for Participation",
+        "description": "Some attractions, like Escape Rooms, may have age restrictions due to content or challenge complexity. eAgenda offers the flexibility to incorporate these rules directly into the scheduling process. This means that when attempting to schedule, the system automatically checks if the participant meets age requirements, blocking bookings from users who don't qualify and ensuring compliance with event guidelines. This functionality simplifies management for organizers and avoids non-compliance situations at the attraction location."
+      },
+      "challenge4": {
+        "title": "4. Waiting List Management",
+        "description": "In events with high demand and limited spots, it's common for some participants not to show up, leaving idle spots. To optimize occupancy and public experience, eAgenda included a waiting list system. When all spots for a specific time were filled, interested parties could sign up for a waiting list. In case of cancellation or no-show, the system automatically notified the next in line, allowing spots to be filled quickly and minimizing missed opportunities for visitors and event organization."
+      },
+      "challenge5": {
+        "title": "5. Group Booking and Data Validation",
+        "description": "Considering that Escape Rooms are group activities, the eAgenda platform was configured to allow a single booking to include multiple participants. Additionally, to ensure data integrity and effective participation, a validation system was implemented where complete companion data should be provided within a stipulated timeframe. Otherwise, the booking was automatically cancelled, releasing spots for other interested parties and optimizing session management."
+      }
+    },
+    "tools": {
+      "title": "Tools Used",
+      "mainTechTitle": "Main Technology",
+      "eAgendaPlatform": "eAgenda Platform",
+      "cloudArchitecture": "Cloud Architecture",
+      "functionalitiesTitle": "Functionalities",
+      "validationSystem": "Validation System",
+      "waitingList": "Waiting List",
+      "mainTech": {
+        "title": "Main Technology",
+        "platform": "eAgenda Platform",
+        "architecture": "Cloud Architecture"
+      },
+      "features": {
+        "title": "Features",
+        "validation": "Validation System",
+        "waitlist": "Waiting List"
+      }
+    },
+    "results": {
+      "title": "Results",
+      "description": "The implementation of the eAgenda platform at Rio Book Fair 2025 was a complete success, providing efficient management of Escape Rooms and an exceptional experience for visitors.",
+      "stable": {
+        "title": "Stable System",
+        "description": "Zero downtime during access peaks"
+      },
+      "control": {
+        "title": "Effective Control",
+        "description": "Fair slot distribution implemented"
+      },
+      "optimization": {
+        "title": "Slot Optimization",
+        "description": "Waiting list minimized idle spots"
+      },
+      "experience": {
+        "title": "Smooth Experience",
+        "description": "Intuitive scheduling process"
+      },
+      "conclusion": {
+        "title": "Conclusion",
+        "description": "Mupi Systems' participation in Bienal do Livro Rio 2025, through the eAgenda platform, demonstrates our technology's capability to handle complex challenges of online scheduling in large-scale events. By offering solutions for high volume access, user booking control, age restrictions, and waiting list management, eAgenda proved to be an indispensable tool for optimizing public experience and organizers' operational efficiency. We are proud to have contributed to the success of one of the Fair's most sought-after attractions and remain committed to developing innovative solutions that meet the dynamic needs of the events market."
+      }
+    },
+    "sidebar": {
+      "challengesTitle": "Main Challenges",
+      "challenge1": {
+        "title": "High Volume Access",
+        "description": "Thousands of users trying to schedule simultaneously"
+      },
+      "challenge2": {
+        "title": "User Limitation",
+        "description": "Booking control by CPF and email"
+      },
+      "challenge3": {
+        "title": "Age Restrictions",
+        "description": "Automatic validation of age requirements"
+      },
+      "challenge4": {
+        "title": "Waiting List Management",
+        "description": "Slot optimization in case of cancellations"
+      },
+      "challenge5": {
+        "title": "Group Booking",
+        "description": "Companion data validation"
+      }
+    },
+    "cta": {
+      "title": "Need a scheduling solution?",
+      "description": "Contact us and discover how eAgenda can transform your event management.",
+      "button": "Talk to specialist"
+    }
+  }
+}
