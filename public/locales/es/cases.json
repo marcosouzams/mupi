@@ -1,0 +1,54 @@
+{
+  "cases": {
+    "hero": {
+      "viewFullCase": "Ver Caso Completo"
+    },
+    "header": {
+      "subtitle": "NUESTROS PROYECTOS",
+      "title": "Todos nuestros <span class=\"text-[#5667fe]\">casos de éxito</span>",
+      "description": "Explora en detalle cómo nuestras soluciones transformaron desafíos en resultados excepcionales."
+    },
+    "filters": {
+      "filterBySector": "Filtrar por sector",
+      "all": "Todos"
+    },
+    "caseCard": {
+      "viewFullCase": "Ver caso completo"
+    },
+    "emptyState": {
+      "title": "No se encontraron casos",
+      "description": "No hay casos disponibles para este sector en este momento.",
+      "viewAll": "Ver todos los casos"
+    },
+    "cta": {
+      "title": "¿Listo para transformar tu próximo proyecto en un caso de éxito?",
+      "description": "Nuestra experiencia en soluciones de programación y gestión puede revolucionar tu negocio o evento. Hablemos sobre tus necesidades y creemos algo extraordinario juntos.",
+      "contactSpecialists": "Hablar con nuestros especialistas",
+      "knowSolutions": "Conoce nuestras soluciones"
+    },
+    "sectors": {
+      "todos": "Todos los sectores",
+      "eventos": "Eventos",
+      "cartorio": "Notarías",
+      "agricultura": "Agricultura",
+      "farmaceutico": "Farmacéutico",
+      "orgaos-publicos": "Organismos Públicos",
+      "educacao": "Educación",
+      "saude": "Salud"
+    },
+    "caseData": {
+      "1": {
+        "title": "Desafios do Agendamento na Bienal do Livro Rio 2025",
+        "shortTitle": "Bienal do Livro Rio 2025",
+        "description": "Solución completa de programación para las Escape Rooms del mayor evento literario de Brasil.",
+        "category": "Eventos"
+      },
+      "2": {
+        "title": "Transformação Digital no 1º Registro de Imóveis de Montes Claros",
+        "shortTitle": "1º Registro de Imóveis de Montes Claros",
+        "description": "Modernización completa de los servicios notariales con soluciones integradas de programación y gestión.",
+        "category": "Notarías"
+      }
+    }
+  }
+}

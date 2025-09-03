@@ -1,0 +1,55 @@
+{
+  "products": {
+    "badge": "OUR PLATFORMS",
+    "title": "Catalog of",
+    "titleHighlight": "Solutions",
+    "description": "Click on a platform to learn about its features and functionalities",
+    "featuresTitle": "Key features",
+    "ctaLearnMore": "Learn more",
+    "ctaDemo": "Demo",
+    "items": {
+      "eagenda": {
+        "title": "eAgenda",
+        "category": "Scheduling",
+        "description": "General-purpose online scheduling platform to optimize appointment and schedule management.",
+        "features": ["Online scheduling", "Schedule management", "Automatic notifications", "Calendar integration"]
+      },
+      "minhaSala": {
+        "title": "Minha Sala Virtual",
+        "category": "Education",
+        "description": "E-learning platform for corporate training focused on engagement and results.",
+        "features": ["Online courses", "Gamification", "Progress reports", "Certifications"]
+      },
+      "meuAtendimento": {
+        "title": "Meu Atendimento Virtual",
+        "category": "Customer Service",
+        "description": "Intelligent queue management to improve customer experience.",
+        "features": ["Queue management", "Virtual service", "Real-time metrics", "Integrated chat"]
+      },
+      "atendeAqui": {
+        "title": "Atende Aqui",
+        "category": "Support",
+        "description": "Complete ticket management for support, sales and development in a single platform.",
+        "features": ["Ticket management", "Multichannel support", "Knowledge base", "Process automation"]
+      },
+      "eQualifica": {
+        "title": "eQualifica",
+        "category": "Qualification",
+        "description": "Platform specialized in registry qualification for secure and efficient processes.",
+        "features": ["Digital qualification", "Electronic signature", "Document validation", "Compliance"]
+      },
+      "eTalentos": {
+        "title": "eTalentos",
+        "category": "HR",
+        "description": "Complete solution for selection, recruitment and resume screening.",
+        "features": ["Digital recruitment", "Automatic screening", "Online assessments", "Candidate pipeline"]
+      },
+      "sigVirtual": {
+        "title": "SIG-Virtual",
+        "category": "Management",
+        "description": "Integrated system for people management, compliance, privacy and information security.",
+        "features": ["People management", "Automatic compliance", "Data security", "Integrated reports"]
+      }
+    }
+  }
+}

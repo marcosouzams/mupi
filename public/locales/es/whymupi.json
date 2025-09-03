@@ -1,0 +1,22 @@
+{
+  "whymupi": {
+    "casesTitle": "Nuestros Casos de",
+    "casesTitleHighlight": "Éxito",
+    "casesDescription": "Conoce algunos proyectos que transformamos en historias de éxito, demostrando nuestra capacidad de entregar soluciones excepcionales.",
+    "ctaAllCases": "Ver todos los casos",
+    "features": {
+      "growth": {
+        "title": "Soporte para Crecimiento",
+        "description": "Queremos ser socios preferidos de empresas/negocios en expansión"
+      },
+      "development": {
+        "title": "Desarrollo Continuo",
+        "description": "Nuestro equipo trabaja continuamente para encontrar nuevas mejoras para nuestro portafolio de productos"
+      },
+      "perfection": {
+        "title": "Búsqueda de la Perfección",
+        "description": "Buscamos colaborar con clientes y socios para el desarrollo de productos robustos e intuitivos para los usuarios"
+      }
+    }
+  }
+}

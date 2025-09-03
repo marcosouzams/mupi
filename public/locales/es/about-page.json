@@ -1,0 +1,155 @@
+{
+  "title": "Más allá de la tecnología, nuestro software ofrece impactos reales",
+  "subtitle": "Desarrollamos soluciones que transforman procesos, optimizan resultados y generan valor tangible para empresas en todo Brasil",
+  "description": "Nos especializamos en desarrollar y ofrecer plataformas SaaS listas para usar que revolucionan la gestión empresarial e impulsan el crecimiento de nuestros clientes.",
+  
+  "hero": {
+    "titleLine1": "más allá de la tecnología,",
+    "titleLine2": "nuestro software ofrece",
+    "titleLine3": "impactos reales.",
+    "stats": {
+      "experience": {
+        "number": "10+",
+        "label": "Años de experiencia"
+      },
+      "clients": {
+        "number": "500+",
+        "label": "Clientes atendidos"
+      },
+      "platforms": {
+        "number": "8",
+        "label": "Plataformas SaaS"
+      }
+    }
+  },
+
+  "nameOrigin": {
+    "badge": "ORIGEN DEL NOMBRE",
+    "title": "Un homenaje a nuestros orígenes",
+    "description": "El nombre Mupi Systems lleva en su esencia un homenaje a los orígenes de uno de sus creadores. Inspirado en el Río Mupi, ubicado en el interior de Pará, el nombre simboliza resistencia, conexión y fluidez, valores que también guían cómo desarrollamos nuestras soluciones tecnológicas.",
+    "extraText": "Así como el río traza su curso con constancia y propósito, Mupi Systems fue creada con la misión de conectar innovación, conocimiento y tecnología, llevando soluciones robustas y eficientes a diferentes segmentos.",
+    "extraText2": "Este vínculo con el Río Mupi representa más que un tributo geográfico: es un recordatorio de que incluso las iniciativas más tecnológicas tienen raíces humanas, y que el verdadero progreso nace del equilibrio entre tradición e innovación."
+  },
+
+  "mission": {
+    "badge": "NUESTRA MISIÓN",
+    "title": "Democratizamos el acceso a tecnología de punta",
+    "description": "Nuestra misión es hacer accesibles las soluciones tecnológicas avanzadas para empresas de todos los tamaños, ofreciendo plataformas SaaS completas y listas para usar.",
+    "values": [
+      {
+        "title": "Innovación Constante",
+        "description": "Siempre buscamos las mejores tecnologías y prácticas del mercado."
+      },
+      {
+        "title": "Enfoque en el Cliente",
+        "description": "Desarrollamos soluciones pensando en las necesidades reales de nuestros usuarios."
+      },
+      {
+        "title": "Calidad Premium",
+        "description": "Entregamos plataformas robustas, seguras y de alto rendimiento."
+      },
+      {
+        "title": "Soporte Especializado",
+        "description": "Ofrecemos seguimiento y soporte técnico especializado."
+      }
+    ]
+  },
+
+  "story": {
+    "badge": "NUESTRA HISTORIA",
+    "title": "Más que tecnología, entregamos soluciones personalizadas",
+    "description": "Más que proporcionar software, entregamos soluciones personalizadas con altos estándares de calidad, confiabilidad y seguridad. Trabajamos lado a lado con nuestros clientes, entendiendo sus desafíos, particularidades y objetivos para impulsar resultados sostenibles.",
+    "extraText": "Creemos que la tecnología es un aliado estratégico para el crecimiento y éxito de nuestros socios. Por eso, invertimos continuamente en la evolución de nuestras plataformas, asegurando que se mantengan al día con los cambios del mercado y ofrezcan innovación con impacto real.",
+    "timeline": [
+      {
+        "year": "2014",
+        "title": "Fundación de MUPI",
+        "description": "Iniciamos nuestro viaje enfocándonos en desarrollo de software personalizado."
+      },
+      {
+        "year": "2018",
+        "title": "Primera Plataforma SaaS",
+        "description": "Lanzamos nuestra primera solución SaaS para gestión empresarial."
+      },
+      {
+        "year": "2020",
+        "title": "Expansión Nacional",
+        "description": "Alcanzamos clientes en todo Brasil con nuestras plataformas digitales."
+      },
+      {
+        "year": "2024",
+        "title": "Portafolio Completo",
+        "description": "Consolidamos un portafolio de 8 plataformas SaaS especializadas."
+      }
+    ]
+  },
+
+  "team": {
+    "badge": "NUESTRO EQUIPO",
+    "title": "Especialistas en transformación digital",
+    "description": "Nuestro equipo está formado por profesionales experimentados y apasionados por la tecnología, siempre listos para entregar las mejores soluciones.",
+    "departments": [
+      {
+        "name": "Desarrollo",
+        "description": "Especialistas en tecnologías modernas y arquitecturas escalables"
+      },
+      {
+        "name": "Diseño UX/UI",
+        "description": "Enfocados en crear experiencias intuitivas y atractivas"
+      },
+      {
+        "name": "Soporte Técnico",
+        "description": "Dedicados al éxito y satisfacción de nuestros clientes"
+      },
+      {
+        "name": "Negocios",
+        "description": "Especialistas en entender y atender las necesidades del mercado"
+      }
+    ]
+  },
+
+  "values": {
+    "badge": "NUESTROS VALORES",
+    "title": "Compromiso con la excelencia, innovación y éxito",
+    "subtitle": "Nuestros valores reflejan el compromiso de MUPI SYSTEMS con la excelencia, la innovación y el éxito de nuestros clientes.",
+    "list": [
+      {
+        "number": "01",
+        "title": "Innovación",
+        "description": "Buscamos ir más allá de la tecnología por la tecnología. Toda innovación que desarrollamos tiene un propósito claro: resolver problemas reales, mejorar procesos y agregar valor a nuestros clientes. Creamos soluciones prácticas y transformadoras, con impacto directo en los resultados."
+      },
+      {
+        "number": "02",
+        "title": "Enfoque en el Cliente",
+        "description": "El cliente está en el centro de todo lo que hacemos. Escuchamos, comprendemos sus necesidades y adaptamos nuestras soluciones para generar resultados concretos. Más que entregar tecnología, buscamos construir asociaciones duraderas basadas en empatía, proximidad y compromiso con el éxito de cada cliente."
+      },
+      {
+        "number": "03",
+        "title": "Conocimiento",
+        "description": "Valoramos el conocimiento que genera acción. Unimos experiencia de mercado, experiencia técnica y dominio de procesos para entregar soluciones eficientes, bien fundamentadas y aplicables en la práctica, de forma ágil e inteligente."
+      },
+      {
+        "number": "04",
+        "title": "Confianza y Transparencia",
+        "description": "Creemos en relaciones basadas en la confianza mutua. Mantenemos una comunicación abierta, clara y verdadera con nuestros clientes, socios y equipo. La transparencia está presente en todas las etapas, desde la planificación hasta la ejecución."
+      },
+      {
+        "number": "05",
+        "title": "Escalabilidad y Eficiencia",
+        "description": "Nuestras soluciones están pensadas para crecer con el cliente. Desarrollamos sistemas escalables, modulares y de alto rendimiento, que acompañan la evolución de los negocios sin comprometer la eficiencia operacional."
+      },
+      {
+        "number": "06",
+        "title": "Soporte Consultivo de Alto Nivel",
+        "description": "Más que atención técnica, ofrecemos soporte consultivo. Estamos al lado de nuestros clientes en cada etapa, ayudando a tomar decisiones, implementar buenas prácticas y obtener el máximo valor de nuestras plataformas."
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "¿Listo para transformar tu negocio?",
+    "description": "Descubre cómo nuestras plataformas SaaS pueden revolucionar la gestión de tu empresa e impulsar tu crecimiento.",
+    "contactButton": "Hablar con especialista",
+    "platformsButton": "Conocer plataformas"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Contáctanos",
+  "subtitle": "Descubre nuestras plataformas SaaS listas para impulsar tu negocio",
+  "description": "Estamos aquí para ayudarte a encontrar la solución perfecta. Contáctanos y conoce nuestras plataformas digitales que transformarán la gestión de tu negocio.",
+  "form": {
+    "title": "Envía tu mensaje",
+    "name": {
+      "label": "Nombre completo",
+      "placeholder": "Ingresa tu nombre completo",
+      "error": "El nombre es obligatorio"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "tu@email.com",
+      "error": "Email válido es obligatorio"
+    },
+    "phone": {
+      "label": "Teléfono",
+      "placeholder": "+34 000 000 000",
+      "error": "Teléfono es obligatorio"
+    },
+    "company": {
+      "label": "Empresa",
+      "placeholder": "Nombre de tu empresa"
+    },
+    "subject": {
+      "label": "Asunto",
+      "placeholder": "¿De qué te gustaría hablar?",
+      "error": "Asunto es obligatorio"
+    },
+    "message": {
+      "label": "Mensaje",
+      "placeholder": "Describe tu proyecto, necesidad o pregunta...",
+      "error": "Mensaje es obligatorio"
+    },
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito! Te contactaremos pronto.",
+    "error": "Error al enviar mensaje. Inténtalo de nuevo."
+  },
+  "contact_info": {
+    "title": "Información de Contacto",
+    "email": {
+      "label": "Email",
+      "value": "contacto@mupisystems.com.br"
+    },
+    "phone": {
+      "label": "Teléfono",
+      "value": "+55 (38) 3214-4592"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "value": "+55 (11) 94252-9100"
+    },
+    "address": {
+      "label": "Dirección",
+      "value": "Rua Dom João Pimenta 701, tienda 2\nMontes Claros - MG\nCEP: 39400-001"
+    },
+    "business_hours": {
+      "label": "Horario de Atención",
+      "value": "Lunes a Viernes: 8h a 18h\nSábado: 8h a 12h"
+    }
+  },
+  "map": {
+    "title": "Nuestra Ubicación",
+    "description": "Ven a visitarnos a nuestra oficina en Montes Claros - MG"
+  }
+}

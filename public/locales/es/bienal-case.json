@@ -1,0 +1,141 @@
+{
+  "bienalCase": {
+    "meta": {
+      "backButton": "Volver a Casos",
+      "category": "Eventos",
+      "author": "Por admin",
+      "date": "26 de junio de 2025",
+      "readingTime": "8 min de lectura"
+    },
+    "header": {
+      "title": "Desafíos de Reservas en Bienal do Livro Rio 2025"
+    },
+    "overview": {
+      "title": "Visión General del Proyecto",
+      "description1": "Bienal do Livro Rio es uno de los mayores eventos literarios de Brasil, atrayendo a miles de visitantes ávidos de nuevas historias y experiencias. En su edición de 2025, Mupi Systems tuvo el privilegio de participar activamente, proporcionando su experiencia en reservas en línea para una de las atracciones más populares: las Escape Rooms.",
+      "description2": "Esta publicación detalla nuestra contribución, los desafíos inherentes a las reservas de alto volumen en eventos de gran escala, y cómo la plataforma eAgenda se destaca como una solución eficiente.",
+      "description3": "Eventos como Bienal do Livro Rio presentan un escenario único y desafiante para las reservas en línea. La alta demanda y la naturaleza efímera de las atracciones requieren una plataforma que no solo gestione reservas, sino que también sea capaz de manejar picos de acceso y reglas complejas.",
+      "projectInfo": {
+        "title": "Información del Proyecto",
+        "client": "Cliente:",
+        "clientName": "Bienal do Livro Rio",
+        "duration": "Duración:",
+        "durationValue": "7 días",
+        "category": "Categoría:",
+        "categoryValue": "Eventos",
+        "solution": "Solución:",
+        "solutionValue": "eAgenda"
+      }
+    },
+    "objective": {
+      "title": "Objetivo",
+      "description": "Desarrollar una solución de reservas en línea robusta y escalable para gestionar las Escape Rooms en Bienal do Livro Rio 2025, garantizando una experiencia fluida para miles de visitantes simultáneos e implementando reglas específicas de control y validación."
+    },
+    "approach": {
+      "title": "Enfoque",
+      "description": "Nuestro enfoque se centró en crear una arquitectura escalable capaz de manejar picos de acceso e implementar reglas de negocio complejas específicas del evento. La plataforma eAgenda fue configurada para satisfacer las necesidades únicas de la Bienal, ofreciendo soluciones efectivas para cada desafío identificado.",
+      "architecture": {
+        "title": "Arquitectura Escalable",
+        "description": "Sistema preparado para soportar miles de accesos simultáneos con estabilidad y velocidad"
+      },
+      "rules": {
+        "title": "Reglas Personalizadas",
+        "description": "Implementación de validaciones específicas del evento y controles de acceso"
+      }
+    },
+    "challenges": {
+      "title": "Desafíos Detallados y Soluciones",
+      "challenge1": {
+        "title": "1. Gran Volumen de Acceso y Reservas Simultáneas",
+        "description": "Uno de los mayores obstáculos en eventos populares es el volumen masivo de accesos y reservas que ocurren en un corto período de tiempo. Miles de usuarios intentan asegurar su lugar en atracciones como las Escape Rooms simultáneamente, lo que puede sobrecargar sistemas menos robustos, resultando en lentitud, errores y una experiencia frustrante para el usuario. La plataforma eAgenda fue diseñada para soportar esta carga, utilizando una arquitectura escalable que garantiza la estabilidad y velocidad necesarias incluso en momentos pico. Esto permitió que Bienal do Livro Rio ofreciera un proceso de reserva fluido y eficiente, incluso con la alta demanda por las Escape Rooms."
+      },
+      "challenge2": {
+        "title": "2. Limitación de Reservas por Usuario (CPF y Email)",
+        "description": "Para garantizar que el mayor número posible de visitantes tuviera la oportunidad de participar en las Escape Rooms, era crucial implementar un sistema que limitara el número de reservas por individuo. La plataforma eAgenda permitió la configuración de reglas que impedían reservas duplicadas o excesivas por CPF y email. Esta funcionalidad es vital para evitar fraudes y garantizar una distribución justa de las plazas, asegurando que la experiencia fuera accesible a un público más amplio y que las plazas no fueran monopolizadas por pocos usuarios."
+      },
+      "challenge3": {
+        "title": "3. Restricciones de Edad para Participación",
+        "description": "Algunas atracciones, como las Escape Rooms, pueden tener restricciones de edad debido al contenido o la complejidad de los desafíos. eAgenda ofrece la flexibilidad de incorporar estas reglas directamente en el proceso de reserva. Esto significa que, al intentar reservar, el sistema verifica automáticamente si el participante cumple con los requisitos de edad, bloqueando reservas de usuarios que no califican y garantizando el cumplimiento con las directrices del evento. Esta funcionalidad simplifica la gestión para los organizadores y evita situaciones de incumplimiento en el lugar de la atracción."
+      },
+      "challenge4": {
+        "title": "4. Gestión de Lista de Espera",
+        "description": "En eventos con alta demanda y plazas limitadas, es común que algunos participantes no se presenten, dejando plazas ociosas. Para optimizar la ocupación y la experiencia del público, eAgenda incluyó un sistema de lista de espera. Cuando todas las plazas para un horario determinado estaban llenas, los interesados podían inscribirse en una lista de espera. En caso de cancelación o no presentación, el sistema notificaba automáticamente a los siguientes en la fila, permitiendo que las plazas se llenaran rápidamente y minimizando oportunidades perdidas para los visitantes y la organización del evento."
+      },
+      "challenge5": {
+        "title": "5. Reserva con Acompañantes y Validación de Datos",
+        "description": "Considerando que las Escape Rooms son actividades grupales, la plataforma eAgenda fue configurada para permitir que una sola reserva incluyera múltiples participantes. Además, para garantizar la integridad de los datos y la participación efectiva, se implementó un sistema de validación donde los datos completos de los acompañantes debían proporcionarse dentro de un plazo estipulado. De lo contrario, la reserva era automáticamente cancelada, liberando las plazas para otros interesados y optimizando la gestión de las sesiones."
+      }
+    },
+    "tools": {
+      "title": "Herramientas Utilizadas",
+      "mainTechTitle": "Tecnología Principal",
+      "eAgendaPlatform": "Plataforma eAgenda",
+      "cloudArchitecture": "Arquitectura Cloud",
+      "functionalitiesTitle": "Funcionalidades",
+      "validationSystem": "Sistema de Validación",
+      "waitingList": "Lista de Espera",
+      "mainTech": {
+        "title": "Tecnología Principal",
+        "platform": "Plataforma eAgenda",
+        "architecture": "Arquitectura Cloud"
+      },
+      "features": {
+        "title": "Funcionalidades",
+        "validation": "Sistema de Validación",
+        "waitlist": "Lista de Espera"
+      }
+    },
+    "results": {
+      "title": "Resultados",
+      "description": "La implementación de la plataforma eAgenda en Bienal do Livro Rio 2025 fue un éxito completo, proporcionando una gestión eficiente de las Escape Rooms y una experiencia excepcional para los visitantes.",
+      "stable": {
+        "title": "Sistema Estable",
+        "description": "Cero tiempo de inactividad durante picos de acceso"
+      },
+      "control": {
+        "title": "Control Efectivo",
+        "description": "Distribución justa de plazas implementada"
+      },
+      "optimization": {
+        "title": "Optimización de Plazas",
+        "description": "Lista de espera minimizó plazas ociosas"
+      },
+      "experience": {
+        "title": "Experiencia Fluida",
+        "description": "Proceso de reserva intuitivo"
+      },
+      "conclusion": {
+        "title": "Conclusión",
+        "description": "La participación de Mupi Systems en Bienal do Livro Rio 2025, a través de la plataforma eAgenda, demuestra la capacidad de nuestra tecnología para manejar desafíos complejos de reservas en línea en eventos de gran escala. Al ofrecer soluciones para acceso de alto volumen, control de reservas por usuario, restricciones de edad y gestión de lista de espera, eAgenda demostró ser una herramienta indispensable para optimizar la experiencia del público y la eficiencia organizacional. Estamos orgullosos de haber contribuido al éxito de una de las atracciones más buscadas de la Bienal y seguimos comprometidos a desarrollar soluciones innovadoras que satisfagan las necesidades dinámicas del mercado de eventos."
+      }
+    },
+    "sidebar": {
+      "challengesTitle": "Principales Desafíos",
+      "challenge1": {
+        "title": "Alto Volumen de Acceso",
+        "description": "Miles de usuarios intentando reservar simultáneamente"
+      },
+      "challenge2": {
+        "title": "Limitación por Usuario",
+        "description": "Control de reservas por CPF y email"
+      },
+      "challenge3": {
+        "title": "Restricciones de Edad",
+        "description": "Validación automática de requisitos etarios"
+      },
+      "challenge4": {
+        "title": "Gestión de Lista de Espera",
+        "description": "Optimización de plazas en caso de cancelaciones"
+      },
+      "challenge5": {
+        "title": "Reserva Grupal",
+        "description": "Validación de datos de acompañantes"
+      }
+    },
+    "cta": {
+      "title": "¿Necesitas una solución de reservas?",
+      "description": "Contáctanos y descubre cómo eAgenda puede transformar la gestión de tu evento.",
+      "button": "Hablar con especialista"
+    }
+  }
+}

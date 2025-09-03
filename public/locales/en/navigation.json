@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Home",
+    "platforms": "Platforms",
+    "careers": "Careers",
+    "cases": "Cases", 
+    "about": "About",
+    "contact": "Contact us",
+    "search": "Search",
+    "language": "EN"
+  },
+  "platforms": {
+    "atendeaqui": "Atende Aqui",
+    "eagenda": "eAgenda",
+    "etalentos": "e-Talentos",
+    "equalifica": "eQualifica",
+    "meuatendimentovirtual": "Meu Atendimento Virtual",
+    "minhaagendavirtual": "Minha Agenda Virtual",
+    "minhasalavirtual": "Minha Sala Virtual",
+    "rionline": "RI-online",
+    "sigvirtual": "SIG Virtual",
+    "textualiza": "Textualiza",
+    "eagendas": "eAgendas",
+    "awaitra": "Awaitra"
+  }
+}

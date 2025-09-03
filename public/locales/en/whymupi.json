@@ -1,0 +1,22 @@
+{
+  "whymupi": {
+    "casesTitle": "Our",
+    "casesTitleHighlight": "Success Stories",
+    "casesDescription": "Discover some projects we've transformed into success stories, demonstrating our ability to deliver exceptional solutions.",
+    "ctaAllCases": "View all cases",
+    "features": {
+      "growth": {
+        "title": "Growth Support",
+        "description": "We want to be preferred partners for expanding companies/businesses"
+      },
+      "development": {
+        "title": "Continuous Development",
+        "description": "Our team is continuously working to find new improvements for our product portfolio"
+      },
+      "perfection": {
+        "title": "Pursuit of Perfection",
+        "description": "We seek to collaborate with clients and partners to develop robust and intuitive products for users"
+      }
+    }
+  }
+}
