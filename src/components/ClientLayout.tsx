@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { I18nextProvider } from 'react-i18next';
 import i18n from 'i18next';
 import { Navigation, Footer } from '.';
+import { LanguageProvider } from '@/contexts/LanguageContext';
 
 // Configuração básica do i18next para client-side
 const getStoredLanguage = () => {
@@ -224,20 +225,22 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
 
   return (
     <I18nextProvider i18n={i18n}>
-      <div className="min-h-screen text-white">
-        <Navigation 
-          scrolled={scrolled} 
-          isMenuOpen={isMenuOpen} 
-          setIsMenuOpen={setIsMenuOpen}
-          currentPage={getCurrentPage()}
-        />
-        
-        <main>
-          {children}
-        </main>
-        
-        <Footer />
-      </div>
+      <LanguageProvider>
+        <div className="min-h-screen text-white">
+          <Navigation 
+            scrolled={scrolled} 
+            isMenuOpen={isMenuOpen} 
+            setIsMenuOpen={setIsMenuOpen}
+            currentPage={getCurrentPage()}
+          />
+          
+          <main>
+            {children}
+          </main>
+          
+          <Footer />
+        </div>
+      </LanguageProvider>
     </I18nextProvider>
   );
 };

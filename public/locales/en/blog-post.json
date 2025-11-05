@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "backButton": "Back to blog",
+    "readingTime": "min read",
+    "by": "By",
+    "publishedOn": "Published on",
+    "share": "Share",
+    "linkCopied": "Link copied to clipboard!"
+  },
+  "sidebar": {
+    "categories": "Categories",
+    "tags": "Tags",
+    "author": "About the Author",
+    "authorDescription": "Digital transformation specialist"
+  },
+  "cta": {
+    "title": "Did you like this content?",
+    "description": "Contact our specialists and discover how we can help your company grow with cutting-edge technology.",
+    "button": "Talk to specialists"
+  },
+  "relatedPosts": {
+    "title": "Related Posts",
+    "readMore": "Read more"
+  },
+  "notFound": {
+    "title": "Post not found",
+    "description": "Sorry, the post you are looking for does not exist or has been removed.",
+    "backButton": "Back to blog"
+  }
+}

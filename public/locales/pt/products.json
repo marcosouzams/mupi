@@ -3,7 +3,19 @@
     "badge": "NOSSAS PLATAFORMAS",
     "title": "Catálogo de",
     "titleHighlight": "Soluções",
-    "description": "Clique em uma plataforma para conhecer seus recursos e funcionalidades",
+    "description": "Explore nossas plataformas tecnológicas inovadoras",
+    "leftSection": {
+      "title": "Inovação e Tecnologia",
+      "titleHighlight": "para o Futuro",
+      "paragraph1": "A MUPI SYSTEMS nasceu para revolucionar o mercado através de plataformas tecnológicas escaláveis e inovadoras. Desenvolvemos soluções que não apenas resolvem problemas reais, mas transformam a forma como empresas operam e crescem no ambiente digital.",
+      "paragraph2": "Nosso foco está em desenvolver soluções que impulsionam a transformação digital: sistemas inteligentes de atendimento ao cliente, plataformas de gestão de recursos humanos (recrutamento, desenvolvimento e treinamento), tecnologias avançadas para análise de textos (contratos, documentos, notícias), smart contracts e agentes de IA autônomos que estão revolucionando processos de negócio.",
+      "tags": {
+        "customerService": "Atendimento ao Cliente",
+        "hrManagement": "Gestão de RH",
+        "textAnalysis": "Análise de Textos",
+        "smartContracts": "Smart Contracts"
+      }
+    },
     "featuresTitle": "Principais recursos",
     "ctaLearnMore": "Saiba mais",
     "ctaDemo": "Demonstração",

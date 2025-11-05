@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Play, Sparkles } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'next/navigation';
 
@@ -12,8 +12,7 @@ export const HeroContent = () => {
     <div className="space-y-8 lg:space-y-12">
       {/* Badge */}
       <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#5667fe]/10 to-[#d1dafb]/10 border border-[#5667fe]/20 rounded-full px-6 py-3 backdrop-blur-sm">
-        <Sparkles className="w-4 h-4 text-[#5667fe]" />
-        <span className="text-[#d1dafb] text-sm font-medium tracking-wide font-inter">{t('hero.badge')}</span>
+        <span className="text-[#d1dafb] text-sm font-medium tracking-wide font-inter uppercase">{t('hero.badge')}</span>
       </div>
 
       {/* Título Principal */}
@@ -55,11 +54,11 @@ export const HeroContent = () => {
           <div className="text-sm text-[#d1dafb]/60 font-light font-inter">{t('hero.stats.projects')}</div>
         </div>
         <div>
-          <div className="text-2xl lg:text-3xl font-light text-white mb-1 font-inter">50+</div>
+          <div className="text-2xl lg:text-3xl font-light text-white mb-1 font-inter">5000+</div>
           <div className="text-sm text-[#d1dafb]/60 font-light font-inter">{t('hero.stats.clients')}</div>
         </div>
         <div>
-          <div className="text-2xl lg:text-3xl font-light text-white mb-1 font-inter">5 anos</div>
+          <div className="text-2xl lg:text-3xl font-light text-white mb-1 font-inter">8 anos</div>
           <div className="text-sm text-[#d1dafb]/60 font-light font-inter">{t('hero.stats.experience')}</div>
         </div>
       </div>

@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "backButton": "Volver al blog",
+    "readingTime": "min de lectura",
+    "by": "Por",
+    "publishedOn": "Publicado en",
+    "share": "Compartir",
+    "linkCopied": "¡Enlace copiado al portapapeles!"
+  },
+  "sidebar": {
+    "categories": "Categorías",
+    "tags": "Etiquetas",
+    "author": "Sobre el Autor",
+    "authorDescription": "Especialista en transformación digital"
+  },
+  "cta": {
+    "title": "¿Te gustó este contenido?",
+    "description": "Póngase en contacto con nuestros especialistas y descubra cómo podemos ayudar a su empresa a crecer con tecnología de vanguardia.",
+    "button": "Hablar con especialistas"
+  },
+  "relatedPosts": {
+    "title": "Publicaciones Relacionadas",
+    "readMore": "Leer más"
+  },
+  "notFound": {
+    "title": "Publicación no encontrada",
+    "description": "Lo sentimos, la publicación que busca no existe o ha sido eliminada.",
+    "backButton": "Volver al blog"
+  }
+}

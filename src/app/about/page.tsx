@@ -108,7 +108,6 @@ export default function AboutPage() {
       >
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           {/* Título */}
-                    {/* Título */}
           <div className="mb-16">
             <h2 className="text-2xl lg:text-3xl font-bold text-[#5667fe] uppercase tracking-[0.15em] mb-4">
               {t('story.badge')}
@@ -116,33 +115,46 @@ export default function AboutPage() {
             <div className="w-16 h-1 bg-[#d1dafb]"></div>
           </div>
 
-          <div className={`grid lg:grid-cols-2 gap-12 transition-all duration-1000 ease-out ${
+          <div className={`transition-all duration-1000 ease-out ${
             isStoryVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            {/* Primeiro parágrafo */}
-            <div>
-              <p className="text-base lg:text-lg text-[#191927] leading-relaxed">
-                <strong>{t('description')}</strong>
-              </p>
-              <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
-                {t('story.description')}
-              </p>
-              <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
-                {t('story.extraText')}
-              </p>
+            {/* Texto em duas colunas */}
+            <div className="grid lg:grid-cols-2 gap-12 mb-12">
+              {/* Primeiro parágrafo */}
+              <div>
+                <p className="text-base lg:text-lg text-[#191927] leading-relaxed">
+                  <strong>{t('description')}</strong>
+                </p>
+                <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
+                  {t('story.description')}
+                </p>
+                <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
+                  {t('story.extraText')}
+                </p>
+              </div>
+
+              {/* Segundo parágrafo */}
+              <div>
+                <p className="text-base lg:text-lg text-[#191927] leading-relaxed">
+                  <strong>{t('nameOrigin.description')}</strong>
+                </p>
+                <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
+                  {t('nameOrigin.extraText')}
+                </p>
+                <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
+                  {t('nameOrigin.extraText2')}
+                </p>
+              </div>
             </div>
 
-            {/* Segundo parágrafo */}
-            <div>
-              <p className="text-base lg:text-lg text-[#191927] leading-relaxed">
-                <strong>{t('nameOrigin.description')}</strong>
-              </p>
-              <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
-                {t('nameOrigin.extraText')}
-              </p>
-              <p className="text-base lg:text-lg text-[#191927] leading-relaxed mt-6">
-                {t('nameOrigin.extraText2')}
-              </p>
+            {/* Imagem */}
+            <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
+              <Image
+                src="/team.jpg"
+                alt="Equipe MUPI"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -151,22 +163,22 @@ export default function AboutPage() {
       {/* Values Section */}
       <div 
         ref={valuesRef}
-        className="bg-[#191927]/30 py-20"
+        className="bg-[#191927] py-24"
       >
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="text-center mb-16">
-            <span className="text-sm font-bold text-[#5667fe] uppercase tracking-[0.15em] mb-4 block">
+          <div className="text-center mb-20">
+            <span className="text-xs font-bold text-[#5667fe] uppercase tracking-wider mb-4 block">
               {t('values.badge')}
             </span>
-            <h2 className="text-2xl lg:text-3xl font-bold text-white leading-tight mb-6">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-urbancat-st font-bold text-white leading-tight mb-8">
               {t('values.title')}
             </h2>
-            <p className="text-base lg:text-lg text-[#d1dafb]/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-white/80 leading-relaxed max-w-3xl mx-auto">
               {t('values.subtitle')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {(t('values.list', { returnObjects: true }) as Array<{number: string, title: string, description: string}>).map((value: {number: string, title: string, description: string}, index: number) => {
               const icons = [Target, Users, Brain, Shield, TrendingUp, Headphones];
               const IconComponent = icons[index % icons.length];
@@ -174,27 +186,19 @@ export default function AboutPage() {
               return (
                 <div 
                   key={index}
-                  className={`bg-[#191927]/50 backdrop-blur-xl border border-[#5667fe]/10 rounded-xl p-6 transition-all duration-1000 ease-out ${
+                  className={`bg-white/5 backdrop-blur-sm border border-white/10 hover:border-[#5667fe]/30 rounded-2xl p-8 transition-all duration-1000 ease-out hover:bg-white/10 group ${
                     isValuesVisible 
                       ? 'opacity-100 translate-y-0' 
                       : 'opacity-0 translate-y-8'
                   }`}
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-8 h-8 bg-[#5667fe]/10 rounded-lg flex items-center justify-center">
-                        <span className="text-xs font-bold text-[#5667fe]">{value.number}</span>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="w-12 h-12 bg-[#5667fe]/10 rounded-lg flex items-center justify-center mb-4">
-                        <IconComponent className="w-6 h-6 text-[#5667fe]" />
-                      </div>
-                      <h3 className="text-lg font-bold text-white mb-3">{value.title}</h3>
-                      <p className="text-sm text-[#d1dafb]/60 leading-relaxed">{value.description}</p>
-                    </div>
+                  <div className="flex items-center space-x-4 mb-6">
+                    <IconComponent className="w-8 h-8 text-[#5667fe] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-sm font-bold text-[#5667fe] flex-shrink-0">{value.number}</span>
                   </div>
+                  <h3 className="text-xl font-urbancat-st font-bold text-white mb-4">{value.title}</h3>
+                  <p className="text-base text-white/70 leading-relaxed">{value.description}</p>
                 </div>
               );
             })}

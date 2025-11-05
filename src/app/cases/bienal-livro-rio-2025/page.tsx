@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, Calendar, User, Clock, Target, Lightbulb, Wrench, TrendingUp, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Target, Lightbulb, Building2, Wrench, CheckCircle, TrendingUp, Zap, Users, Clock } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
@@ -37,19 +37,10 @@ const BienalCasePage = () => {
             </h1>
             
             {/* Meta Info */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 lg:gap-6 text-sm text-white/70 mb-8 sm:mb-10">
-              <div className="flex items-center space-x-2">
-                <User className="w-4 h-4" />
-                <span className="text-xs sm:text-sm">{t('bienalCase.meta.author')}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Calendar className="w-4 h-4" />
-                <span className="text-xs sm:text-sm">{t('bienalCase.meta.date')}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Clock className="w-4 h-4" />
-                <span className="text-xs sm:text-sm">{t('bienalCase.meta.readingTime')}</span>
-              </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-sm text-white/70 mb-8 sm:mb-10">
+              <span className="text-xs sm:text-sm">{t('bienalCase.meta.date')}</span>
+              <span className="hidden sm:inline text-white/50">•</span>
+              <span className="text-xs sm:text-sm">{t('bienalCase.meta.readingTime')}</span>
             </div>
           </div>
         </div>
@@ -57,57 +48,91 @@ const BienalCasePage = () => {
 
       {/* Article Content */}
       <article className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          {/* Hero Image */}
-          <div className="mb-8 sm:mb-12">
-            <Image 
-              src="/images/bienal.webp" 
-              alt="Bienal do Livro Rio 2025" 
-              width={800}
-              height={320}
-              className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-xl sm:rounded-2xl shadow-lg"
-            />
+        <div className="max-w-7xl mx-auto">
+          {/* Hero Image - Clean e Simples */}
+          <div className="mb-12 sm:mb-16">
+            <div className="overflow-hidden rounded-lg shadow-md">
+              <Image 
+                src="/images/bienal.webp" 
+                alt="Bienal do Livro Rio 2025" 
+                width={1200}
+                height={400}
+                className="w-full h-64 sm:h-80 lg:h-[400px] object-cover"
+              />
+            </div>
           </div>
 
           {/* Overview Section */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-gray-200 p-6 sm:p-8 lg:p-12 mb-6 sm:mb-8">
-            <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
-              <div className="lg:col-span-2">
-                <h2 className="text-2xl sm:text-3xl font-urbancat-st font-bold text-[#191927] mb-4 sm:mb-6">
-                  {t('bienalCase.overview.title')}
-                </h2>
-                <div className="space-y-3 sm:space-y-4">
-                  <p className="text-gray-700 leading-relaxed text-base sm:text-lg font-inter">
+          <div className="mb-16">
+            <div className="grid lg:grid-cols-12 gap-8 lg:gap-10">
+              {/* Main Content */}
+              <div className="lg:col-span-8">
+                <div className="mb-6">
+                  <span className="inline-block text-xs font-bold text-[#5667fe] uppercase tracking-wider font-urbancat-st mb-4">
+                    {t('bienalCase.overview.title')}
+                  </span>
+                  <div className="h-px bg-gradient-to-r from-[#5667fe]/40 via-[#5667fe]/20 to-transparent mb-8"></div>
+                </div>
+                
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-gray-800 leading-relaxed text-lg font-inter mb-6">
                     {t('bienalCase.overview.description1')}
                   </p>
-                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base font-inter">
+                  <p className="text-gray-600 leading-relaxed text-base font-inter mb-4">
                     {t('bienalCase.overview.description2')}
                   </p>
-                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base font-inter">
+                  <p className="text-gray-600 leading-relaxed text-base font-inter">
                     {t('bienalCase.overview.description3')}
                   </p>
                 </div>
               </div>
-              <div className="bg-[#5667fe]/5 rounded-lg sm:rounded-xl p-4 sm:p-6">
-                <h3 className="text-base sm:text-lg font-urbancat-st font-bold text-[#191927] mb-3 sm:mb-4">
-                  {t('bienalCase.overview.projectInfo.title')}
-                </h3>
-                <div className="space-y-3 sm:space-y-4 text-sm">
-                  <div className="border-b border-gray-100 pb-2">
-                    <div className="text-gray-600 text-xs uppercase tracking-wide mb-1">{t('bienalCase.overview.projectInfo.client')}</div>
-                    <div className="font-medium text-[#191927] break-words text-sm">{t('bienalCase.overview.projectInfo.clientName')}</div>
+
+              {/* Project Info Card - Clean Sidebar */}
+              <div className="lg:col-span-4">
+                <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm sticky top-8">
+                  <div className="flex items-center gap-2 mb-6">
+                    <Building2 className="w-4 h-4 text-[#5667fe]" />
+                    <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wider font-urbancat-st">
+                      {t('bienalCase.overview.projectInfo.title')}
+                    </h3>
                   </div>
-                  <div className="border-b border-gray-100 pb-2">
-                    <div className="text-gray-600 text-xs uppercase tracking-wide mb-1">{t('bienalCase.overview.projectInfo.duration')}</div>
-                    <div className="font-medium text-[#191927] break-words text-sm">{t('bienalCase.overview.projectInfo.durationValue')}</div>
-                  </div>
-                  <div className="border-b border-gray-100 pb-2">
-                    <div className="text-gray-600 text-xs uppercase tracking-wide mb-1">{t('bienalCase.overview.projectInfo.category')}</div>
-                    <div className="font-medium text-[#191927] break-words text-sm">{t('bienalCase.overview.projectInfo.categoryValue')}</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-600 text-xs uppercase tracking-wide mb-1">{t('bienalCase.overview.projectInfo.solution')}</div>
-                    <div className="font-medium text-[#191927] break-words text-sm">{t('bienalCase.overview.projectInfo.solutionValue')}</div>
+                  
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs font-bold text-gray-900 uppercase tracking-wide font-urbancat-st mb-2">
+                        {t('bienalCase.overview.projectInfo.client')}
+                      </p>
+                      <p className="text-sm text-gray-600 font-inter">
+                        {t('bienalCase.overview.projectInfo.clientName')}
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-xs font-bold text-gray-900 uppercase tracking-wide font-urbancat-st mb-2">
+                        {t('bienalCase.overview.projectInfo.duration')}
+                      </p>
+                      <p className="text-sm text-gray-600 font-inter">
+                        {t('bienalCase.overview.projectInfo.durationValue')}
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-xs font-bold text-gray-900 uppercase tracking-wide font-urbancat-st mb-2">
+                        {t('bienalCase.overview.projectInfo.category')}
+                      </p>
+                      <p className="text-sm text-gray-600 font-inter">
+                        {t('bienalCase.overview.projectInfo.categoryValue')}
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-xs font-bold text-gray-900 uppercase tracking-wide font-urbancat-st mb-2">
+                        {t('bienalCase.overview.projectInfo.solution')}
+                      </p>
+                      <p className="text-sm text-gray-600 font-inter">
+                        {t('bienalCase.overview.projectInfo.solutionValue')}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -115,109 +140,117 @@ const BienalCasePage = () => {
           </div>
 
           {/* Main Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
             
             {/* Left Column - Main Content */}
-            <div className="lg:col-span-8 space-y-8">
+            <div className="lg:col-span-8 space-y-12">
               
               {/* Objective Section */}
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-[#5667fe]/10 rounded-lg flex items-center justify-center">
-                    <Target className="w-5 h-5 text-[#5667fe]" />
-                  </div>
-                  <h2 className="text-2xl font-urbancat-st font-bold text-[#191927]">
+              <div>
+                <div className="mb-6">
+                  <span className="inline-block text-xs font-bold text-[#5667fe] uppercase tracking-wider font-urbancat-st mb-4">
                     {t('bienalCase.objective.title')}
-                  </h2>
+                  </span>
+                  <div className="h-px bg-gradient-to-r from-[#5667fe]/40 via-[#5667fe]/20 to-transparent mb-6"></div>
                 </div>
-                <p className="text-gray-700 leading-relaxed font-inter">
+                <p className="text-gray-800 leading-relaxed font-inter text-lg">
                   {t('bienalCase.objective.description')}
                 </p>
               </div>
 
               {/* Approach Section */}
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-[#5667fe]/10 rounded-lg flex items-center justify-center">
-                    <Lightbulb className="w-5 h-5 text-[#5667fe]" />
-                  </div>
-                  <h2 className="text-2xl font-urbancat-st font-bold text-[#191927]">
+              <div>
+                <div className="mb-6">
+                  <span className="inline-block text-xs font-bold text-[#5667fe] uppercase tracking-wider font-urbancat-st mb-4">
                     {t('bienalCase.approach.title')}
-                  </h2>
+                  </span>
+                  <div className="h-px bg-gradient-to-r from-[#5667fe]/40 via-[#5667fe]/20 to-transparent mb-6"></div>
                 </div>
-                <p className="text-gray-700 leading-relaxed font-inter mb-6">
+                <p className="text-gray-800 leading-relaxed font-inter text-lg mb-8">
                   {t('bienalCase.approach.description')}
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <h4 className="font-urbancat-st font-bold text-[#191927] mb-2">{t('bienalCase.approach.architecture.title')}</h4>
-                    <p className="text-sm text-gray-600">{t('bienalCase.approach.architecture.description')}</p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Zap className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        {t('bienalCase.approach.architecture.title')}
+                      </h4>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed text-base font-inter">
+                      {t('bienalCase.approach.architecture.description')}
+                    </p>
                   </div>
-                  <div className="border border-gray-200 rounded-lg p-4">
-                    <h4 className="font-urbancat-st font-bold text-[#191927] mb-2">{t('bienalCase.approach.rules.title')}</h4>
-                    <p className="text-sm text-gray-600">{t('bienalCase.approach.rules.description')}</p>
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-3">
+                      <CheckCircle className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        {t('bienalCase.approach.rules.title')}
+                      </h4>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed text-base font-inter">
+                      {t('bienalCase.approach.rules.description')}
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Detailed Challenges Section */}
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
-                    <Target className="w-5 h-5 text-orange-600" />
-                  </div>
-                  <h2 className="text-2xl font-urbancat-st font-bold text-[#191927]">
+              <div>
+                <div className="mb-6">
+                  <span className="inline-block text-xs font-bold text-[#5667fe] uppercase tracking-wider font-urbancat-st mb-4">
                     {t('bienalCase.challenges.title')}
-                  </h2>
+                  </span>
+                  <div className="h-px bg-gradient-to-r from-[#5667fe]/40 via-[#5667fe]/20 to-transparent mb-8"></div>
                 </div>
                 
                 <div className="space-y-8">
                   {/* Challenge 1 */}
                   <div>
-                    <h3 className="text-xl font-urbancat-st font-bold text-[#191927] mb-3">
+                    <h3 className="text-sm font-urbancat-st font-bold text-[#191927] mb-2">
                       {t('bienalCase.challenges.challenge1.title')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed font-inter">
+                    <p className="text-gray-600 leading-relaxed font-inter text-base">
                       {t('bienalCase.challenges.challenge1.description')}
                     </p>
                   </div>
 
                   {/* Challenge 2 */}
                   <div>
-                    <h3 className="text-xl font-urbancat-st font-bold text-[#191927] mb-3">
+                    <h3 className="text-sm font-urbancat-st font-bold text-[#191927] mb-2">
                       {t('bienalCase.challenges.challenge2.title')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed font-inter">
+                    <p className="text-gray-600 leading-relaxed font-inter text-base">
                       {t('bienalCase.challenges.challenge2.description')}
                     </p>
                   </div>
 
                   {/* Challenge 3 */}
                   <div>
-                    <h3 className="text-xl font-urbancat-st font-bold text-[#191927] mb-3">
+                    <h3 className="text-sm font-urbancat-st font-bold text-[#191927] mb-2">
                       {t('bienalCase.challenges.challenge3.title')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed font-inter">
+                    <p className="text-gray-600 leading-relaxed font-inter text-base">
                       {t('bienalCase.challenges.challenge3.description')}
                     </p>
                   </div>
 
                   {/* Challenge 4 */}
                   <div>
-                    <h3 className="text-xl font-urbancat-st font-bold text-[#191927] mb-3">
+                    <h3 className="text-sm font-urbancat-st font-bold text-[#191927] mb-2">
                       {t('bienalCase.challenges.challenge4.title')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed font-inter">
+                    <p className="text-gray-600 leading-relaxed font-inter text-base">
                       {t('bienalCase.challenges.challenge4.description')}
                     </p>
                   </div>
 
                   {/* Challenge 5 */}
                   <div>
-                    <h3 className="text-xl font-urbancat-st font-bold text-[#191927] mb-3">
+                    <h3 className="text-sm font-urbancat-st font-bold text-[#191927] mb-2">
                       {t('bienalCase.challenges.challenge5.title')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed font-inter">
+                    <p className="text-gray-600 leading-relaxed font-inter text-base">
                       {t('bienalCase.challenges.challenge5.description')}
                     </p>
                   </div>
@@ -225,94 +258,111 @@ const BienalCasePage = () => {
               </div>
 
               {/* Tools Section */}
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-[#5667fe]/10 rounded-lg flex items-center justify-center">
-                    <Wrench className="w-5 h-5 text-[#5667fe]" />
-                  </div>
-                  <h2 className="text-2xl font-urbancat-st font-bold text-[#191927]">
+              <div>
+                <div className="mb-6">
+                  <span className="inline-block text-xs font-bold text-[#5667fe] uppercase tracking-wider font-urbancat-st mb-4">
                     {t('bienalCase.tools.title')}
-                  </h2>
+                  </span>
+                  <div className="h-px bg-gradient-to-r from-[#5667fe]/40 via-[#5667fe]/20 to-transparent mb-8"></div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-urbancat-st font-bold text-[#191927] mb-3">{t('bienalCase.tools.mainTechTitle')}</h4>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-[#5667fe] rounded-full"></div>
-                        <span className="text-gray-700 text-sm">{t('bienalCase.tools.eAgendaPlatform')}</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-[#5667fe] rounded-full"></div>
-                        <span className="text-gray-700 text-sm">{t('bienalCase.tools.cloudArchitecture')}</span>
-                      </div>
+                  {/* Main Tech */}
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Wrench className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        {t('bienalCase.tools.mainTechTitle')}
+                      </h4>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-gray-800 text-base font-inter">{t('bienalCase.tools.eAgendaPlatform')}</p>
+                      <p className="text-gray-800 text-base font-inter">{t('bienalCase.tools.cloudArchitecture')}</p>
                     </div>
                   </div>
-                  <div>
-                    <h4 className="font-urbancat-st font-bold text-[#191927] mb-3">{t('bienalCase.tools.functionalitiesTitle')}</h4>
-                    <div className="space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-[#5667fe] rounded-full"></div>
-                        <span className="text-gray-700 text-sm">{t('bienalCase.tools.validationSystem')}</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-[#5667fe] rounded-full"></div>
-                        <span className="text-gray-700 text-sm">{t('bienalCase.tools.waitingList')}</span>
-                      </div>
+                  
+                  {/* Functionalities */}
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Zap className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        {t('bienalCase.tools.functionalitiesTitle')}
+                      </h4>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-gray-800 text-base font-inter">{t('bienalCase.tools.validationSystem')}</p>
+                      <p className="text-gray-800 text-base font-inter">{t('bienalCase.tools.waitingList')}</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Results Section */}
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <TrendingUp className="w-5 h-5 text-green-600" />
-                  </div>
-                  <h2 className="text-2xl font-urbancat-st font-bold text-[#191927]">
+              <div>
+                <div className="mb-6">
+                  <span className="inline-block text-xs font-bold text-[#5667fe] uppercase tracking-wider font-urbancat-st mb-4">
                     {t('bienalCase.results.title')}
-                  </h2>
+                  </span>
+                  <div className="h-px bg-gradient-to-r from-[#5667fe]/40 via-[#5667fe]/20 to-transparent mb-6"></div>
                 </div>
-                <p className="text-gray-700 leading-relaxed font-inter mb-6">
+                <p className="text-gray-800 leading-relaxed font-inter text-lg mb-8">
                   {t('bienalCase.results.description')}
                 </p>
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                    <div>
-                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">Sistema Estável</h4>
-                      <p className="text-xs text-gray-600">Zero downtime durante picos de acesso</p>
+                <div className="grid md:grid-cols-2 gap-5 mb-8">
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-2">
+                      <CheckCircle className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        Sistema Estável
+                      </h4>
                     </div>
+                    <p className="text-base text-gray-600 font-inter leading-relaxed">
+                      Zero downtime durante picos de acesso
+                    </p>
                   </div>
-                  <div className="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                    <div>
-                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">Controle Eficaz</h4>
-                      <p className="text-xs text-gray-600">Distribuição justa de vagas implementada</p>
+                  
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-2">
+                      <Target className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        Controle Eficaz
+                      </h4>
                     </div>
+                    <p className="text-base text-gray-600 font-inter leading-relaxed">
+                      Distribuição justa de vagas implementada
+                    </p>
                   </div>
-                  <div className="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                    <div>
-                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">Otimização de Vagas</h4>
-                      <p className="text-xs text-gray-600">Lista de espera minimizou vagas ociosas</p>
+                  
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-2">
+                      <TrendingUp className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        Otimização de Vagas
+                      </h4>
                     </div>
+                    <p className="text-base text-gray-600 font-inter leading-relaxed">
+                      Lista de espera minimizou vagas ociosas
+                    </p>
                   </div>
-                  <div className="flex items-start space-x-3 p-4 bg-green-50 rounded-lg">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                    <div>
-                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">Experiência Fluida</h4>
-                      <p className="text-xs text-gray-600">Processo de agendamento intuitivo</p>
+                  
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div className="flex items-center gap-3 mb-2">
+                      <Users className="w-4 h-4 text-[#5667fe]" />
+                      <h4 className="font-urbancat-st font-bold text-[#191927] text-sm">
+                        Experiência Fluida
+                      </h4>
                     </div>
+                    <p className="text-base text-gray-600 font-inter leading-relaxed">
+                      Processo de agendamento intuitivo
+                    </p>
                   </div>
                 </div>
                 
-                <div className="border-t border-gray-200 pt-6">
+                {/* Conclusion */}
+                <div className="bg-[#5667fe]/5 rounded-xl p-6 border border-[#5667fe]/20">
                   <h3 className="text-lg font-urbancat-st font-bold text-[#191927] mb-3">
                     {t('bienalCase.results.conclusion.title')}
                   </h3>
-                  <p className="text-gray-700 leading-relaxed font-inter">
+                  <p className="text-gray-700 leading-relaxed font-inter text-sm">
                     {t('bienalCase.results.conclusion.description')}
                   </p>
                 </div>
@@ -321,50 +371,53 @@ const BienalCasePage = () => {
 
             {/* Right Sidebar */}
             <div className="lg:col-span-4">
-              <div className="lg:sticky lg:top-8 lg:self-start space-y-6">
+              <div className="lg:sticky lg:top-8 lg:self-start space-y-8">
                 {/* Challenges Card */}
-                <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
-                  <h3 className="text-xl font-urbancat-st font-bold text-gray-900 mb-4" style={{ fontWeight: 700 }}>
-                    {t('bienalCase.sidebar.challengesTitle')}
-                  </h3>
+                <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3 mb-6">
+                    <Target className="w-5 h-5 text-orange-600" />
+                    <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wider font-urbancat-st">
+                      {t('bienalCase.sidebar.challengesTitle')}
+                    </h3>
+                  </div>
                   <div className="space-y-4">
-                    <div className="border-l-4 border-[#5667fe] pl-4">
-                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-1">
+                    <div>
+                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-2">
                         {t('bienalCase.sidebar.challenge1.title')}
                       </h4>
-                      <p className="text-xs text-gray-600">
+                      <p className="text-xs text-gray-600 font-inter leading-relaxed">
                         {t('bienalCase.sidebar.challenge1.description')}
                       </p>
                     </div>
-                    <div className="border-l-4 border-[#5667fe] pl-4">
-                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-1">
+                    <div>
+                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-2">
                         {t('bienalCase.sidebar.challenge2.title')}
                       </h4>
-                      <p className="text-xs text-gray-600">
+                      <p className="text-xs text-gray-600 font-inter leading-relaxed">
                         {t('bienalCase.sidebar.challenge2.description')}
                       </p>
                     </div>
-                    <div className="border-l-4 border-[#5667fe] pl-4">
-                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-1">
+                    <div>
+                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-2">
                         {t('bienalCase.sidebar.challenge3.title')}
                       </h4>
-                      <p className="text-xs text-gray-600">
+                      <p className="text-xs text-gray-600 font-inter leading-relaxed">
                         {t('bienalCase.sidebar.challenge3.description')}
                       </p>
                     </div>
-                    <div className="border-l-4 border-[#5667fe] pl-4">
-                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-1">
+                    <div>
+                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-2">
                         {t('bienalCase.sidebar.challenge4.title')}
                       </h4>
-                      <p className="text-xs text-gray-600">
+                      <p className="text-xs text-gray-600 font-inter leading-relaxed">
                         {t('bienalCase.sidebar.challenge4.description')}
                       </p>
                     </div>
-                    <div className="border-l-4 border-[#5667fe] pl-4">
-                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-1">
+                    <div>
+                      <h4 className="font-urbancat-st font-semibold text-[#191927] text-sm mb-2">
                         {t('bienalCase.sidebar.challenge5.title')}
                       </h4>
-                      <p className="text-xs text-gray-600">
+                      <p className="text-xs text-gray-600 font-inter leading-relaxed">
                         {t('bienalCase.sidebar.challenge5.description')}
                       </p>
                     </div>
@@ -372,18 +425,22 @@ const BienalCasePage = () => {
                 </div>
 
                 {/* Call to Action */}
-                <div className="bg-[#5667fe]/5 border border-[#5667fe]/20 rounded-xl p-6">
-                  <h3 className="text-lg font-urbancat-st font-bold text-[#191927] mb-2">
-                    {t('bienalCase.cta.title')}
-                  </h3>
-                  <p className="text-gray-600 mb-4 font-inter text-sm">
+                <div className="bg-[#5667fe] rounded-2xl p-6 shadow-lg">
+                  <div className="flex items-start gap-3 mb-4">
+                    <Lightbulb className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <h3 className="text-lg font-urbancat-st font-bold text-white">
+                      {t('bienalCase.cta.title')}
+                    </h3>
+                  </div>
+                  <p className="text-white/90 mb-6 font-inter text-sm leading-relaxed">
                     {t('bienalCase.cta.description')}
                   </p>
                   <button
                     onClick={() => router.push('/#contact')}
-                    className="inline-flex items-center space-x-2 bg-[#5667fe] hover:bg-[#5667fe]/90 text-white px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm w-full justify-center"
+                    className="w-full bg-white hover:bg-gray-50 text-[#5667fe] px-6 py-3 rounded-xl transition-colors font-urbancat-st font-bold text-sm flex items-center justify-center gap-2"
                   >
                     <span>{t('bienalCase.cta.button')}</span>
+                    <ArrowLeft className="w-4 h-4 rotate-180" />
                   </button>
                 </div>
               </div>

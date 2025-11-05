@@ -27,19 +27,19 @@ export const PartnersSection = () => {
   ];
 
   return (
-    <div className='bg-[#d1dafb]'>
-      <section id="partners" className="py-8 rounded-b-[50px] bg-[#5667fe] border-radius px-4 sm:px-6 lg:px-8" data-section="partners">
+    <div className='bg-white'>
+      <section id="partners" className="py-20 rounded-b-[50px] bg-white border-radius px-4 sm:px-6 lg:px-8" data-section="partners">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-urbancat-st font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-urbancat-st font-bold text-[#191927]">
               {t('partners.title')}{' '}
-              <span className="text-white">{t('partners.subtitle')}</span>
+              <span className="text-[#5667fe]">{t('partners.subtitle')}</span>
             </h2>
-            <p className="text-base text-white/80 max-w-2xl mx-auto mb-4">
+            <p className="text-base text-gray-600 max-w-2xl mx-auto mb-4">
               {t('partners.description')}
             </p>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#d1dafb] to-white mx-auto rounded-full"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#5667fe] to-white mx-auto rounded-full"></div>
           </div>
 
           {/* Partners Slider */}
@@ -80,13 +80,13 @@ export const PartnersSection = () => {
               {partners.map((partner, index) => (
                 <SwiperSlide key={index}>
                   <div>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 h-32 flex items-center justify-center">
+                    <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 h-32 flex items-center justify-center">
                       <Image
                         src={partner.logo}
                         alt={`${partner.name} logo`}
                         width={120}
                         height={80}
-                        className="max-h-20 max-w-full object-contain filter brightness-0 invert opacity-80"
+                        className="max-h-20 max-w-full object-contain opacity-80"
                       />
                     </div>
                   </div>
@@ -98,9 +98,9 @@ export const PartnersSection = () => {
           {/* Bottom decorative element */}
           <div className="flex justify-center mt-10">
             <div className="flex space-x-2">
-              <div className="w-2 h-2 bg-[#d1dafb] rounded-full animate-pulse"></div>
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse delay-100"></div>
-              <div className="w-2 h-2 bg-[#d1dafb] rounded-full animate-pulse delay-200"></div>
+              <div className="w-2 h-2 bg-[#5667fe] rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-[#191927] rounded-full animate-pulse delay-100"></div>
+              <div className="w-2 h-2 bg-[#5667fe] rounded-full animate-pulse delay-200"></div>
             </div>
           </div>
         </div>

@@ -5,16 +5,16 @@ import { ScrollIndicator } from '@/components/sections/ScrollIndicator';
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[100vh] flex items-center overflow-hidden rounded-b-[3rem]">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-b-[3rem]"
         style={{
           backgroundImage: 'url(/banner.jpg)',
         }}
       >
         {/* Overlay escuro para melhorar legibilidade */}
-        <div className="absolute inset-0 bg-[#191927]/70"></div>
+        <div className="absolute inset-0 bg-[#191927]/70 rounded-b-[3rem]"></div>
       </div>
 
       {/* Conteúdo Principal */}

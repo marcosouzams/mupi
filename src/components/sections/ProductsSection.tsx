@@ -1,205 +1,322 @@
 'use client';
 
-import React from 'react';
-import { ArrowRight, Calendar, GraduationCap, Users, Headphones, Shield, UserCheck, Database } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { ArrowRight, Calendar, GraduationCap, Users, Headphones, Shield, UserCheck, Database, Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
 import Image from 'next/image';
 
 export const ProductsSection = () => {
   const { t } = useTranslation('products');
-  const [selectedProduct, setSelectedProduct] = useState<number>(0); // Sempre começa com o primeiro produto
+  const sectionRef = useRef<HTMLElement>(null);
+  const [currentProductIndex, setCurrentProductIndex] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const products = [
     {
-      icon: <Calendar className="w-6 h-6" />,
+      icon: Calendar,
       key: "eagenda",
       logo: "/plataformas/eAGENDA_LOGO.png",
-      url: "https://eagenda.com.br/"
+      url: "https://eagenda.com.br/",
+      gradient: "from-blue-500 to-cyan-500",
+      color: "#3b82f6"
     },
     {
-      icon: <GraduationCap className="w-6 h-6" />,
+      icon: GraduationCap,
       key: "minhaSala",
       logo: "/plataformas/MSV_LOGO.png",
-      url: "https://minhasalavirtual.com/"
+      url: "https://minhasalavirtual.com/",
+      gradient: "from-purple-500 to-pink-500",
+      color: "#a855f7"
     },
     {
-      icon: <Users className="w-6 h-6" />,
+      icon: Users,
       key: "meuAtendimento",
       logo: "/plataformas/MEU_ATENDIMENTO_LOGO.png",
-      url: "https://meuatendimentovirtual.com.br/"
+      url: "https://meuatendimentovirtual.com.br/",
+      gradient: "from-green-500 to-emerald-500",
+      color: "#22c55e"
     },
     {
-      icon: <Headphones className="w-6 h-6" />,
+      icon: Headphones,
       key: "atendeAqui",
       logo: "/plataformas/ATENDE_AQUI_LOGO.png",
-      url: "https://atendeaqui.com.br/"
+      url: "https://atendeaqui.com.br/",
+      gradient: "from-orange-500 to-red-500",
+      color: "#f97316"
     },
     {
-      icon: <Shield className="w-6 h-6" />,
+      icon: Shield,
       key: "eQualifica",
       logo: "/plataformas/eQUALIFICA_LOGO.png",
-      url: "https://equalifica.com.br/"
+      url: "https://equalifica.com.br/",
+      gradient: "from-indigo-500 to-blue-500",
+      color: "#6366f1"
     },
     {
-      icon: <UserCheck className="w-6 h-6" />,
+      icon: UserCheck,
       key: "eTalentos",
       logo: "/plataformas/eTALENTOS_LOGO.png",
-      url: "https://etalentos.com.br/"
+      url: "https://etalentos.com.br/",
+      gradient: "from-pink-500 to-rose-500",
+      color: "#ec4899"
     },
     {
-      icon: <Database className="w-6 h-6" />,
+      icon: Database,
       key: "sigVirtual",
       logo: "/plataformas/SIG_LOGO.png",
-      url: "https://sigvirtual.com.br/"
+      url: "https://sigvirtual.com.br/",
+      gradient: "from-teal-500 to-cyan-500",
+      color: "#14b8a6"
     }
   ];
 
-  const handleProductSelect = (index: number) => {
-    setSelectedProduct(index); // Sempre seleciona um produto, não permite deselecionar
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+
+      const section = sectionRef.current;
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Quando a seção entra na viewport
+      // rect.top começa positivo (abaixo da tela) e vai até negativo (acima da tela)
+      // Precisamos calcular quanto já scrollamos dentro da seção
+      
+      const sectionTop = rect.top;
+      const sectionHeight = section.offsetHeight - windowHeight;
+      
+      // Calcula progresso: 0 quando começa, 1 quando termina
+      const progress = Math.max(0, Math.min(1, -sectionTop / sectionHeight));
+      setScrollProgress(progress);
+
+      // Divide o progresso entre os produtos
+      const segmentSize = 1 / products.length;
+      const newIndex = Math.min(
+        products.length - 1,
+        Math.floor(progress / segmentSize)
+      );
+      
+      setCurrentProductIndex(newIndex);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Executa uma vez ao montar
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [products.length]);
+
+  const currentProduct = products[currentProductIndex];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#d1dafb]">
-      <div className="max-w-7xl mx-auto">
-        {/* Header with Icons */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-12">
-          {/* Left side - Text content */}
-          <div className="text-left flex-1">
-            <span className="text-sm font-urbancat-st font-bold text-[#5667fe] uppercase tracking-[0.15em] mb-4 block">
-              {t('products.badge')}
-            </span>
-            <h2 className="text-2xl lg:text-3xl xl:text-4xl font-urbancat-st font-bold text-[#191927] leading-tight mb-4">
-              {t('products.title')}{' '}
-              <span className="text-[#5667fe]">{t('products.titleHighlight')}</span>
-            </h2>
-            <p className="text-sm lg:text-base text-[#191927]/70 leading-relaxed font-inter max-w-2xl">
-              {t('products.description')}
-            </p>
-          </div>
-
-          {/* Right side - Product Icons */}
-          <div className="flex flex-row flex-wrap justify-center lg:justify-center items-center gap-2 sm:gap-3 lg:gap-4 lg:flex-1 lg:max-w-md">
-            {products.map((product, index) => (
-              <button
-                key={index}
-                onClick={() => handleProductSelect(index)}
-                className={`group relative transition-all duration-300 hover:scale-110 ${
-                  selectedProduct === index ? 'scale-110' : ''
-                }`}
-              >
-                {/* Logo - responsive smaller round icon */}
-                <div className={`w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full flex items-center justify-center transition-all duration-300`}>
-                  <div className={`transition-transform duration-300 ${
-                    selectedProduct === index 
-                      ? 'text-[#5667fe] scale-110' 
-                      : 'text-[#191927]/60 group-hover:scale-110'
-                  }`}>
-                    {/* Clonando o ícone com tamanho responsivo */}
-                    {React.cloneElement(product.icon, {
-                      className: "w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
-                    })}
-                  </div>
+    <section 
+      ref={sectionRef}
+      className="relative bg-gradient-to-br from-gray-50 to-white pb-20 lg:pb-32"
+      style={{ height: `${products.length * 65}vh` }}
+    >
+      {/* Conteúdo fixo */}
+      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden pt-12 lg:pt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          
+          {/* Grid 2 colunas */}
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            
+            {/* Lado Esquerdo - Texto sobre a empresa */}
+            <div className="hidden lg:block pr-8">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-3xl lg:text-4xl font-urbancat-st font-bold text-[#191927] leading-tight mb-6">
+                    {t('products.leftSection.title')} <span className="text-[#5667fe]">{t('products.leftSection.titleHighlight')}</span>
+                  </h3>
+                </div>
+                
+                <div className="space-y-4 text-[#191927]/80 font-inter leading-relaxed">
+                  <p className="text-base lg:text-lg">
+                    {t('products.leftSection.paragraph1')}
+                  </p>
+                  
+                  <p className="text-base lg:text-lg">
+                    {t('products.leftSection.paragraph2')}
+                  </p>
                 </div>
 
-                {/* Selection indicator */}
-                {selectedProduct === index && (
-                  <div className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#5667fe] rounded-full flex items-center justify-center">
-                    <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white rounded-full"></div>
-                  </div>
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Main Content - Product Card */}
-        <div className="grid lg:grid-cols-12 gap-8">
-          {/* Product Card - Full width */}
-          <div className="lg:col-span-12">
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm">
-              {/* Card Header - Simplified */}
-              <div className="p-6 lg:p-8 border-b border-gray-100">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="text-xl lg:text-2xl font-urbancat-st font-bold text-[#191927]">
-                      {t(`products.items.${products[selectedProduct].key}.title`)}
-                    </h3>
-                  </div>
-                  <div>
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white text-[#5667fe] border border-[#5667fe]/20">
-                      {t(`products.items.${products[selectedProduct].key}.category`)}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card Content */}
-              <div className="p-6 lg:p-8">
-                <div className="grid lg:grid-cols-12 gap-6">
-                  {/* Left side - Content */}
-                  <div className="lg:col-span-8">
-                    {/* Description */}
-                    <div className="mb-6">
-                      <p className="text-sm lg:text-base text-[#191927]/70 leading-relaxed font-inter">
-                        {t(`products.items.${products[selectedProduct].key}.description`)}
-                      </p>
+                <div className="pt-4">
+                  <div className="flex flex-wrap gap-3">
+                    <div className="px-4 py-2 bg-[#5667fe]/10 rounded-lg border border-[#5667fe]/20">
+                      <span className="text-sm font-medium text-[#5667fe]">{t('products.leftSection.tags.customerService')}</span>
                     </div>
-
-                    {/* Features */}
-                    <div className="mb-6">
-                      <h4 className="text-sm font-urbancat-st font-bold text-[#191927] mb-3 uppercase tracking-wide">
-                        {t('products.featuresTitle')}
-                      </h4>
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-                        {(t(`products.items.${products[selectedProduct].key}.features`, { returnObjects: true }) as string[]).map((feature: string, featureIndex: number) => (
-                          <div 
-                            key={featureIndex} 
-                            className="flex items-center text-sm text-[#191927]/70"
-                          >
-                            <div className="w-1.5 h-1.5 rounded-full mr-3 flex-shrink-0 bg-[#5667fe]"></div>
-                            {feature}
-                          </div>
-                        ))}
-                      </div>
+                    <div className="px-4 py-2 bg-[#5667fe]/10 rounded-lg border border-[#5667fe]/20">
+                      <span className="text-sm font-medium text-[#5667fe]">{t('products.leftSection.tags.hrManagement')}</span>
                     </div>
-
-                    {/* CTA Button - Single */}
-                    <div>
-                      <a 
-                        href={products[selectedProduct].url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group bg-[#5667fe] hover:bg-[#5667fe]/90 text-white px-6 py-2.5 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 text-sm font-medium inline-flex"
-                      >
-                        <span>{t('products.ctaLearnMore')}</span>
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                      </a>
+                    <div className="px-4 py-2 bg-[#5667fe]/10 rounded-lg border border-[#5667fe]/20">
+                      <span className="text-sm font-medium text-[#5667fe]">{t('products.leftSection.tags.textAnalysis')}</span>
                     </div>
-                  </div>
-
-                  {/* Right side - Logo */}
-                  <div className="lg:col-span-4 flex items-center justify-center">
-                    {products[selectedProduct].logo !== "/api/placeholder/120/60" ? (
-                      <Image
-                        src={products[selectedProduct].logo}
-                        alt={t(`products.items.${products[selectedProduct].key}.title`)}
-                        width={240}
-                        height={160}
-                        className="max-w-full max-h-40 w-auto object-contain"
-                      />
-                    ) : (
-                      <div className="text-8xl text-[#5667fe] opacity-30">
-                        {products[selectedProduct].icon}
-                      </div>
-                    )}
+                    <div className="px-4 py-2 bg-[#5667fe]/10 rounded-lg border border-[#5667fe]/20">
+                      <span className="text-sm font-medium text-[#5667fe]">{t('products.leftSection.tags.smartContracts')}</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            {/* Lado Direito - Container com fundo escuro */}
+            <div className="bg-[#191927] rounded-3xl px-6 py-8 lg:px-8 lg:py-10 shadow-2xl">
+              {/* Header fixo */}
+              <div className="text-center mb-8 lg:mb-10">
+                <span className="text-xs font-urbancat-st font-bold text-[#5667fe] uppercase tracking-[0.15em] mb-3 block">
+                  {t('products.badge')}
+                </span>
+                <h2 className="text-2xl lg:text-3xl font-urbancat-st font-bold text-white leading-tight mb-3">
+                  {t('products.title')}{' '}
+                  <span className="text-white">{t('products.titleHighlight')}</span>
+                </h2>
+                <p className="text-sm lg:text-base text-white/70 leading-relaxed font-inter">
+                  {t('products.description')}
+                </p>
+              </div>
+
+              {/* Área de Cards Empilhados */}
+              <div className="relative" style={{ minHeight: '500px' }}>
+                {/* Cards empilhados */}
+                <div className="relative w-full" style={{ minHeight: '500px' }}>
+              {products.map((product, index) => {
+                const isActive = currentProductIndex === index;
+                const isPast = index < currentProductIndex;
+                const isFuture = index > currentProductIndex;
+                
+                // Calcula a posição da carta na pilha
+                const stackOffset = (index - currentProductIndex) * 20;
+                const scaleOffset = isActive ? 1 : isFuture ? 0.95 - (index - currentProductIndex) * 0.03 : 0.9;
+                const opacityValue = isActive ? 1 : isFuture ? 0.4 : 0;
+                
+                return (
+                  <div
+                    key={product.key}
+                    className={`absolute top-0 left-0 right-0 transition-all duration-700 ease-out ${
+                      isPast ? 'pointer-events-none' : ''
+                    }`}
+                    style={{
+                      transform: `
+                        translateY(${isPast ? -100 : stackOffset}px) 
+                        scale(${scaleOffset})
+                        rotateX(${isFuture ? (index - currentProductIndex) * 2 : 0}deg)
+                      `,
+                      opacity: opacityValue,
+                      zIndex: products.length - Math.abs(index - currentProductIndex),
+                      transformOrigin: 'center top',
+                    }}
+                  >
+                    {/* Card */}
+                    <div className="bg-white rounded-2xl shadow-xl p-5 lg:p-6 border border-gray-100">
+                      {/* Header do Card */}
+                      <div className="flex items-start justify-between mb-4">
+                        {/* Logo e Nome */}
+                        <div className="flex-1">
+                          <Image
+                            src={product.logo}
+                            alt={t(`products.items.${product.key}.title`)}
+                            width={140}
+                            height={50}
+                            className="max-h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 mb-2"
+                          />
+                          <h3 className="text-lg lg:text-xl font-urbancat-st font-bold text-[#191927]">
+                            {t(`products.items.${product.key}.title`)}
+                          </h3>
+                        </div>
+                        
+                        {/* Número do Card */}
+                        <div className="text-right flex-shrink-0 ml-4">
+                          <div className="text-3xl lg:text-4xl font-urbancat-st font-bold text-[#5667fe]/20">
+                            {String(index + 1).padStart(2, '0')}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Badge de categoria */}
+                      <div className="mb-4">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-50 text-[#191927]/70 font-inter border border-gray-200">
+                          {t(`products.items.${product.key}.category`)}
+                        </span>
+                      </div>
+
+                      {/* Descrição */}
+                      <p className="text-sm lg:text-base text-[#191927] leading-relaxed font-inter mb-5">
+                        {t(`products.items.${product.key}.description`)}
+                      </p>
+
+                      {/* Features em Grid */}
+                      <div className="grid md:grid-cols-2 gap-2 mb-5">
+                        {(t(`products.items.${product.key}.features`, { returnObjects: true }) as string[])
+                          .slice(0, 4)
+                          .map((feature: string, featureIndex: number) => (
+                            <div 
+                              key={featureIndex} 
+                              className="flex items-start text-xs text-[#191927]/70 font-inter"
+                              style={{
+                                animation: isActive ? `slideIn 0.5s ease-out ${featureIndex * 0.1}s both` : 'none',
+                              }}
+                            >
+                              <Check className="w-3.5 h-3.5 text-[#5667fe] mt-0.5 mr-2 flex-shrink-0" strokeWidth={1.5} />
+                              <span>{feature}</span>
+                            </div>
+                          ))}
+                      </div>
+
+                      {/* CTA Button */}
+                      <div className="flex items-center justify-start">
+                        <a 
+                          href={product.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group/btn inline-flex items-center space-x-2 px-5 py-2.5 bg-[#5667fe] text-white rounded-lg hover:bg-[#5667fe]/90 transition-all duration-200 text-sm font-medium font-inter shadow-lg hover:shadow-xl hover:scale-105"
+                        >
+                          <span>{t('products.ctaLearnMore')}</span>
+                          <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Indicador de progresso */}
+          <div className="flex items-center justify-center gap-2 mt-6">
+            {products.map((_, index) => (
+              <div
+                key={index}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  index === currentProductIndex 
+                    ? 'w-6 bg-[#5667fe]' 
+                    : 'w-1.5 bg-white/30'
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* Contador de produtos */}
+          <div className="text-center mt-4 text-xs font-urbancat-st font-medium text-white/50">
+            <span className="text-[#5667fe] text-lg">{currentProductIndex + 1}</span>
+            <span className="mx-1">/</span>
+            <span>{products.length}</span>
+          </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      `}</style>
     </section>
   );
 };

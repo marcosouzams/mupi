@@ -39,6 +39,7 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
           partnersPt, partnersEn, partnersEs,
           whymupiPt, whymupiEn, whymupiEs,
           casesPt, casesEn, casesEs,
+          blogPt, blogEn, blogEs,
           footerPt, footerEn, footerEs,
           contactPt, contactEn, contactEs
         ] = await Promise.all([
@@ -66,6 +67,9 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
           fetch('/locales/pt/cases.json').then(r => r.json()),
           fetch('/locales/en/cases.json').then(r => r.json()),
           fetch('/locales/es/cases.json').then(r => r.json()),
+          fetch('/locales/pt/blog.json').then(r => r.json()),
+          fetch('/locales/en/blog.json').then(r => r.json()),
+          fetch('/locales/es/blog.json').then(r => r.json()),
           fetch('/locales/pt/footer.json').then(r => r.json()),
           fetch('/locales/en/footer.json').then(r => r.json()),
           fetch('/locales/es/footer.json').then(r => r.json()),
@@ -108,6 +112,10 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
         i18n.addResourceBundle('en', 'cases', casesEn);
         i18n.addResourceBundle('es', 'cases', casesEs);
         
+        i18n.addResourceBundle('pt', 'blog', blogPt);
+        i18n.addResourceBundle('en', 'blog', blogEn);
+        i18n.addResourceBundle('es', 'blog', blogEs);
+        
         i18n.addResourceBundle('pt', 'footer', footerPt);
         i18n.addResourceBundle('en', 'footer', footerEn);
         i18n.addResourceBundle('es', 'footer', footerEs);
@@ -148,6 +156,7 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
   const getCurrentPage = () => {
     if (!pathname || pathname === '/') return 'home';
     if (pathname.startsWith('/cases')) return 'cases';
+    if (pathname.startsWith('/blog')) return 'blog';
     return pathname.slice(1); // Remove a barra inicial
   };
 

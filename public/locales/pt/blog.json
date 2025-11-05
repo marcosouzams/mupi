@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "viewFullPost": "Ler post completo"
+  },
+  "header": {
+    "subtitle": "NOSSO BLOG",
+    "title": "Insights e <span class=\"text-[#5667fe]\">Novidades</span>",
+    "description": "Fique por dentro das últimas tendências em tecnologia, inovação e transformação digital."
+  },
+  "filters": {
+    "filterByCategory": "Filtrar por Categoria",
+    "all": "Todos os Posts"
+  },
+  "postCard": {
+    "readMore": "Ler mais",
+    "by": "Por",
+    "in": "em",
+    "minutes": "min de leitura"
+  },
+  "emptyState": {
+    "title": "Nenhum post encontrado",
+    "description": "Não há posts nesta categoria no momento.",
+    "viewAll": "Ver todos os posts"
+  },
+  "cta": {
+    "title": "Quer saber mais sobre nossas soluções?",
+    "description": "Nossa equipe de especialistas está pronta para ajudar sua empresa a crescer com tecnologia de ponta.",
+    "contactSpecialists": "Falar com especialistas",
+    "knowSolutions": "Conhecer nossas soluções"
+  }
+}
