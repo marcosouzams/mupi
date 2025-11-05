@@ -9,7 +9,6 @@ export const ProductsSection = () => {
   const { t } = useTranslation('products');
   const sectionRef = useRef<HTMLElement>(null);
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
-  const [scrollProgress, setScrollProgress] = useState(0);
 
   const products = [
     {
@@ -87,7 +86,6 @@ export const ProductsSection = () => {
       
       // Calcula progresso: 0 quando começa, 1 quando termina
       const progress = Math.max(0, Math.min(1, -sectionTop / sectionHeight));
-      setScrollProgress(progress);
 
       // Divide o progresso entre os produtos
       const segmentSize = 1 / products.length;
@@ -104,8 +102,6 @@ export const ProductsSection = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [products.length]);
-
-  const currentProduct = products[currentProductIndex];
 
   return (
     <section 

@@ -1,0 +1,102 @@
+1:"$Sreact.fragment"
+2:I[8151,["780","static/chunks/780-8127cd74db873ebc.js","274","static/chunks/274-afea160d27953768.js","875","static/chunks/875-a70386571ee0f3c9.js","90","static/chunks/90-6793a29fa24f2604.js","151","static/chunks/151-9868a070ae162856.js","974","static/chunks/app/page-6fea276a593ecd4c.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[6771,["560","static/chunks/app/blog/%5Bslug%5D/not-found-f93126fc6a95c086.js"],"default"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/d6a84b0fccc9e19c.css","style"]
+:HL["/_next/static/css/cb74a29fa9526037.css","style"]
+0:{"P":null,"b":"T8iPiE2JIDA2j8V9M5u2b","p":"","c":["","blog","como-entrevistar-um-candidato",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","como-entrevistar-um-candidato","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d6a84b0fccc9e19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/cb74a29fa9526037.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"className":"__variable_f367f3 antialiased font-inter","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","como-entrevistar-um-candidato","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+11:I[6605,["780","static/chunks/780-8127cd74db873ebc.js","13","static/chunks/13-f058e38bbc28f504.js","953","static/chunks/app/blog/%5Bslug%5D/page-937346dc7afd1875.js"],"default"]
+12:T1f6f,<p><img fetchpriority="high" decoding="async" class="aligncenter wp-image-2337" title="Photo by &lt;a href=&quot;https://unsplash.com/@linkedinsalesnavigator?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;LinkedIn Sales Solutions&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/interview?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;" src="https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-scaled.jpg" alt="" width="638" height="425" srcset="https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-scaled.jpg 2560w, https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-300x200.jpg 300w, https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-1024x683.jpg 1024w, https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-768x512.jpg 768w, https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-1536x1025.jpg 1536w, https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-2048x1366.jpg 2048w, https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-930x620.jpg 930w, https://mupisystems.com.br/wp-content/uploads/2022/02/capa-1-272x182.jpg 272w" sizes="(max-width: 638px) 100vw, 638px" /></p>
+<p>Neste post vamos dar dicas sobre como entrevistar um candidato a emprego. Essa etapa é uma oportunidade para que a empresa conheça melhor o candidato, entendendo se ele se encaixa na cultura da empresa e tem as habilidades e experiências necessárias. É sabido que erros na identificação dessas características podem levar à seleção de um candidato que talvez não se adapte ao cargo, o que pode gerar custos e imprevistos tanto para a empresa quanto para o profissional. Dessa forma, nós da <a href="https://mupisystems.com.br/">MUPI Systems</a> preparamos para vocês, usuários da plataforma <a href="https://etalentos.com.br/" target="_blank" rel="noopener">E-Talentos</a>, este post com 7 tópicos relevantes a considerar para realizar uma boa entrevista.</p>
+<h3>Antes da entrevista</h3>
+<h4>1. Conheça bem o perfil e requisitos da vaga</h4>
+<p>Em primeiro lugar, é importante que a empresa tenha bem especificados o <strong>cargo</strong> e seus <strong>requisitos</strong> e que o entrevistador revise esses itens antes da entrevista. É válido lembrar que mesmo para um determinado setor produtivo, o perfil desejado pode variar bastante de acordo com o cargo. Por exemplo, se a vaga é para um desenvolvedor júnior, o perfil poderá ser diferente do que o de um gerente de projetos. Além disso, tenha bem definidas quais as experiências <strong>mais importantes </strong>e qual a formação <strong>mais adequada.</strong> Alguns cargos também podem exigir <strong>certificações</strong> e cursos específicos.</p>
+<h4>2. Analise o currículo do candidato com antecedência</h4>
+<p>Leia antecipadamente o currículo do candidato. Dessa forma você vai se informar muito sobre se ele atende ou não aos requisitos e quais os seus <strong>pontos</strong> <strong>fortes</strong>. Além disso, lendo o currículo com antecedência vai suscitar dúvidas que você vai poder tirar com o candidato e evitará com que você faça perguntas já respondidas pelo currículo.</p>
+<h4>3. Planeje o que será perguntado</h4>
+<p>É recomendado ter um <strong>roteiro</strong> sobre como será conduzida a seleção, dessa forma a interação com o candidato será mais dinâmica. Claro que não é preciso seguir à risca o <strong>roteiro</strong>, pois dúvidas e perguntas podem surgir naturalmente no decorrer da entrevista. Além disso, é normal que mais de uma pessoa da empresa participe da entrevista e quando isso acontece, é bom planejar a função de cada pessoa no processo.</p>
+<h3>Durante a entrevista</h3>
+<h4>4. Receba bem o candidato</h4>
+<p>É comum que alguns candidatos estejam nervosos no dia da entrevista. Para mitigar isso, ao receber o candidato (ou ao iniciar a videoconferência), converse com ele sobre algum tópico geral, seja: se foi fácil achar a sede da empresa, trânsito, etc. Em seguida, apresente as pessoas que vão participar da entrevista e fale um pouco sobre a empresa.</p>
+<h4>5. Resumo da vida acadêmica e profissional</h4>
+<p>Um bom ponto de partida para começar a ouvir o candidato é deixar com que ele fale sobre sua vida acadêmica e profissional, dessa forma, perguntar isso inicialmente é interessante. Por mais que essas informações estejam no currículo, o candidato deverá ter espaço para falar sobre elas em mais detalhes, pois assim, é possível conhecer sua forma de se comunicar e ter uma melhor ideia sobre seu perfil e atuação.</p>
+<h4>6. Perguntas</h4>
+<p>Nessa etapa, o ideal é fazer perguntas claras e objetivas, que agreguem para entender o perfil do candidato. Em geral, o que se quer avaliar no candidato são suas competências comportamentais e técnicas, portanto:</p>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>Comportamento: atitude, iniciativa, criatividade, etc.;</li>
+<li>Técnica: conhecimentos e habilidades em funções específicas;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Assim, para avaliar de forma mais eficaz o candidato, nesta etapa, busque  fazer perguntas que vão mostrar como ele atua. Como exemplos de perguntas comportamentais:</p>
+<h5>6.1 Perguntas sobre criatividade e resolução de problemas:</h5>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>&#8220;Fale sobre um caso imprevisto que você precisou administrar na sua função e como se saiu.&#8221;;</li>
+<li>&#8220;Quais melhorias você propôs no seu último emprego?&#8221;;</li>
+<li>&#8220;Fale sobre uma situação em que por maior que tenha sido seu empenho, não atendeu à expectativa do seu supervisor?&#8221;;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>6.2 Flexibilidade:</h5>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>&#8220;Fale sobre um caso em que teve que abrir mão de suas ideias em favor da equipe.&#8221;;</li>
+<li>&#8220;Houve alguma ocasião que precisou abordar várias pessoas para obter apoio em uma tarefa?&#8221;;</li>
+<li>&#8220;Fale sobre algo importante que você aprendeu com a equipe.&#8221;;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>6.3 Planos e aspirações futuras:</h5>
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li style="list-style-type: none">
+<ul>
+<li>&#8220;Como esse cargo vai ajudar sua carreira?&#8221;;</li>
+<li>&#8220;Explique o que considera a empresa ideal.&#8221;;</li>
+<li>&#8220;Você teria interesse em chegar a gerente ou em seguir em uma área mais técnica?&#8221;;</li>
+<li>&#8220;O que faz uma pessoa ser bem sucedida?&#8221;;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>6.4 Perguntas que não devem ser feitas</h5>
+<p>Segundo especialistas [<a href="https://www.jornalcontabil.com.br/perguntas-que-nao-devem-ser-feitas-em-entrevistas-de-emprego/" target="_blank" rel="noopener">1</a>,<a href="https://economia.ig.com.br/2019-10-14/7-perguntas-que-o-recrutador-nao-deve-fazer-em-uma-entrevista-de-emprego.html" target="_blank" rel="noopener">2</a>] é considerado antiético e fere a <em>LGPD</em> (Lei Geral de Proteção de Dados), perguntar sobre religião, orientação sexual, posição política, deficiência, assuntos familiares, intenção de ter filhos, etc, durante uma entrevista de emprego, dessa forma, pode gerar problemas para a empresa fazer esse tipo de pergunta.</p>
+<h4>7 Reserve tempo para perguntas do candidato</h4>
+<p>Um candidato que tem interesse vai fazer perguntas sobre a empresa (o ambiente de trabalho, horários, dia a dia dos funcionários), bem como (salário, benefícios, etc). Assim, esteja pronto para responder suas dúvidas.</p>
+<h4>Conclusão</h4>
+<p>Por fim, esperamos que as informações aqui apresentadas sejam de utilidade para você e seu negócio. Caso tenha alguma dúvida ou sugestão, comente logo abaixo que vamos responder o quanto antes. Sucesso nos processo seletivos!</p>
+
+
+<p></p>
+6:["$","$L11",null,{"post":{"id":2325,"slug":"como-entrevistar-um-candidato","title":"Como entrevistar um candidato","excerpt":"Neste post vamos dar dicas sobre como entrevistar um candidato a emprego. Essa etapa é uma oportunidade para que a ...","content":"$12","date":"2022-02-19T05:56:57","author":{"name":"admin","avatar":"https://secure.gravatar.com/avatar/6e350bf67563ab93cce5dd0ffd74c9aeb0f0a085e6713af67dd563a082714099?s=96&d=mm&r=g"},"categories":[{"id":40,"name":"ETalentos","slug":"etalentos"}],"tags":[{"id":99,"name":"Candidato","slug":"candidato"},{"id":100,"name":"Emprego","slug":"emprego"},{"id":98,"name":"Entrevista","slug":"entrevista"}],"isFeatured":false},"translations":{"meta":{"backButton":"Voltar para o blog","readingTime":"min de leitura","by":"Por","publishedOn":"Publicado em"},"sidebar":{"categories":"Categorias","tags":"Tags","author":"Sobre o Autor"},"cta":{"title":"Gostou deste conteúdo?","description":"Assine nossa newsletter e receba mais insights como este diretamente no seu e-mail.","button":"Falar com especialistas"},"relatedPosts":{"title":"Posts Relacionados"}},"readingTime":5,"formattedDate":"19 de fevereiro de 2022"}]
+a:{"metadata":[["$","title","0",{"children":"Como entrevistar um candidato | Mupi Systems Blog"}],["$","meta","1",{"name":"description","content":"Neste post vamos dar dicas sobre como entrevistar um candidato a emprego. Essa etapa é uma oportunidade para que a ..."}],["$","meta","2",{"name":"author","content":"MUPI Systems"}],["$","meta","3",{"name":"keywords","content":"SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems"}],["$","meta","4",{"property":"og:title","content":"Como entrevistar um candidato"}],["$","meta","5",{"property":"og:description","content":"Neste post vamos dar dicas sobre como entrevistar um candidato a emprego. Essa etapa é uma oportunidade para que a ..."}],["$","meta","6",{"property":"og:type","content":"article"}],["$","meta","7",{"property":"article:published_time","content":"2022-02-19T05:56:57"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Como entrevistar um candidato"}],["$","meta","10",{"name":"twitter:description","content":"Neste post vamos dar dicas sobre como entrevistar um candidato a emprego. Essa etapa é uma oportunidade para que a ..."}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

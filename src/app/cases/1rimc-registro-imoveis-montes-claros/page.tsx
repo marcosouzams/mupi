@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, Target, Lightbulb, Building2, Calendar, Clock, Wrench, CheckCircle, TrendingUp, Zap, Users } from 'lucide-react';
+import { ArrowLeft, Target, Lightbulb, Building2, Clock, Wrench, CheckCircle, TrendingUp, Zap, Users } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';

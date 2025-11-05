@@ -1,0 +1,191 @@
+1:"$Sreact.fragment"
+2:I[8151,["780","static/chunks/780-8127cd74db873ebc.js","274","static/chunks/274-afea160d27953768.js","875","static/chunks/875-a70386571ee0f3c9.js","90","static/chunks/90-6793a29fa24f2604.js","151","static/chunks/151-9868a070ae162856.js","974","static/chunks/app/page-6fea276a593ecd4c.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[6771,["560","static/chunks/app/blog/%5Bslug%5D/not-found-f93126fc6a95c086.js"],"default"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/d6a84b0fccc9e19c.css","style"]
+:HL["/_next/static/css/cb74a29fa9526037.css","style"]
+0:{"P":null,"b":"T8iPiE2JIDA2j8V9M5u2b","p":"","c":["","blog","organizando-atendimentos-em-clinicas-e-hospitais",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","organizando-atendimentos-em-clinicas-e-hospitais","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d6a84b0fccc9e19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/cb74a29fa9526037.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"className":"__variable_f367f3 antialiased font-inter","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","organizando-atendimentos-em-clinicas-e-hospitais","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+11:I[6605,["780","static/chunks/780-8127cd74db873ebc.js","13","static/chunks/13-f058e38bbc28f504.js","953","static/chunks/app/blog/%5Bslug%5D/page-937346dc7afd1875.js"],"default"]
+12:T3932,
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img fetchpriority="high" decoding="async" src="https://mupisystems.com.br/wp-content/uploads/2022/03/cdn-pages-xM_1ZYHOc9E-unsplash-1-1024x677.jpg" alt="" class="wp-image-2569" width="550" height="363" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/cdn-pages-xM_1ZYHOc9E-unsplash-1-1024x677.jpg 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/cdn-pages-xM_1ZYHOc9E-unsplash-1-300x198.jpg 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/cdn-pages-xM_1ZYHOc9E-unsplash-1-768x508.jpg 768w, https://mupisystems.com.br/wp-content/uploads/2022/03/cdn-pages-xM_1ZYHOc9E-unsplash-1-1536x1016.jpg 1536w, https://mupisystems.com.br/wp-content/uploads/2022/03/cdn-pages-xM_1ZYHOc9E-unsplash-1-2048x1355.jpg 2048w" sizes="(max-width: 550px) 100vw, 550px" /><figcaption>Photo by <a href="https://unsplash.com/@cdnpagesca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Cdn Pages</a> on <a href="https://unsplash.com/s/photos/clinic?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a></figcaption></figure></div>
+
+
+
+<p>Para quem estará diretamente organizando atendimentos em Clínicas e Hospitais, certamente sabe que essa é uma tarefa que tem seus desafios. Com a plataforma <a href="https://meuatendimentovirtual.com.br/" target="_blank" rel="noopener">Meu Atendimento Virtual</a> da <a href="https://mupisystems.com.br/">MUPI Systems</a>, essa etapa fica mais fácil de ser resolvida. Neste post vamos mostrar a você o passo a passo de como administrar uma fila de atendimento. Para seguir esta publicação, vamos usar as configurações feitas <a href="https://mupisystems.com.br/2022/03/11/configurando-atendimentos-em-clinicas-e-hospitais/">neste post</a> que publicamos em outro momento.</p>
+
+
+
+<p>Antes de mais nada, vamos ver como é a ordem da fila. Na imagem abaixo você pode ver que primeiramente o seu cliente irá emitir a senha em um totem de atendimento. Em seguida haverá três etapas, sendo elas recepção, consulta e atendimento. Nossa plataforma vai controlar as filas e chamadas de cada uma dessas etapas.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1212" height="440" src="https://mupisystems.com.br/wp-content/uploads/2022/03/fila.png" alt="" class="wp-image-2544" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/fila.png 1212w, https://mupisystems.com.br/wp-content/uploads/2022/03/fila-300x109.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/fila-1024x372.png 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/fila-768x279.png 768w" sizes="(max-width: 1212px) 100vw, 1212px" /></figure>
+
+
+
+<h3 class="wp-block-heading">Seleção de senha pelo cliente</h3>
+
+
+
+<p>No seu totem de atendimento, caso use um, ao fazer login, deixe selecionada a opção de &#8220;Seleção de Senha&#8221;, conforme abaixo:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1911" height="529" src="https://mupisystems.com.br/wp-content/uploads/2022/03/1_dashboard_red.jpg" alt="" class="wp-image-2545" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/1_dashboard_red.jpg 1911w, https://mupisystems.com.br/wp-content/uploads/2022/03/1_dashboard_red-300x83.jpg 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/1_dashboard_red-1024x283.jpg 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/1_dashboard_red-768x213.jpg 768w, https://mupisystems.com.br/wp-content/uploads/2022/03/1_dashboard_red-1536x425.jpg 1536w" sizes="(max-width: 1911px) 100vw, 1911px" /></figure>
+
+
+
+<p>Detalhe da imagem:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" decoding="async" width="469" height="259" src="https://mupisystems.com.br/wp-content/uploads/2022/03/2_selecao_de_senha.png" alt="" class="wp-image-2546" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/2_selecao_de_senha.png 469w, https://mupisystems.com.br/wp-content/uploads/2022/03/2_selecao_de_senha-300x166.png 300w" sizes="(max-width: 469px) 100vw, 469px" /></figure></div>
+
+
+
+<p>Em seguida, o cliente poderá escolher entre os serviços cadastrados:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img loading="lazy" decoding="async" src="https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecionar_servico.png" alt="" class="wp-image-2547" width="530" height="251" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecionar_servico.png 1125w, https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecionar_servico-300x142.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecionar_servico-1024x486.png 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecionar_servico-768x365.png 768w" sizes="(max-width: 530px) 100vw, 530px" /></figure></div>
+
+
+
+<p>Você pode modificar essa tela caso queira que o seu cliente possa escolher no Totem somente o primeiro processo (recepção). No seu Browser, basta clicar no link:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" decoding="async" width="566" height="31" src="https://mupisystems.com.br/wp-content/uploads/2022/03/link_1.jpg" alt="" class="wp-image-2549" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/link_1.jpg 566w, https://mupisystems.com.br/wp-content/uploads/2022/03/link_1-300x16.jpg 300w" sizes="(max-width: 566px) 100vw, 566px" /></figure></div>
+
+
+
+<p>E em seguida, modificar o final dele (selecao_senha/#) para selecao_senha/1/#:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" decoding="async" width="576" height="31" src="https://mupisystems.com.br/wp-content/uploads/2022/03/link_2-1.jpg" alt="" class="wp-image-2551" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/link_2-1.jpg 576w, https://mupisystems.com.br/wp-content/uploads/2022/03/link_2-1-300x16.jpg 300w" sizes="(max-width: 576px) 100vw, 576px" /></figure></div>
+
+
+
+<p>Logo depois, recarregue a página, e o que você verá é:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img loading="lazy" decoding="async" src="https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecao_servico_2.png" alt="" class="wp-image-2552" width="531" height="249" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecao_servico_2.png 1047w, https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecao_servico_2-300x141.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecao_servico_2-1024x480.png 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/3_selecao_servico_2-768x360.png 768w" sizes="(max-width: 531px) 100vw, 531px" /></figure></div>
+
+
+
+<p>Após o seu paciente selecionar o serviço, ele deverá clicar em gerar senha. Depois disso, deverá preencher os seus dados e clicar em continuar. Caso ele pule esta etapa, o atendente deverá cadastrá-lo depois.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img loading="lazy" decoding="async" width="1235" height="431" src="https://mupisystems.com.br/wp-content/uploads/2022/03/4_selecionando_serv_senha.png" alt="" class="wp-image-2554" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/4_selecionando_serv_senha.png 1235w, https://mupisystems.com.br/wp-content/uploads/2022/03/4_selecionando_serv_senha-300x105.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/4_selecionando_serv_senha-1024x357.png 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/4_selecionando_serv_senha-768x268.png 768w" sizes="(max-width: 1235px) 100vw, 1235px" /></figure></div>
+
+
+
+<h3 class="wp-block-heading">Atendendo um cliente</h3>
+
+
+
+<p>Agora que seu cliente tem uma senha, você poderá chamá-lo. Para isso, o atendente da recepção deverá, no seu dashboard, clicar em fila de atendimento:</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1911" height="529" src="https://mupisystems.com.br/wp-content/uploads/2022/03/5_dashboard_2.jpg" alt="" class="wp-image-2555" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/5_dashboard_2.jpg 1911w, https://mupisystems.com.br/wp-content/uploads/2022/03/5_dashboard_2-300x83.jpg 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/5_dashboard_2-1024x283.jpg 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/5_dashboard_2-768x213.jpg 768w, https://mupisystems.com.br/wp-content/uploads/2022/03/5_dashboard_2-1536x425.jpg 1536w" sizes="(max-width: 1911px) 100vw, 1911px" /></figure>
+
+
+
+<p>Detalhe da imagem:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="463" height="254" src="https://mupisystems.com.br/wp-content/uploads/2022/03/5_atendimento_1.png" alt="" class="wp-image-2556" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/5_atendimento_1.png 463w, https://mupisystems.com.br/wp-content/uploads/2022/03/5_atendimento_1-300x165.png 300w" sizes="(max-width: 463px) 100vw, 463px" /></figure></div>
+
+
+
+<p>Em seguida, na tela que vai abrir, verifique se o seu local está correto, neste caso a recepção deve ser utilizada pelo atendente. Contudo, caso queira mudar o local, clique em alterar local.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="478" height="321" src="https://mupisystems.com.br/wp-content/uploads/2022/03/6_local_1.png" alt="" class="wp-image-2557" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/6_local_1.png 478w, https://mupisystems.com.br/wp-content/uploads/2022/03/6_local_1-300x201.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/6_local_1-272x182.png 272w" sizes="(max-width: 478px) 100vw, 478px" /></figure></div>
+
+
+
+<p>Logo depois, veja que a tabela de próximas senhas mostra os clientes que estão aguardando, você deve clicar em chamar próxima senha para chamar o próximo cliente.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="952" height="241" src="https://mupisystems.com.br/wp-content/uploads/2022/03/7_chamar_cliente.png" alt="" class="wp-image-2558" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/7_chamar_cliente.png 952w, https://mupisystems.com.br/wp-content/uploads/2022/03/7_chamar_cliente-300x76.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/7_chamar_cliente-768x194.png 768w" sizes="(max-width: 952px) 100vw, 952px" /></figure></div>
+
+
+
+<p>Depois disso, aparecerá a tela de Atendimento Atual. Para iniciar, clique no botão de iniciar o atendimento.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" src="https://mupisystems.com.br/wp-content/uploads/2022/03/8_atendimento_atual.png" alt="" class="wp-image-2559" width="323" height="315" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/8_atendimento_atual.png 480w, https://mupisystems.com.br/wp-content/uploads/2022/03/8_atendimento_atual-300x293.png 300w" sizes="(max-width: 323px) 100vw, 323px" /></figure></div>
+
+
+
+<p>Em seguida, vai abrir a tela de atendimento. Você pode digitar observações sobre o paciente, digitar o valor do atendimento, caso se aplique, e depois disso terá três opções:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full is-resized"><img loading="lazy" decoding="async" src="https://mupisystems.com.br/wp-content/uploads/2022/03/9_atendimento.png" alt="" class="wp-image-2560" width="607" height="397" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/9_atendimento.png 954w, https://mupisystems.com.br/wp-content/uploads/2022/03/9_atendimento-300x197.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/9_atendimento-768x503.png 768w" sizes="(max-width: 607px) 100vw, 607px" /></figure></div>
+
+
+
+<h3 class="wp-block-heading">Encaminhar atendimento </h3>
+
+
+
+<p>Nesse caso, você precisará escolher na próxima tela qual a etapa que vai receber o paciente. Vamos encaminhar, neste caso para consulta, com tipo de fila comum. Dessa forma, quem estiver atendendo no consultório deverá repetir o procedimento aqui descrito e chamar a próxima senha. O mesmo vale para quem estiver na recepção, que deverá repetir este procedimento e chamar a próxima senha.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="290" src="https://mupisystems.com.br/wp-content/uploads/2022/03/10-1024x290.png" alt="" class="wp-image-2561" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/10-1024x290.png 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/10-300x85.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/10-768x218.png 768w, https://mupisystems.com.br/wp-content/uploads/2022/03/10.png 1179w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h3 class="wp-block-heading">Encerrar atendimento</h3>
+
+
+
+<p>Nesse caso, o paciente não será passado adiante. O atendimento se encerrará na etapa da recepção. Essa opção pode ser útil caso algum cliente queira apenas entregar documentos na recepção, ou mesmo buscar algum documento.</p>
+
+
+
+<h3 class="wp-block-heading">Texto do atendimento</h3>
+
+
+
+<p>Essa opção pode ser utilizada caso você queira um campo maior para escrever considerações sobre o paciente. Assim, você terá um editor de texto para inserir as informações e poderá imprimir ou mesmo salvar como .pdf o documento.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="639" src="https://mupisystems.com.br/wp-content/uploads/2022/03/11-1024x639.png" alt="" class="wp-image-2563" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/11-1024x639.png 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/11-300x187.png 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/11-768x479.png 768w, https://mupisystems.com.br/wp-content/uploads/2022/03/11.png 1176w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h3 class="wp-block-heading">Considerações finais</h3>
+
+
+
+<p>Chegamos ao final de mais um post. Esperamos que as informações que apresentamos sejam úteis para você e o seu negócio superarem os desafios de gerenciar suas filas. Dessa forma, em caso de dúvidas insira um comentário logo abaixo que responderemos o quanto antes.</p>
+
+
+
+<p> </p>
+6:["$","$L11",null,{"post":{"id":2537,"slug":"organizando-atendimentos-em-clinicas-e-hospitais","title":"Organizando Atendimentos em Clínicas e Hospitais","excerpt":"Para quem estará diretamente organizando atendimentos em Clínicas e Hospitais, certamente sabe que essa é uma tarefa que tem seus ...","content":"$12","date":"2022-03-18T10:03:02","author":{"name":"admin","avatar":"https://secure.gravatar.com/avatar/6e350bf67563ab93cce5dd0ffd74c9aeb0f0a085e6713af67dd563a082714099?s=96&d=mm&r=g"},"categories":[{"id":10,"name":"Meu Atendimento","slug":"atendimento"}],"tags":[{"id":106,"name":"clínicas","slug":"clinicas"},{"id":107,"name":"hospitais","slug":"hospitais"},{"id":79,"name":"Meu Atendimento Virtual","slug":"meu-atendimento-virtual"},{"id":109,"name":"organizar atendimento","slug":"organizar-atendimento"}],"isFeatured":false},"translations":{"meta":{"backButton":"Voltar para o blog","readingTime":"min de leitura","by":"Por","publishedOn":"Publicado em"},"sidebar":{"categories":"Categorias","tags":"Tags","author":"Sobre o Autor"},"cta":{"title":"Gostou deste conteúdo?","description":"Assine nossa newsletter e receba mais insights como este diretamente no seu e-mail.","button":"Falar com especialistas"},"relatedPosts":{"title":"Posts Relacionados"}},"readingTime":3,"formattedDate":"18 de março de 2022"}]
+a:{"metadata":[["$","title","0",{"children":"Organizando Atendimentos em Clínicas e Hospitais | Mupi Systems Blog"}],["$","meta","1",{"name":"description","content":"Para quem estará diretamente organizando atendimentos em Clínicas e Hospitais, certamente sabe que essa é uma tarefa que tem seus ..."}],["$","meta","2",{"name":"author","content":"MUPI Systems"}],["$","meta","3",{"name":"keywords","content":"SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems"}],["$","meta","4",{"property":"og:title","content":"Organizando Atendimentos em Clínicas e Hospitais"}],["$","meta","5",{"property":"og:description","content":"Para quem estará diretamente organizando atendimentos em Clínicas e Hospitais, certamente sabe que essa é uma tarefa que tem seus ..."}],["$","meta","6",{"property":"og:type","content":"article"}],["$","meta","7",{"property":"article:published_time","content":"2022-03-18T10:03:02"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Organizando Atendimentos em Clínicas e Hospitais"}],["$","meta","10",{"name":"twitter:description","content":"Para quem estará diretamente organizando atendimentos em Clínicas e Hospitais, certamente sabe que essa é uma tarefa que tem seus ..."}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

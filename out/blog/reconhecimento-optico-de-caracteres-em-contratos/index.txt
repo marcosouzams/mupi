@@ -1,0 +1,123 @@
+1:"$Sreact.fragment"
+2:I[8151,["780","static/chunks/780-8127cd74db873ebc.js","274","static/chunks/274-afea160d27953768.js","875","static/chunks/875-a70386571ee0f3c9.js","90","static/chunks/90-6793a29fa24f2604.js","151","static/chunks/151-9868a070ae162856.js","974","static/chunks/app/page-6fea276a593ecd4c.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[6771,["560","static/chunks/app/blog/%5Bslug%5D/not-found-f93126fc6a95c086.js"],"default"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/d6a84b0fccc9e19c.css","style"]
+:HL["/_next/static/css/cb74a29fa9526037.css","style"]
+0:{"P":null,"b":"T8iPiE2JIDA2j8V9M5u2b","p":"","c":["","blog","reconhecimento-optico-de-caracteres-em-contratos",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","reconhecimento-optico-de-caracteres-em-contratos","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d6a84b0fccc9e19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/cb74a29fa9526037.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"className":"__variable_f367f3 antialiased font-inter","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","reconhecimento-optico-de-caracteres-em-contratos","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+11:I[6605,["780","static/chunks/780-8127cd74db873ebc.js","13","static/chunks/13-f058e38bbc28f504.js","953","static/chunks/app/blog/%5Bslug%5D/page-937346dc7afd1875.js"],"default"]
+12:T25d4,
+<figure class="wp-block-image aligncenter"><img fetchpriority="high" decoding="async" width="962" height="724" src="https://mupisystems.com.br/wp-content/uploads/2021/11/Drawing-2.png" alt="reconhecimento óptico de caracteres" class="wp-image-1815" srcset="https://mupisystems.com.br/wp-content/uploads/2021/11/Drawing-2.png 962w, https://mupisystems.com.br/wp-content/uploads/2021/11/Drawing-2-300x226.png 300w, https://mupisystems.com.br/wp-content/uploads/2021/11/Drawing-2-768x578.png 768w" sizes="(max-width: 962px) 100vw, 962px" /></figure>
+
+
+
+<h2 class="wp-block-heading"><b>OCR &#8211; Reconhecimento Óptico de Caracteres</b></h2>
+
+
+
+<p>O <b>OCR &#8211; Reconhecimento Óptico de Caracteres</b> (<i>Optical Character Recognition</i> do Inglês) é um método que realiza o processamento de imagens e transforma as informações em texto. É uma ferramenta importante para várias empresas que trabalham com <b>processamento de documentos</b>, sejam escritórios de advocacia, cartórios, indústrias, bancos, entre outros. Em geral, há a necessidade de  extrair informações desses documentos, os quais, quando já digitalizados, encontram-se em formatos portáteis como .pdf ou até mesmo como imagens .png, .tiff, etc. </p>
+
+
+
+<p>A Figura 1 abaixo, apresenta um fluxograma geral de processamento de documentos utilizando OCR. Em geral, os arquivos que serão processados são convertidos para um formato de interesse (Figura 1a), para posteriormente serem <b>pré-processados</b> (Figura 1b). Nessa etapa pode ser utilizada a biblioteca do Python <a href="https://opencv.org/" target="_blank" rel="noopener">OpenCV</a>, onde são aplicados filtros e métodos que tendem a eliminar distorções na imagem, para que em seguida a mesma possa ser <b>processada</b> utilizando as bibliotecas <a href="https://layout-parser.github.io/" target="_blank" rel="noopener">Layout Parser</a> e <a href="https://opensource.google/projects/tesseract" target="_blank" rel="noopener">Tesseract</a> (Figura 1c) e as informações extraídas analisadas por técnicas de <b>Processamento de Linguagem Natural</b>, tema de um artigo anterior, que utiliza os módulos <a href="https://spacy.io/" target="_blank" rel="noopener">spaCy</a> e <a href="https://www.nltk.org/" target="_blank" rel="noopener">NLTK</a>.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1253" height="465" src="https://mupisystems.com.br/wp-content/uploads/2021/11/fluxograma-OCR-1.png" alt="" class="wp-image-1816" srcset="https://mupisystems.com.br/wp-content/uploads/2021/11/fluxograma-OCR-1.png 1253w, https://mupisystems.com.br/wp-content/uploads/2021/11/fluxograma-OCR-1-300x111.png 300w, https://mupisystems.com.br/wp-content/uploads/2021/11/fluxograma-OCR-1-1024x380.png 1024w, https://mupisystems.com.br/wp-content/uploads/2021/11/fluxograma-OCR-1-768x285.png 768w" sizes="(max-width: 1253px) 100vw, 1253px" /></figure>
+
+
+
+<p class="has-text-align-center">Figura 1 &#8211; Fluxograma geral de processamento de documentos etapas de (a) conversão, (b) pré-processamento, (c) processamento OCR e (d) Processamento de Linguagem Natural.</p>
+
+
+
+<h3 class="wp-block-heading">Etapa de Pré-Processamento</h3>
+
+
+
+<p>Conforme explicado no parágrafo anterior, utiliza-se o OpenCV para o pré-processamento, que realiza etapas de tratamento como<b> binarização, eliminação de bordas, alinhamento de imagem, remoção de ruído</b>, entre outras, tudo com o objetivo de eliminar informações desnecessárias que possam prejudicar a extração de informações da imagem. A Figura 2a apresenta uma imagem de um documento padrão de um banco de imagens, que deve ser processado. Esse documento é uma imagem colorida contendo texto, que apresenta uma leve rotação e ruído &#8211; comuns a processos de digitalização. Na Figura 2b, temos a imagem após pré-processamento, pelas etapas de: (i) transformação para tons de cinza, (ii) redução de ruído, (iii) limiarização por histograma, (iv) alinhamento, entre outras.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1108" height="504" src="https://mupisystems.com.br/wp-content/uploads/2021/11/figura2-1.png" alt="" class="wp-image-1817" srcset="https://mupisystems.com.br/wp-content/uploads/2021/11/figura2-1.png 1108w, https://mupisystems.com.br/wp-content/uploads/2021/11/figura2-1-300x136.png 300w, https://mupisystems.com.br/wp-content/uploads/2021/11/figura2-1-1024x466.png 1024w, https://mupisystems.com.br/wp-content/uploads/2021/11/figura2-1-768x349.png 768w" sizes="(max-width: 1108px) 100vw, 1108px" /></figure>
+
+
+
+<p class="has-text-align-center">Figura 2 &#8211; (a) Documento original, (b) documento pré-processado.</p>
+
+
+
+<h4 class="wp-block-heading">Transformação para tons de cinza</h4>
+
+
+
+<p>A transformação para tons de cinza é uma etapa essencial no pré-processamento de imagens para OCR. Convertendo a imagem para uma escala de cinza, eliminamos informações de cor e simplificamos a representação, facilitando a extração de características durante o reconhecimento óptico de caracteres. Isso também reduz a complexidade computacional e melhora a eficiência do processo.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Redução de ruído</strong></h4>
+
+
+
+<p>A redução de ruído é crucial para melhorar a qualidade da imagem antes da aplicação do OCR. Técnicas como filtragem gaussiana, median filtering ou algoritmos de suavização ajudam a eliminar distorções indesejadas, granulações e imperfeições que podem comprometer a precisão do reconhecimento. Essa etapa contribui para a obtenção de resultados mais confiáveis durante a extração de texto.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Limiarização por histograma</strong></h4>
+
+
+
+<p>A limiarização por histograma é empregada para segmentar a imagem, destacando regiões de interesse e melhorando a diferenciação entre o texto e o fundo. Ao escolher um limiar apropriado com base na distribuição de intensidades de pixels, podemos binarizar a imagem, convertendo-a em pixels pretos e brancos. Essa técnica é fundamental para aprimorar a clareza do texto e simplificar o processo de reconhecimento.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Alinhamento</strong></h4>
+
+
+
+<p>O alinhamento de texto é uma <strong>fase crítica</strong> para garantir a correta orientação e posicionamento das palavras na imagem. Técnicas de alinhamento automático, como detecção de linhas de base e algoritmos de transformação geométrica, são aplicadas para corrigir desalinhamentos causados por inclinações, rotações ou distorções na captura da imagem. Esse passo <strong>contribui significativamente</strong> para aumentar a precisão e a confiabilidade do OCR, <strong>especialmente em documentos escaneados</strong> ou imagens com perspectivas variadas.</p>
+
+
+
+<h3 class="wp-block-heading">Etapa de Processamento</h3>
+
+
+
+<p>A etapa de processamento permitirá fazer o <b>reconhecimento óptico d</b><strong>e caracteres</strong> nas imagens, que é propriamente o OCR. Essa etapa utiliza <strong>aprendizado de máquina</strong> para que se tenha um modelo que saiba identificar os elementos do layout do documento, sejam eles cabeçalhos, texto, tabelas, figuras, entre outros. A Figura 3a, mostra nossa imagem de exemplo já processada por essa etapa. Observa-se que foram marcados itens em verde (títulos), azul (imagens) e alaranjado (textos). Na Figura 3b, estão sendo mostrados somente os parágrafos detectados como ‘texto’, que serão utilizados para análises subsequentes.</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1191" height="546" src="https://mupisystems.com.br/wp-content/uploads/2021/11/figura3-1.png" alt="" class="wp-image-1818" srcset="https://mupisystems.com.br/wp-content/uploads/2021/11/figura3-1.png 1191w, https://mupisystems.com.br/wp-content/uploads/2021/11/figura3-1-300x138.png 300w, https://mupisystems.com.br/wp-content/uploads/2021/11/figura3-1-1024x469.png 1024w, https://mupisystems.com.br/wp-content/uploads/2021/11/figura3-1-768x352.png 768w" sizes="(max-width: 1191px) 100vw, 1191px" /></figure>
+
+
+
+<p class="has-text-align-center">Figura 3 &#8211; (a) identificação de todos itens e (b) identificação de texto de parágrafos somente.</p>
+
+
+
+<p>Os itens da Figura 3b são transformados em texto (as chamadas strings de texto) e podem ser analisados posteriormente. A Figura 4 apresenta uma imagem das informações extraídas da Figura 3b.</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1075" height="309" src="https://mupisystems.com.br/wp-content/uploads/2021/11/Figura4-1.png" alt="" class="wp-image-1819" srcset="https://mupisystems.com.br/wp-content/uploads/2021/11/Figura4-1.png 1075w, https://mupisystems.com.br/wp-content/uploads/2021/11/Figura4-1-300x86.png 300w, https://mupisystems.com.br/wp-content/uploads/2021/11/Figura4-1-1024x294.png 1024w, https://mupisystems.com.br/wp-content/uploads/2021/11/Figura4-1-768x221.png 768w" sizes="(max-width: 1075px) 100vw, 1075px" /></figure>
+
+
+
+<p class="has-text-align-center">Figura 4 &#8211; Texto extraído da imagem.</p>
+
+
+
+<p>Neste pequeno artigo, foi apresentada uma possibilidade de processamento via OCR. Existem muitos outros filtros ou etapas de processamento que podem ser incorporadas para garantir que as informações corretas serão extraídas do documento. Essa é uma técnica indispensável para empresas que se utilizam de processamento de documentos de forma automática e a utilização de ferramentas de Aprendizado de Máquina garantem a aplicação para os mais diversos tipos de documentos.</p>
+6:["$","$L11",null,{"post":{"id":1807,"slug":"reconhecimento-optico-de-caracteres-em-contratos","title":"Reconhecimento Óptico de Caracteres em Contratos","excerpt":"OCR – Reconhecimento Óptico de Caracteres O OCR – Reconhecimento Óptico de Caracteres (Optical Character Recognition do Inglês) é um ...","content":"$12","date":"2021-11-05T10:35:31","author":{"name":"admin","avatar":"https://secure.gravatar.com/avatar/6e350bf67563ab93cce5dd0ffd74c9aeb0f0a085e6713af67dd563a082714099?s=96&d=mm&r=g"},"categories":[{"id":137,"name":"Inteligência Artificial","slug":"inteligencia-artificial"},{"id":32,"name":"Textualiza","slug":"textualiza"}],"tags":[{"id":76,"name":"Análise de Imagens","slug":"analise-de-imagens"},{"id":52,"name":"Contratos","slug":"contratos"},{"id":74,"name":"OCR","slug":"ocr"},{"id":75,"name":"Reconhecimento Óptico de Caracteres","slug":"reconhecimento-optico-de-caracteres"}],"isFeatured":false},"translations":{"meta":{"backButton":"Voltar para o blog","readingTime":"min de leitura","by":"Por","publishedOn":"Publicado em"},"sidebar":{"categories":"Categorias","tags":"Tags","author":"Sobre o Autor"},"cta":{"title":"Gostou deste conteúdo?","description":"Assine nossa newsletter e receba mais insights como este diretamente no seu e-mail.","button":"Falar com especialistas"},"relatedPosts":{"title":"Posts Relacionados"}},"readingTime":5,"formattedDate":"5 de novembro de 2021"}]
+a:{"metadata":[["$","title","0",{"children":"Reconhecimento Óptico de Caracteres em Contratos | Mupi Systems Blog"}],["$","meta","1",{"name":"description","content":"OCR – Reconhecimento Óptico de Caracteres O OCR – Reconhecimento Óptico de Caracteres (Optical Character Recognition do Inglês) é um ..."}],["$","meta","2",{"name":"author","content":"MUPI Systems"}],["$","meta","3",{"name":"keywords","content":"SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems"}],["$","meta","4",{"property":"og:title","content":"Reconhecimento Óptico de Caracteres em Contratos"}],["$","meta","5",{"property":"og:description","content":"OCR – Reconhecimento Óptico de Caracteres O OCR – Reconhecimento Óptico de Caracteres (Optical Character Recognition do Inglês) é um ..."}],["$","meta","6",{"property":"og:type","content":"article"}],["$","meta","7",{"property":"article:published_time","content":"2021-11-05T10:35:31"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Reconhecimento Óptico de Caracteres em Contratos"}],["$","meta","10",{"name":"twitter:description","content":"OCR – Reconhecimento Óptico de Caracteres O OCR – Reconhecimento Óptico de Caracteres (Optical Character Recognition do Inglês) é um ..."}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

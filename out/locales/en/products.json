@@ -3,7 +3,19 @@
     "badge": "OUR PLATFORMS",
     "title": "Catalog of",
     "titleHighlight": "Solutions",
-    "description": "Click on a platform to learn about its features and functionalities",
+    "description": "Explore our innovative technology platforms",
+    "leftSection": {
+      "title": "Innovation and Technology",
+      "titleHighlight": "for the Future",
+      "paragraph1": "MUPI SYSTEMS was born to revolutionize the market through scalable and innovative technology platforms. We develop solutions that not only solve real problems, but transform the way companies operate and grow in the digital environment.",
+      "paragraph2": "Our focus is on developing solutions that drive digital transformation: intelligent customer service systems, human resources management platforms (recruitment, development and training), advanced technologies for text analysis (contracts, documents, news), smart contracts and autonomous AI agents that are revolutionizing business processes.",
+      "tags": {
+        "customerService": "Customer Service",
+        "hrManagement": "HR Management",
+        "textAnalysis": "Text Analysis",
+        "smartContracts": "Smart Contracts"
+      }
+    },
     "featuresTitle": "Key features",
     "ctaLearnMore": "Learn more",
     "ctaDemo": "Demo",

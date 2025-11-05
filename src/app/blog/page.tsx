@@ -2,7 +2,6 @@ import { fetchAllPostsForListing, fetchFeaturedPosts, fetchCategories } from '@/
 import BlogHeroSlider from '@/components/blog/BlogHeroSlider';
 import BlogPostsList from '@/components/blog/BlogPostsList';
 import BlogCTASection from '@/components/blog/BlogCTASection';
-import type { BlogPost, WordPressCategory } from '@/types/wordpress';
 
 // Traduções padrão (podemos pegar do contexto depois)
 const translations = {

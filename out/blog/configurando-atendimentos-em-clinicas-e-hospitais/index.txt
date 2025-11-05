@@ -1,0 +1,207 @@
+1:"$Sreact.fragment"
+2:I[8151,["780","static/chunks/780-8127cd74db873ebc.js","274","static/chunks/274-afea160d27953768.js","875","static/chunks/875-a70386571ee0f3c9.js","90","static/chunks/90-6793a29fa24f2604.js","151","static/chunks/151-9868a070ae162856.js","974","static/chunks/app/page-6fea276a593ecd4c.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[6771,["560","static/chunks/app/blog/%5Bslug%5D/not-found-f93126fc6a95c086.js"],"default"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/d6a84b0fccc9e19c.css","style"]
+:HL["/_next/static/css/cb74a29fa9526037.css","style"]
+0:{"P":null,"b":"T8iPiE2JIDA2j8V9M5u2b","p":"","c":["","blog","configurando-atendimentos-em-clinicas-e-hospitais",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","configurando-atendimentos-em-clinicas-e-hospitais","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d6a84b0fccc9e19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/cb74a29fa9526037.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"className":"__variable_f367f3 antialiased font-inter","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","configurando-atendimentos-em-clinicas-e-hospitais","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+11:I[6605,["780","static/chunks/780-8127cd74db873ebc.js","13","static/chunks/13-f058e38bbc28f504.js","953","static/chunks/app/blog/%5Bslug%5D/page-937346dc7afd1875.js"],"default"]
+12:T3dcb,
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img fetchpriority="high" decoding="async" src="https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2-1024x682.jpg" alt="" class="wp-image-2498" width="618" height="411" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2-1024x682.jpg 1024w, https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2-300x200.jpg 300w, https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2-768x512.jpg 768w, https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2-1536x1024.jpg 1536w, https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2-930x620.jpg 930w, https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2-272x182.jpg 272w, https://mupisystems.com.br/wp-content/uploads/2022/03/pexels-cedric-fauntleroy-4269203-2.jpg 2000w" sizes="(max-width: 618px) 100vw, 618px" /><figcaption>Foto de <strong><a href="https://www.pexels.com/pt-br/@cedric-fauntleroy?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" target="_blank" rel="noopener">Cedric Fauntleroy</a></strong> no <strong><a href="https://www.pexels.com/pt-br/foto/adulto-banheiro-crianca-filho-4269203/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" target="_blank" rel="noopener">Pexels</a></strong></figcaption></figure></div>
+
+
+
+<p>Olá, em primeiro lugar, este post vai mostrar a você, que vai estar configurando atendimentos em clínicas e hospitais, como isso é simples com a nossa plataforma. Organizar e gerenciar filas são tarefas importantes que podem ser feitas de forma simples com o <a href="https://meuatendimentovirtual.com.br/" target="_blank" rel="noopener">Meu Atendimento Virtual</a> da <a href="https://mupisystems.com.br/">MUPI Systems</a>. Com ela você pode inserir no sistema todos os seus pontos de atendimento e serviços. Além disso, você pode inserir as pessoas que ficarão responsáveis por cada etapa de contato com seus clientes.</p>
+
+
+
+<p>Primeiro, clique em &#8220;Configurações&#8221; na sua tela inicial.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img decoding="async" width="468" height="255" src="https://mupisystems.com.br/wp-content/uploads/2022/03/1.png" alt="" class="wp-image-2499" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/1.png 468w, https://mupisystems.com.br/wp-content/uploads/2022/03/1-300x163.png 300w" sizes="(max-width: 468px) 100vw, 468px" /></figure></div>
+
+
+
+<p>Em seguida, clique na aba de configurações no menu esquerdo. As opções que vamos modificar neste post são as três marcadas em vermelho na imagem abaixo. Clique em &#8220;Serviços&#8221; para iniciar.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img decoding="async" width="392" height="356" src="https://mupisystems.com.br/wp-content/uploads/2022/03/2_M.png" alt="" class="wp-image-2500" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/2_M.png 392w, https://mupisystems.com.br/wp-content/uploads/2022/03/2_M-300x272.png 300w" sizes="(max-width: 392px) 100vw, 392px" /></figure></div>
+
+
+
+<h2 class="has-medium-font-size wp-block-heading">Configurando Serviços</h2>
+
+
+
+<p>Logo após clicar em &#8220;Serviços&#8221;, clique agora em &#8220;Novo Serviço&#8221; na tela que abrir e preencha os dados abaixo. Vamos supor que na sua clínica ou hospital você queira uma fila para as etapas de recepção, consulta e exame. É preciso inserir essas três etapas como serviços. </p>
+
+
+
+<p>Primeiro, digite a ordem que este serviço aparecerá na tela, vamos inserir &#8220;1&#8221;, pois esse é o primeiro serviço.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="584" height="118" src="https://mupisystems.com.br/wp-content/uploads/2022/03/serv1_M-1.png" alt="" class="wp-image-2506" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/serv1_M-1.png 584w, https://mupisystems.com.br/wp-content/uploads/2022/03/serv1_M-1-300x61.png 300w" sizes="(max-width: 584px) 100vw, 584px" /></figure></div>
+
+
+
+<p>Em seguida, digite o nome do serviço e seu código (com até três letras).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="575" height="218" src="https://mupisystems.com.br/wp-content/uploads/2022/03/serv2_M.png" alt="" class="wp-image-2503" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/serv2_M.png 575w, https://mupisystems.com.br/wp-content/uploads/2022/03/serv2_M-300x114.png 300w" sizes="(max-width: 575px) 100vw, 575px" /></figure></div>
+
+
+
+<p>Agora, indique qual a etapa. Como trata-se da recepção esta é a primeira etapa. Quando você for adicionar o próximo serviço da fila, como a consulta, a etapa deverá ser 2.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="588" height="103" src="https://mupisystems.com.br/wp-content/uploads/2022/03/serv3_M.png" alt="" class="wp-image-2508" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/serv3_M.png 588w, https://mupisystems.com.br/wp-content/uploads/2022/03/serv3_M-300x53.png 300w" sizes="(max-width: 588px) 100vw, 588px" /></figure></div>
+
+
+
+<p>O próximo passo é então definir as metas de tempos de espera e atendimento para este serviço.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="591" height="181" src="https://mupisystems.com.br/wp-content/uploads/2022/03/serv4_M.png" alt="" class="wp-image-2509" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/serv4_M.png 591w, https://mupisystems.com.br/wp-content/uploads/2022/03/serv4_M-300x92.png 300w" sizes="(max-width: 591px) 100vw, 591px" /></figure></div>
+
+
+
+<p>Agora, marque a opção de fila preferencial caso queira habilitar essa opção. Se sim, informe no campo &#8220;Razão&#8221; quantos atendimentos comuns ocorrerão para cada preferencial.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="586" height="177" src="https://mupisystems.com.br/wp-content/uploads/2022/03/serv5_M.png" alt="" class="wp-image-2511" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/serv5_M.png 586w, https://mupisystems.com.br/wp-content/uploads/2022/03/serv5_M-300x91.png 300w" sizes="(max-width: 586px) 100vw, 586px" /></figure></div>
+
+
+
+<p>Em seguida, defina como será a condição de chegada dos seus clientes:</p>
+
+
+
+<ul class="wp-block-list"><li><strong>Serviço Agendado</strong>: quer dizer que este serviço só atende clientes que fizerem agendamentos nas suas agendas pela <a href="https://minhaagendavirtual.com.br/" target="_blank" rel="noopener">Minha Agenda Virtual</a>. Se você marcar essa opção, não marque “Cadastrar Cliente” e vice-versa;</li><li><strong>Cadastrar Cliente</strong>: significa que o cliente que chegar no local de atendimento deverá ser cadastrado por quem for atender no ato do atendimento;</li><li><strong>Chamada rápida</strong>: você fará a chamada do cliente apenas com um sinal sonoro, caso o contrário, o cliente será chamado pelo nome. Para que essa opção funcione você precisa de um painel com áudio disponível. Entre em contato com nosso suporte para mais informações.</li></ul>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="663" height="179" src="https://mupisystems.com.br/wp-content/uploads/2022/03/serv6.png" alt="" class="wp-image-2513" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/serv6.png 663w, https://mupisystems.com.br/wp-content/uploads/2022/03/serv6-300x81.png 300w" sizes="(max-width: 663px) 100vw, 663px" /></figure></div>
+
+
+
+<p>Posteriormente, selecione quais usuários poderão atender para o serviço que está sendo cadastrado. Caso você ainda não tenha cadastrado o funcionário, deixe em branco no momento. Em seguida, clique em &#8220;Salvar&#8221; no final da página.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="582" height="175" src="https://mupisystems.com.br/wp-content/uploads/2022/03/serv7_M.png" alt="" class="wp-image-2515" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/serv7_M.png 582w, https://mupisystems.com.br/wp-content/uploads/2022/03/serv7_M-300x90.png 300w" sizes="(max-width: 582px) 100vw, 582px" /></figure></div>
+
+
+
+<h2 class="has-medium-font-size wp-block-heading">Configurando Pontos de Atendimento</h2>
+
+
+
+<p>De volta do menu lateral, clique agora em Pontos de Atendimento. Na tela que vai abrir, vamos inserir um atendente para a recepção. Você deverá inserir um ponto para cada serviço, ou seja:</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="344" height="121" src="https://mupisystems.com.br/wp-content/uploads/2022/03/pontos.png" alt="" class="wp-image-2517" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/pontos.png 344w, https://mupisystems.com.br/wp-content/uploads/2022/03/pontos-300x106.png 300w" sizes="(max-width: 344px) 100vw, 344px" /></figure></div>
+
+
+
+<p>Para inserir um ponto, clique em &#8220;Novo Local&#8221;. Na tela que vai abrir, primeiro escolha qual o tipo de local. Para a nossa recepção vamos inserir um atendente.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="570" height="268" src="https://mupisystems.com.br/wp-content/uploads/2022/03/PA1_M.png" alt="" class="wp-image-2518" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/PA1_M.png 570w, https://mupisystems.com.br/wp-content/uploads/2022/03/PA1_M-300x141.png 300w" sizes="(max-width: 570px) 100vw, 570px" /></figure></div>
+
+
+
+<p>Em seguida, indique o número deste ponto, por exemplo, se essa for o segundo atendente, digite 2, como no nosso caso é o primeiro, digite 1.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="567" height="90" src="https://mupisystems.com.br/wp-content/uploads/2022/03/PA2_M.png" alt="" class="wp-image-2519" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/PA2_M.png 567w, https://mupisystems.com.br/wp-content/uploads/2022/03/PA2_M-300x48.png 300w" sizes="(max-width: 567px) 100vw, 567px" /></figure></div>
+
+
+
+<p>Em seguida, selecione os serviços que ficarão disponíveis para esse ponto , no caso vamos selecionar apenas a recepção.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="576" height="164" src="https://mupisystems.com.br/wp-content/uploads/2022/03/PA3_M.png" alt="" class="wp-image-2520" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/PA3_M.png 576w, https://mupisystems.com.br/wp-content/uploads/2022/03/PA3_M-300x85.png 300w" sizes="(max-width: 576px) 100vw, 576px" /></figure></div>
+
+
+
+<p>Finalmente, selecione qual usuário ficará destacado para este ponto. Caso o usuário ainda não esteja cadastrado, deixe esse campo em branco no momento. Em seguida, clique em &#8220;Salvar&#8221;.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="579" height="106" src="https://mupisystems.com.br/wp-content/uploads/2022/03/PA4_M.png" alt="" class="wp-image-2521" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/PA4_M.png 579w, https://mupisystems.com.br/wp-content/uploads/2022/03/PA4_M-300x55.png 300w" sizes="(max-width: 579px) 100vw, 579px" /></figure></div>
+
+
+
+<h2 class="has-medium-font-size wp-block-heading">Inserindo Usuários</h2>
+
+
+
+<p>Agora você pode inserir usuários no sistema. Esses usuários ficarão alocados nos serviços e pontos de atendimento que você criou, como na Tabela abaixo. *Na Tabela abaixo &#8220;atual&#8221; seria o usuário que está configurando a conta neste momento. No seu caso seria o seu usuário.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="493" height="111" src="https://mupisystems.com.br/wp-content/uploads/2022/03/US_0.png" alt="" class="wp-image-2522" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/US_0.png 493w, https://mupisystems.com.br/wp-content/uploads/2022/03/US_0-300x68.png 300w" sizes="(max-width: 493px) 100vw, 493px" /></figure></div>
+
+
+
+<p>No seu menu lateral, clique em &#8220;Usuários do Sistema&#8221; e em seguida em &#8220;Novo Usuário&#8221;. Na tela que vai abrir, vamos adicionar o Dr. Carlos Alberto, que no nosso exemplo é o médico que vai realizar as consultas. Primeiro, insira o nome.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="566" height="85" src="https://mupisystems.com.br/wp-content/uploads/2022/03/US1_M.png" alt="" class="wp-image-2525" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/US1_M.png 566w, https://mupisystems.com.br/wp-content/uploads/2022/03/US1_M-300x45.png 300w" sizes="(max-width: 566px) 100vw, 566px" /></figure></div>
+
+
+
+<p>Em seguida, insira o e-mail do usuário.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="572" height="87" src="https://mupisystems.com.br/wp-content/uploads/2022/03/US2_M-1.png" alt="" class="wp-image-2530" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/US2_M-1.png 572w, https://mupisystems.com.br/wp-content/uploads/2022/03/US2_M-1-300x46.png 300w" sizes="(max-width: 572px) 100vw, 572px" /></figure></div>
+
+
+
+<p>Logo depois, indique se esse usuário será um administrador, ou seja, se ele poderá criar serviços, adicionar usuários ou mesmo pontos de atendimento. Também, selecione os serviços os quais este usuário atenderá.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="238" height="157" src="https://mupisystems.com.br/wp-content/uploads/2022/03/US_3.png" alt="" class="wp-image-2528" /></figure></div>
+
+
+
+<p>Por último, selecione o ponto de atendimento e clique em &#8220;Salvar&#8221;.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="580" height="154" src="https://mupisystems.com.br/wp-content/uploads/2022/03/US5_M.png" alt="" class="wp-image-2529" srcset="https://mupisystems.com.br/wp-content/uploads/2022/03/US5_M.png 580w, https://mupisystems.com.br/wp-content/uploads/2022/03/US5_M-300x80.png 300w" sizes="(max-width: 580px) 100vw, 580px" /></figure></div>
+
+
+
+<h2 class="has-medium-font-size wp-block-heading">Considerações Finais</h2>
+
+
+
+<p>Chegamos ao fim de mais um post. Dessa forma, esperamos que as informações aqui apresentadas tenham sido de utilidade para você. Em caso de dúvidas, pode sempre acionar nosso <a href="https://api.whatsapp.com/send/?phone=5511942529100&amp;text&amp;app_absent=0" target="_blank" rel="noopener">suporte técnico</a>. Você também pode deixar um comentário ou dúvida logo abaixo, que responderemos prontamente. Ainda, você pode acompanhar nosso <a href="https://mupisystems.com.br/blog/">blog</a>, que sempre terá novos posts sobre sua plataforma de atendimento e nosso <a href="https://youtu.be/_74NXQkrj5A" target="_blank" rel="noopener">canal do YouTube</a> com vídeos explicativos.  Até o próximo post.</p>
+6:["$","$L11",null,{"post":{"id":2446,"slug":"configurando-atendimentos-em-clinicas-e-hospitais","title":"Configurando atendimentos em clínicas e hospitais","excerpt":"Olá, em primeiro lugar, este post vai mostrar a você, que vai estar configurando atendimentos em clínicas e hospitais, como ...","content":"$12","date":"2022-03-11T09:27:37","author":{"name":"admin","avatar":"https://secure.gravatar.com/avatar/6e350bf67563ab93cce5dd0ffd74c9aeb0f0a085e6713af67dd563a082714099?s=96&d=mm&r=g"},"categories":[{"id":10,"name":"Meu Atendimento","slug":"atendimento"}],"tags":[{"id":106,"name":"clínicas","slug":"clinicas"},{"id":110,"name":"consultórios","slug":"consultorios"},{"id":113,"name":"gerenciamento de filas","slug":"gerenciamento-de-filas"},{"id":112,"name":"gerenciar fila","slug":"gerenciar-fila"},{"id":107,"name":"hospitais","slug":"hospitais"},{"id":109,"name":"organizar atendimento","slug":"organizar-atendimento"},{"id":111,"name":"organizar fila","slug":"organizar-fila"}],"isFeatured":false},"translations":{"meta":{"backButton":"Voltar para o blog","readingTime":"min de leitura","by":"Por","publishedOn":"Publicado em"},"sidebar":{"categories":"Categorias","tags":"Tags","author":"Sobre o Autor"},"cta":{"title":"Gostou deste conteúdo?","description":"Assine nossa newsletter e receba mais insights como este diretamente no seu e-mail.","button":"Falar com especialistas"},"relatedPosts":{"title":"Posts Relacionados"}},"readingTime":4,"formattedDate":"11 de março de 2022"}]
+a:{"metadata":[["$","title","0",{"children":"Configurando atendimentos em clínicas e hospitais | Mupi Systems Blog"}],["$","meta","1",{"name":"description","content":"Olá, em primeiro lugar, este post vai mostrar a você, que vai estar configurando atendimentos em clínicas e hospitais, como ..."}],["$","meta","2",{"name":"author","content":"MUPI Systems"}],["$","meta","3",{"name":"keywords","content":"SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems"}],["$","meta","4",{"property":"og:title","content":"Configurando atendimentos em clínicas e hospitais"}],["$","meta","5",{"property":"og:description","content":"Olá, em primeiro lugar, este post vai mostrar a você, que vai estar configurando atendimentos em clínicas e hospitais, como ..."}],["$","meta","6",{"property":"og:type","content":"article"}],["$","meta","7",{"property":"article:published_time","content":"2022-03-11T09:27:37"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"Configurando atendimentos em clínicas e hospitais"}],["$","meta","10",{"name":"twitter:description","content":"Olá, em primeiro lugar, este post vai mostrar a você, que vai estar configurando atendimentos em clínicas e hospitais, como ..."}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

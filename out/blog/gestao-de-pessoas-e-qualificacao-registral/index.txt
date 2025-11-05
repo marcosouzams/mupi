@@ -1,0 +1,91 @@
+1:"$Sreact.fragment"
+2:I[8151,["780","static/chunks/780-8127cd74db873ebc.js","274","static/chunks/274-afea160d27953768.js","875","static/chunks/875-a70386571ee0f3c9.js","90","static/chunks/90-6793a29fa24f2604.js","151","static/chunks/151-9868a070ae162856.js","974","static/chunks/app/page-6fea276a593ecd4c.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[6771,["560","static/chunks/app/blog/%5Bslug%5D/not-found-f93126fc6a95c086.js"],"default"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/d6a84b0fccc9e19c.css","style"]
+:HL["/_next/static/css/cb74a29fa9526037.css","style"]
+0:{"P":null,"b":"T8iPiE2JIDA2j8V9M5u2b","p":"","c":["","blog","gestao-de-pessoas-e-qualificacao-registral",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","gestao-de-pessoas-e-qualificacao-registral","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d6a84b0fccc9e19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/cb74a29fa9526037.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"className":"__variable_f367f3 antialiased font-inter","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","gestao-de-pessoas-e-qualificacao-registral","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+11:I[6605,["780","static/chunks/780-8127cd74db873ebc.js","13","static/chunks/13-f058e38bbc28f504.js","953","static/chunks/app/blog/%5Bslug%5D/page-937346dc7afd1875.js"],"default"]
+12:T1404,
+<p>Nesse primeiro mês de janeiro, gostaríamos de destacar que colocamos no ar a plataforma de qualificação registral <a href="https://equalifica.com.br" target="_blank" rel="noopener">eQualifica</a> e fizemos avanços importantes na plataforma <a href="https://sigvirtual.com.br" target="_blank" rel="noopener">SIGVirtual</a>, especificamente no módulo de gestão de pessoas. Falaremos em detalhes sobre essas plataformas em seguida. </p>
+
+
+
+<p>Para começar, na <a href="https://minhaagendavirtual.com.br" target="_blank" rel="noopener">Minha Agenda Virtual</a> e na <a href="https://eagenda.com.br" target="_blank" rel="noopener">eAgenda</a> ampliamos a funcionalidade de upload de arquivos no formulários de agendamento. A ideia é que esses arquivos sejam armazenados por até 30 dias após a data do agendamento, pois a finalidade do envio de arquivo é somente possibilitar o atendimento agendado e não faz sentido armazenar esses dados por um prazo além do necessário para a finalidade de coleta.</p>
+
+
+
+<p>Sobre a plataforma <a href="https://etalentos.com.br" target="_blank" rel="noopener">e-Talentos</a>, iniciamos a campanha #juntospeloemprego, onde oferecendo créditos de R$400 para uso em organização de processos seletivos pela plataforma. É a forma que podemos colaborar e incentivar nossos clientes a fazerem mais contratações nesse início de ano.</p>
+
+
+
+<h2 class="wp-block-heading" id="sig-virtual"> SIG-Virtual</h2>
+
+
+
+<p>Sobre o SIGVirtual, entregamos uma série de melhorias no módulo de Gestão de Pessoas, incluindo as seguintes funcionalidades:</p>
+
+
+
+<ul class="wp-block-list"><li>Cadastro de plano de cargos e salários;</li><li>Fluxo de processo de promoção/progressão de colaboradores;</li><li>Indicadores de tempo médio de trabalho na organização por setor, com o objetivo de detectar setores que estão com equipes mais inexperientes;</li><li>Plano de Desenvolvimento Individual;</li><li>Controle de Férias e Ausências de Colaboradores;</li></ul>
+
+
+
+<p>Também gostaríamos de destacar que, por tratar de dados pessoais mais sensíveis sobre colaboradores das organizações que utilizam a plataforma, fizemos um esforço adicional para obter um alto rating de segurança por avaliadores externos. De acordo com o <a href="https://observatory.mozilla.org/analyze/sigvirtual.com.br" target="_blank" rel="noopener">Mozilla Observatory</a>, estamos com rating A+, conforme demonstrado na imagem abaixo. </p>
+
+
+
+<p class="has-text-align-center"><img fetchpriority="high" decoding="async" width="300" height="191" class="wp-image-2332" style="width: 300px;" src="https://mupisystems.com.br/wp-content/uploads/2022/02/scan_summary.png" alt="rating sigvirtual" srcset="https://mupisystems.com.br/wp-content/uploads/2022/02/scan_summary.png 690w, https://mupisystems.com.br/wp-content/uploads/2022/02/scan_summary-300x191.png 300w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+
+
+
+<h2 class="wp-block-heading" id="equalifica">eQualifica</h2>
+
+
+
+<p>Já sobre a plataforma <a href="https://equalifica.com.br" target="_blank" rel="noopener">eQualifica</a>, a ideia é oferecer uma série de ferramentas que facilitem e tornem mais ágil o processo de elaboração de contratos e registro de operações imobiliárias. Conforme foi mencionado acima, essa plataforma foi lançada neste mês de janeiro e estamos trabalhando intensamente em pontos de melhorias. Nessa fase inicial já temos em funcionamento as seguintes funcionalidades:</p>
+
+
+
+<ul class="wp-block-list"><li>Construção de checklists para análise de documentos e qualificação registral;</li><li>Leitura OCR de imagens para extrair o texto;</li><li>Estruturação do texto de escrituras públicas, para identificar as partes, imóveis e principais cláusulas;</li></ul>
+
+
+
+<p>No momento estamos trabalhando em outras funcionalidades, como por exemplo a estruturação do texto de matrículas de imóveis com o objetivo de encontrar automaticamente registros de atos que podem impedir a venda do bem.</p>
+
+
+
+<h2 class="wp-block-heading" id="meu-atendimento-virtual">Meu Atendimento Virtual</h2>
+
+
+
+<p>Na plataforma&nbsp;<a href="https://meuatendimentovirtual.com.br/" target="_blank" rel="noopener">Meu Atendimento Virtual</a> fizemos algumas melhorias gerais de usabilidade além de uma melhoria no controle de metas de tempo de espera. Agora é possível criar uma meta de tempo de espera e o sistema passa a controlar dia  a dia o percentual de atendimentos que são realizados com o tempo de espera dentro da meta.</p>
+
+
+
+<h2 class="wp-block-heading" id="finalizando">Finalizando</h2>
+
+
+
+<p>Recomendamos que você veja nossas publicações mais recentes:</p>
+
+
+
+<ul class="wp-block-list"><li>Minha Agenda Virtual: <a href="https://mupisystems.com.br/2022/02/03/editar-feriados/">atenção para o feriado de carnaval;</a></li><li>E-Talentos: <a href="https://mupisystems.com.br/2022/02/12/divulgar-seu-processo-seletivo/">como divulgar seu processo seletivo;</a></li></ul>
+
+
+
+<p>Por hoje é isso! Desejamos um excelente mês a todos e estamos à disposição pelos nossos canais de atendimento e suporte.</p>
+6:["$","$L11",null,{"post":{"id":2328,"slug":"gestao-de-pessoas-e-qualificacao-registral","title":"Atualizações do Mês de Janeiro 2022","excerpt":"Nesse primeiro mês de janeiro, gostaríamos de destacar que colocamos no ar a plataforma de qualificação registral eQualifica e fizemos ...","content":"$12","date":"2022-02-13T21:55:43","author":{"name":"admin","avatar":"https://secure.gravatar.com/avatar/6e350bf67563ab93cce5dd0ffd74c9aeb0f0a085e6713af67dd563a082714099?s=96&d=mm&r=g"},"categories":[{"id":1,"name":"Publicações Gerais","slug":"publicacoes-gerais"}],"tags":[],"isFeatured":false,"featuredImage":{"url":"https://mupisystems.com.br/wp-content/uploads/2022/02/mupi_21-04-07.217777.png","alt":"resumo do mês"}},"translations":{"meta":{"backButton":"Voltar para o blog","readingTime":"min de leitura","by":"Por","publishedOn":"Publicado em"},"sidebar":{"categories":"Categorias","tags":"Tags","author":"Sobre o Autor"},"cta":{"title":"Gostou deste conteúdo?","description":"Assine nossa newsletter e receba mais insights como este diretamente no seu e-mail.","button":"Falar com especialistas"},"relatedPosts":{"title":"Posts Relacionados"}},"readingTime":3,"formattedDate":"13 de fevereiro de 2022"}]
+a:{"metadata":[["$","title","0",{"children":"Atualizações do Mês de Janeiro 2022 | Mupi Systems Blog"}],["$","meta","1",{"name":"description","content":"Nesse primeiro mês de janeiro, gostaríamos de destacar que colocamos no ar a plataforma de qualificação registral eQualifica e fizemos ..."}],["$","meta","2",{"name":"author","content":"MUPI Systems"}],["$","meta","3",{"name":"keywords","content":"SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems"}],["$","meta","4",{"property":"og:title","content":"Atualizações do Mês de Janeiro 2022"}],["$","meta","5",{"property":"og:description","content":"Nesse primeiro mês de janeiro, gostaríamos de destacar que colocamos no ar a plataforma de qualificação registral eQualifica e fizemos ..."}],["$","meta","6",{"property":"og:image","content":"https://mupisystems.com.br/wp-content/uploads/2022/02/mupi_21-04-07.217777.png"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2022-02-13T21:55:43"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Atualizações do Mês de Janeiro 2022"}],["$","meta","11",{"name":"twitter:description","content":"Nesse primeiro mês de janeiro, gostaríamos de destacar que colocamos no ar a plataforma de qualificação registral eQualifica e fizemos ..."}],["$","meta","12",{"name":"twitter:image","content":"https://mupisystems.com.br/wp-content/uploads/2022/02/mupi_21-04-07.217777.png"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

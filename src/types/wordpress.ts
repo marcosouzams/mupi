@@ -26,7 +26,7 @@ export interface WordPressPost {
   sticky: boolean;
   template: string;
   format: string;
-  meta: any[];
+  meta: unknown[];
   categories: number[];
   tags: number[];
   _embedded?: {
@@ -64,7 +64,7 @@ export interface WordPressCategory {
   slug: string;
   taxonomy: string;
   parent: number;
-  meta: any[];
+  meta: unknown[];
 }
 
 export interface WordPressTag {
@@ -75,7 +75,7 @@ export interface WordPressTag {
   name: string;
   slug: string;
   taxonomy: string;
-  meta: any[];
+  meta: unknown[];
 }
 
 export interface WordPressAuthor {

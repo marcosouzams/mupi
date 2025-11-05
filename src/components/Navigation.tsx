@@ -113,10 +113,6 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
 
   const activePage = currentPage || getCurrentPage();
 
-  // Páginas que devem ter nav sempre sólido
-  const solidNavPages = ['cases', 'about', 'blog'];
-  const shouldHaveSolidNav = solidNavPages.includes(activePage) || scrolled;
-
   return (
     <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 bg-white shadow-md`}>
       <div className="max-w-7xl mx-auto px-4 lg:px-6">

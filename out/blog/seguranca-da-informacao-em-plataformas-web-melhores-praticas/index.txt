@@ -1,0 +1,207 @@
+1:"$Sreact.fragment"
+2:I[8151,["780","static/chunks/780-8127cd74db873ebc.js","274","static/chunks/274-afea160d27953768.js","875","static/chunks/875-a70386571ee0f3c9.js","90","static/chunks/90-6793a29fa24f2604.js","151","static/chunks/151-9868a070ae162856.js","974","static/chunks/app/page-6fea276a593ecd4c.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[6771,["560","static/chunks/app/blog/%5Bslug%5D/not-found-f93126fc6a95c086.js"],"default"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/d6a84b0fccc9e19c.css","style"]
+:HL["/_next/static/css/cb74a29fa9526037.css","style"]
+0:{"P":null,"b":"T8iPiE2JIDA2j8V9M5u2b","p":"","c":["","blog","seguranca-da-informacao-em-plataformas-web-melhores-praticas",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","seguranca-da-informacao-em-plataformas-web-melhores-praticas","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d6a84b0fccc9e19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/cb74a29fa9526037.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":["$","link",null,{"rel":"icon","type":"image/png","href":"/favicon.png"}]}],["$","body",null,{"className":"__variable_f367f3 antialiased font-inter","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","seguranca-da-informacao-em-plataformas-web-melhores-praticas","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+11:I[6605,["780","static/chunks/780-8127cd74db873ebc.js","13","static/chunks/13-f058e38bbc28f504.js","953","static/chunks/app/blog/%5Bslug%5D/page-937346dc7afd1875.js"],"default"]
+12:T36a8,
+<p>A segurança da informação é um tema de extrema importância para as empresas de tecnologia, que lidam com uma grande quantidade de dados sensíveis de seus clientes e usuários. Pois é fundamental garantir a privacidade, integridade e disponibilidade dessas informações, protegendo-as contra acesso não autorizado, roubo, danos e outros tipos de ameaças. Além disso, a segurança da informação é vital para a continuidade dos negócios e a preservação da reputação de uma organização. Assim, diante da crescente sofisticação dos ataques cibernéticos, é imprescindível adotar medidas de segurança eficazes para proteger as informações confidenciais. Neste texto, discutiremos algumas das principais medidas de segurança que adotamos para garantir a segurança dos dados e a confiança de nossos clientes.</p>
+
+
+
+<h2 class="wp-block-heading">Criptografia</h2>
+
+
+
+<p>A criptografia é uma das medidas de segurança da informação mais importantes em nossas plataformas, uma vez que ela protege as informações em trânsito entre a plataforma e o cliente e os dados que estão salvos &#8220;em repouso&#8221;. Em linhas gerais, a criptografia é o processo de codificar dados para que só possam ser lidos por alguém que tenha a chave correta para decodificá-lo.</p>
+
+
+
+<p>Existem diferentes algoritmos de criptografia, sendo um dos mais populares o SSL/TLS (Secure Socket Layer/Transport Layer Security). O SSL/TLS é uma tecnologia que faz a criptografia das informações que transitam entre a aplicação e o cliente, e garante que elas não possam ser interceptadas por terceiros.</p>
+
+
+
+<p>O SSL/TLS funciona usando certificados digitais, emitidos por uma autoridade certificadora confiável. Dessa forma, quando um usuário acessa uma plataforma web que utiliza o SSL/TLS, o servidor envia ao cliente um certificado digital contendo uma chave pública. Assim, utiliza-se essa chave para criptografar as informações enviadas pelo cliente. O cliente, por sua vez, gera uma chave de sessão para criptografar as informações antes de enviá-las para a aplicação.</p>
+
+
+
+<p>Aqui na Mupi Systems tomamos alguns cuidados especiais na configuração dos métodos de criptografia de modo a garantir a utilização dos mais rígidos padrões de segurança. Por exemplo, evitamos o uso de algoritmos de criptografia fracos e versões antigas de SSL, mantemos as versões de software atualizadas, monitoramos a conformidade com regulamentações e realizamos testes de segurança regulares. Você pode conferir o <em>rating</em> das nossas configurações de segurança acessando um site independente de validação de SSL, como o <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noreferrer noopener">SSL Labs</a> da Qualys.</p>
+
+
+
+<h2 class="wp-block-heading">Autenticação</h2>
+
+
+
+<p>A autenticação é também uma das medidas de segurança da informação mais importantes em nossas plataformas, pois ela ajuda a garantir que apenas usuários autorizados tenham acesso aos dados e recursos protegidos. A autenticação é o processo de verificar a identidade de um usuário, para garantir que ele seja quem ele diz ser.</p>
+
+
+
+<p>Existem diferentes métodos de autenticação no mercado. O mais comum em nossas plataformas é a autenticação baseada em senhas. Nesse método, o usuário informa um nome de usuário e uma senha para acessar a plataforma. A senha é verificada em um banco de dados de senhas criptografadas, e o acesso é concedido apenas se a senha estiver correta.</p>
+
+
+
+<p>No entanto, a autenticação baseada em senhas pode ser vulnerável a ataques de força bruta e outras técnicas de hacking. Isso pode ocorrer especialmente se as senhas não forem fortes o suficiente ou se forem reutilizadas em diferentes serviços. Por isso, utilizamos algumas medidas de proteção como o bloqueio do usuário após uma sequência de tentativas inválidas de login.</p>
+
+
+
+<h2 class="wp-block-heading">Gerenciamento de Senhas</h2>
+
+
+
+<p>O gerenciamento de senhas é uma parte crucial da segurança da informação, pois senhas fracas ou mal gerenciadas podem expor informações confidenciais e dados de usuários a invasores. Dessa forma, o gerenciamento de senhas envolve várias práticas e políticas para garantir o armazenamento seguro e que os usuários criem senhas fortes e exclusivas.</p>
+
+
+
+<p>Uma das principais práticas é o armazenamento seguro de senhas. Em vez de armazenar as senhas dos usuários em texto, elas são armazenadas em uma forma criptografada e usando um &#8220;salt&#8221;. A criptografia protege a senha de ser vista por pessoas não autorizadas, enquanto o &#8220;salt&#8221; adiciona uma sequência aleatória de caracteres à senha antes de ser criptografada, tornando a senha ainda mais difícil de ser descoberta.</p>
+
+
+
+<p>Além disso, as senhas devem ser fortes e exclusivas. Isso significa que as senhas devem ter pelo menos 8 caracteres, incluindo letras maiúsculas e minúsculas, números e caracteres especiais. Também é importante que os usuários não reutilizem senhas em diferentes serviços, pois isso aumenta o risco de que uma violação de segurança em um serviço possa levar à exposição de outras contas do usuário.</p>
+
+
+
+<p>Também implementamos políticas de senha que incentivem os usuários a criar senhas fortes e exclusivas. Isso pode incluir exigir senhas fortes ao criar uma conta ou alterar uma senha, bem como notificar os usuários sobre senhas fracas ou reutilizadas.</p>
+
+
+
+<p>Por fim, a educação do usuário é importante para garantir que eles entendam a importância de senhas seguras e como criar senhas fortes e exclusivas. Aqui na Mupi Systems trabalhamos para oferecer recursos educacionais aos nossos clientes, como guias de melhores práticas de senha, bem como notificações e lembretes de senha aos usuários.</p>
+
+
+
+<h2 class="wp-block-heading">Backup</h2>
+
+
+
+<p>O backup de dados é crucial para a segurança e disponibilidade de nossas plataformas. Ele garante que, em caso de falhas de hardware ou software, erros humanos ou ataques cibernéticos, os dados possam ser restaurados rapidamente e sem perda de dados.</p>
+
+
+
+<p>Existem várias práticas que adotamos e recomendamos para o backup de dados, incluindo:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Fazer backup regularmente: fazemos backups frequência regular e consistente, dependendo da quantidade de dados que está sendo gerado. Dessa forma, em nossos bancos de dados, fazemos backup incremental a cada 5min e há um backup completo realizado diariamente.</li>
+
+
+
+<li>Armazenar os backups em local seguro: armazenamos os backups em um local separado da plataforma e também fora das instalações físicas da empresa. Isso garante que, em caso de uma falha que afete os servidores ou o local de trabalho, não haja comprometimento dos backups.</li>
+
+
+
+<li>Testar os backups: testamos os backups regularmente para garantir que possamos restaurar os dados corretamente. Dessa forma, em caso de uma falha, podemos utilizar os backups para restaurar os dados de forma eficiente e sem perda de dados.</li>
+
+
+
+<li>Automatizar o processo de backup: O processo de backup é totalmente autônomo para garantir uma execução regular e consistente. Por isso, reduzimos o risco de falhas causadas por erros humanos ou esquecimento.</li>
+
+
+
+<li>Criptografar os backups: realizamos criptografia dos backups para garantir que os dados armazenados neles estejam protegidos contra acesso não autorizado.</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">Monitoramento</h2>
+
+
+
+<p>O monitoramento é uma prática essencial para garantir o desempenho, a segurança da informação e a disponibilidade de nossas plataformas. Ele permite que as equipes de Desenvolvimento, Operações e Segurança possam detectar problemas rapidamente, antes que eles afetem os usuários, e tomar medidas para corrigi-los.</p>
+
+
+
+<p>Aqui estão alguns tipos de monitoramento que realizamos em nossas plataformas:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Monitoramento de desempenho: monitoramos continuamente as plataformas para garantir que elas estejam funcionando corretamente e oferecendo uma boa experiência do usuário. O monitoramento de desempenho pode detectar problemas como lentidão, tempo de resposta alto ou erros de conexão. Isso permite que a equipe tome medidas para corrigi-los e garantir que a plataforma continue a funcionar sem interrupções.</li>
+
+
+
+<li>Monitoramento de segurança: As plataformas estão constantemente expostas a ameaças de segurança, como ataques cibernéticos, malware e phishing. O monitoramento de segurança permite que a equipe de Segurança detecte essas ameaças o mais rápido possível e tome medidas para mitigar os riscos, protegendo os dados dos usuários e a integridade da plataforma.</li>
+
+
+
+<li>Monitoramento de disponibilidade: A disponibilidade da plataforma é fundamental para garantir a satisfação do usuário. O monitoramento de disponibilidade pode detectar problemas como quedas da aplicação, falhas de rede ou erros de configuração. Isso permite que a equipe de TI tome medidas para garantir que a plataforma esteja sempre disponível para os usuários. Você pode acessar nos página pública de monitoramento de disponibilidade de nossas plataformas pela página <a href="https://status.mupisystems.com.br" target="_blank" rel="noreferrer noopener">https://status.mupisystems.com.br</a>;</li>
+
+
+
+<li>Monitoramento de logs: Os logs são registros que rastreiam as atividades da plataforma web, incluindo erros, eventos de segurança e ações dos usuários. O monitoramento de logs ajuda a equipe de Desenvolvimento a identificar problemas de segurança, depurar problemas de desempenho e fornecer informações valiosas para o planejamento futuro da plataforma.</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">Testes de Segurança da Informação</h2>
+
+
+
+<p>Os testes de segurança são uma parte crítica do ciclo de vida de desenvolvimento de plataformas e são essenciais para identificar e corrigir vulnerabilidades antes que indivíduos mal-intencionados possam explorá-las. Esses testes incluem a identificação e correção de vulnerabilidades como SQL Injection, Cross-Site Scripting (XSS), Injeção de Comando, entre outras ameaças.</p>
+
+
+
+<p>Existem diversos tipos de testes de segurança que realizamos internamente. Esses testes visam identificar vulnerabilidades e ameaças de segurança que possam existir na plataforma e avaliar a eficácia das medidas de segurança adotadas. A seguir, listamos alguns tipos de testes de segurança que realizamos aqui na Mupi Systems:</p>
+
+
+
+<h3 class="wp-block-heading">Teste de penetração (<em>Penetration testing</em>)</h3>
+
+
+
+<p>É um teste de segurança da informação que simula um ataque real à plataforma, a fim de identificar vulnerabilidades e pontos fracos. Esse tipo de teste incluir testes de invasão de rede, testes de intrusão em aplicativos, testes de phishing e outros.</p>
+
+
+
+<h3 class="wp-block-heading">Teste de vulnerabilidade (<em>Vulnerability testing</em>)</h3>
+
+
+
+<p>É um teste que visa identificar vulnerabilidades conhecidas na plataforma. Exemlos de vulnerabilidades são falhas em softwares, configurações inadequadas e outros problemas que possam deixar a plataforma vulnerável a ataques. Adotamos dois tipos de testes: DAST (<em>Dynamic Application Security Testing</em>) e SAST (<em>Static Application Security Testing</em>). A DAST é uma abordagem de teste onde simulamos ataques externos em uma plataforma, identificando vulnerabilidades e pontos fracos. Por outro lado, SAST é uma abordagem de teste que avalia o código-fonte de um aplicativo para identificar possíveis vulnerabilidades.</p>
+
+
+
+<h3 class="wp-block-heading">Teste de conformidade (<em>Compliance testing</em>)</h3>
+
+
+
+<p>É um teste que avalia se a plataforma está em conformidade com as regulamentações de segurança e privacidade, como a LGPD (Lei Geral de Proteção de Dados) no Brasil e o GDPR (Regulamento Geral de Proteção de Dados) na União Europeia.</p>
+
+
+
+<h3 class="wp-block-heading">Teste de estresse (<em>Stress testing</em>)</h3>
+
+
+
+<p>É um teste que avalia a capacidade da plataforma em suportar um grande volume de tráfego, usuários e outras solicitações simultâneas. Esse tipo de teste pode ajudar a identificar possíveis gargalos na plataforma e determinar se ela pode suportar uma carga elevada.</p>
+
+
+
+<h2 class="wp-block-heading">Conclusão</h2>
+
+
+
+<p>A segurança da informação é um tema crucial para as empresas de tecnologia. Ao lidar com uma grande quantidade de dados sensíveis de seus clientes e usuários, a proteção da privacidade, integridade e disponibilidade dessas informações é fundamental. Além disso, a segurança da informação é vital para a continuidade dos negócios e a preservação da reputação de uma organização. </p>
+
+
+
+<p>A implementação de medidas de segurança adequadas é uma das principais formas de garantir a segurança da informação. Por exemplo, uma abordagem eficaz inclui a adoção de práticas de criptografia robustas, o gerenciamento adequado de senhas, a realização de backups regularmente e a realização de testes de segurança. </p>
+
+
+
+<p>Como uma empresa comprometida com a segurança da informação, é essencial que investimos em tecnologias avançadas e em uma equipe altamente qualificada para proteger os dados de nossos clientes e manter sua confiança em nossos serviços. Dessa forma, continuaremos aprimorando nossas medidas de segurança para garantir que nossos clientes possam utilizar nossos serviços com tranquilidade e confiança. Agradecemos pela confiança depositada em nossa empresa e reiteramos nosso compromisso com a segurança da informação. Novas publicações sobre o assunto estarão disponíveis em nosso blog neste <a href="https://mupisystems.com.br/assuntos/seguranca-da-informacao/" target="_blank" rel="noreferrer noopener">link</a>.</p>
+6:["$","$L11",null,{"post":{"id":2688,"slug":"seguranca-da-informacao-em-plataformas-web-melhores-praticas","title":"Segurança da Informação em Plataformas Web – Melhores Práticas","excerpt":"A segurança da informação é um tema de extrema importância para as empresas de tecnologia, que lidam com uma grande ...","content":"$12","date":"2023-04-29T15:16:12","author":{"name":"admin","avatar":"https://secure.gravatar.com/avatar/6e350bf67563ab93cce5dd0ffd74c9aeb0f0a085e6713af67dd563a082714099?s=96&d=mm&r=g"},"categories":[{"id":129,"name":"Segurança da Informação","slug":"seguranca-da-informacao"}],"tags":[{"id":130,"name":"segurança da informação","slug":"seguranca-da-informacao"}],"isFeatured":false,"featuredImage":{"url":"https://mupisystems.com.br/wp-content/uploads/2023/04/fly-d-mT7lXZPjk7U-unsplash.jpg","alt":"segurança da informação"}},"translations":{"meta":{"backButton":"Voltar para o blog","readingTime":"min de leitura","by":"Por","publishedOn":"Publicado em"},"sidebar":{"categories":"Categorias","tags":"Tags","author":"Sobre o Autor"},"cta":{"title":"Gostou deste conteúdo?","description":"Assine nossa newsletter e receba mais insights como este diretamente no seu e-mail.","button":"Falar com especialistas"},"relatedPosts":{"title":"Posts Relacionados"}},"readingTime":10,"formattedDate":"29 de abril de 2023"}]
+a:{"metadata":[["$","title","0",{"children":"Segurança da Informação em Plataformas Web – Melhores Práticas | Mupi Systems Blog"}],["$","meta","1",{"name":"description","content":"A segurança da informação é um tema de extrema importância para as empresas de tecnologia, que lidam com uma grande ..."}],["$","meta","2",{"name":"author","content":"MUPI Systems"}],["$","meta","3",{"name":"keywords","content":"SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems"}],["$","meta","4",{"property":"og:title","content":"Segurança da Informação em Plataformas Web – Melhores Práticas"}],["$","meta","5",{"property":"og:description","content":"A segurança da informação é um tema de extrema importância para as empresas de tecnologia, que lidam com uma grande ..."}],["$","meta","6",{"property":"og:image","content":"https://mupisystems.com.br/wp-content/uploads/2023/04/fly-d-mT7lXZPjk7U-unsplash.jpg"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2023-04-29T15:16:12"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Segurança da Informação em Plataformas Web – Melhores Práticas"}],["$","meta","11",{"name":"twitter:description","content":"A segurança da informação é um tema de extrema importância para as empresas de tecnologia, que lidam com uma grande ..."}],["$","meta","12",{"name":"twitter:image","content":"https://mupisystems.com.br/wp-content/uploads/2023/04/fly-d-mT7lXZPjk7U-unsplash.jpg"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

@@ -1,4 +1,4 @@
-import { fetchPostBySlug, fetchPosts } from '@/services/wordpress';
+import { fetchPostBySlug } from '@/services/wordpress';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import BlogPostClient from '@/components/blog/BlogPostClient';
