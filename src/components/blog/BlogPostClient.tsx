@@ -63,7 +63,7 @@ const BlogPostClient = ({ post, translations, readingTime, formattedDate }: Blog
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-[#191927] pt-20 sm:pt-24 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#191927] pt-32 sm:pt-36 lg:pt-40 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Back Button */}
           <button
@@ -275,3 +275,4 @@ const BlogPostClient = ({ post, translations, readingTime, formattedDate }: Blog
 };
 
 export default BlogPostClient;
+
