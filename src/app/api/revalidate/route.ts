@@ -4,30 +4,29 @@ import { NextRequest, NextResponse } from 'next/server';
 /**
  * On-Demand Revalidation API Route
  * 
- * This endpoint allows WordPress to trigger revalidation of blog posts
- * immediately when they are published or updated.
+ * This endpoint accepts webhooks from WP Webhooks plugin to trigger
+ * revalidation of blog posts immediately when published or updated.
  * 
  * Setup:
- * 1. Set REVALIDATE_SECRET in your environment variables (Netlify)
- * 2. Configure WordPress webhook to call this endpoint on post publish/update
+ * 1. Set REVALIDATE_SECRET in Netlify environment variables
+ * 2. In WordPress WP Webhooks plugin:
+ *    - Add webhook URL: https://yoursite.com/api/revalidate
+ *    - Authentication: Bearer Token
+ *    - Token: [same as REVALIDATE_SECRET]
+ *    - Triggers: post_created, post_updated, post_deleted
  * 
- * WordPress Webhook Configuration:
- * URL: https://yoursite.com/api/revalidate
- * Method: POST
- * Body: { "slug": "post-slug", "secret": "your-secret-key" }
- * 
- * Usage Example:
- * curl -X POST https://yoursite.com/api/revalidate \
- *   -H "Content-Type: application/json" \
- *   -d '{"slug": "my-post", "secret": "your-secret-key"}'
+ * The plugin sends standard WordPress post data:
+ * {
+ *   "post_id": 123,
+ *   "post": { "post_name": "my-post", "post_status": "publish", ... },
+ *   "post_permalink": "https://...",
+ *   ...
+ * }
  */
 export async function POST(request: NextRequest) {
   try {
-    // Parse request body
-    const body = await request.json();
-    const { slug, secret, action = 'post' } = body;
-
-    // Validate secret key
+    // Validate Bearer Token authentication
+    const authHeader = request.headers.get('authorization');
     const expectedSecret = process.env.REVALIDATE_SECRET;
     
     if (!expectedSecret) {
@@ -41,51 +40,88 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (secret !== expectedSecret) {
-      console.warn('[Revalidate API] Invalid secret provided');
+    // Check Bearer Token
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      console.warn('[Revalidate API] Missing or invalid Authorization header');
       return NextResponse.json(
-        { error: 'Invalid secret' },
+        { error: 'Unauthorized', message: 'Bearer token required' },
         { status: 401 }
       );
     }
 
-    // Validate slug
-    if (!slug || typeof slug !== 'string') {
+    const token = authHeader.substring(7); // Remove "Bearer " prefix
+    
+    if (token !== expectedSecret) {
+      console.warn('[Revalidate API] Invalid Bearer token provided');
       return NextResponse.json(
-        { error: 'Invalid slug', message: 'Slug must be a non-empty string' },
+        { error: 'Unauthorized', message: 'Invalid Bearer token' },
+        { status: 401 }
+      );
+    }
+
+    // Parse WP Webhooks payload
+    const body = await request.json();
+    
+    // Extract data from WordPress post object
+    const post = body.post;
+    const postId = body.post_id;
+    
+    if (!post || !post.post_name) {
+      console.error('[Revalidate API] Invalid payload - missing post data');
+      return NextResponse.json(
+        { 
+          error: 'Invalid payload', 
+          message: 'WordPress post data not found in request body' 
+        },
         { status: 400 }
       );
     }
 
-    console.log(`[Revalidate API] Revalidating ${action}: ${slug}`);
+    const slug = post.post_name;
+    const postStatus = post.post_status;
+    const postType = post.post_type;
 
-    // Revalidate specific paths
+    // Only process published posts (not pages, drafts, etc.)
+    if (postType !== 'post') {
+      console.log(`[Revalidate API] Skipping non-post type: ${postType}`);
+      return NextResponse.json({
+        skipped: true,
+        reason: `Only 'post' type is processed, received: ${postType}`,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    console.log(`[Revalidate API] Processing post: ${slug} (ID: ${postId}, Status: ${postStatus})`);
+
+    // Revalidate paths
     const revalidatedPaths: string[] = [];
 
-    if (action === 'post' || action === 'update') {
-      // Revalidate the specific post page
+    if (postStatus === 'publish') {
+      // Post is published - revalidate both post page and listing
       await revalidatePath(`/blog/${slug}`);
       revalidatedPaths.push(`/blog/${slug}`);
 
-      // Also revalidate the blog listing page
       await revalidatePath('/blog');
       revalidatedPaths.push('/blog');
-    } else if (action === 'delete') {
-      // Only revalidate the blog listing
-      await revalidatePath('/blog');
-      revalidatedPaths.push('/blog');
+      
+      console.log(`[Revalidate API] ✅ Published post revalidated: ${slug}`);
     } else {
-      return NextResponse.json(
-        { error: 'Invalid action', message: 'Action must be: post, update, or delete' },
-        { status: 400 }
-      );
+      // Post is deleted, trashed, or draft - only revalidate listing
+      await revalidatePath('/blog');
+      revalidatedPaths.push('/blog');
+      
+      console.log(`[Revalidate API] ✅ Listing revalidated (post status: ${postStatus})`);
     }
 
-    console.log(`[Revalidate API] Successfully revalidated:`, revalidatedPaths);
-
     return NextResponse.json({
+      success: true,
       revalidated: true,
       paths: revalidatedPaths,
+      post: {
+        id: postId,
+        slug: slug,
+        status: postStatus,
+      },
       timestamp: new Date().toISOString(),
     });
 
@@ -107,7 +143,9 @@ export async function GET() {
   return NextResponse.json({
     status: 'active',
     message: 'On-Demand Revalidation API is active',
-    usage: 'POST with { slug, secret, action? } to revalidate',
-    documentation: '/ISR_MIGRATION.md#on-demand-revalidation',
+    authentication: 'Bearer Token required',
+    usage: 'POST with WP Webhooks standard payload + Bearer token in Authorization header',
+    documentation: '/WEBHOOK_SETUP.md',
   });
 }
+
