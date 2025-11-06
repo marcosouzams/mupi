@@ -1,10 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // Removed 'output: export' to enable ISR (Incremental Static Regeneration)
+  // This allows pages to be regenerated in the background while keeping static benefits
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    // Enable image optimization with allowed external domains
+    unoptimized: false,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'mupisystems.com.br',
+        pathname: '/wp-content/**',
+      },
+    ],
   },
   /* config options here */
 };

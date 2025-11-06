@@ -117,7 +117,7 @@ const transformPostWithoutContent = (wpPost: WordPressPost): BlogPost => {
   return post;
 };
 
-// Fetch posts for LISTING (without full content) - Optimized for SSG
+// Fetch posts for LISTING (without full content) - Optimized for ISR
 export const fetchPostsForListing = async (page: number = 1, perPage: number = 10): Promise<{ posts: BlogPost[]; totalPages: number }> => {
   try {
     // Remove 'content' field to reduce payload dramatically
@@ -126,7 +126,7 @@ export const fetchPostsForListing = async (page: number = 1, perPage: number = 1
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&_fields=${fields}&orderby=date&order=desc`,
       { 
-        cache: 'force-cache' // SSG: Cache during build
+        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
       }
     );
 
@@ -185,7 +185,7 @@ export const fetchPosts = async (page: number = 1, perPage: number = 10): Promis
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&_fields=${fields}&orderby=date&order=desc`,
       { 
-        cache: 'force-cache' // SSG: Cache during build
+        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
       }
     );
 
@@ -244,7 +244,7 @@ export const fetchFeaturedPosts = async (): Promise<BlogPost[]> => {
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?sticky=true&_embed=1&_fields=${fields}&per_page=5`,
       { 
-        cache: 'force-cache' // SSG: Cache during build
+        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
       }
     );
 
@@ -265,7 +265,9 @@ export const fetchPostsByCategory = async (categoryId: number, page: number = 1,
   try {
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?categories=${categoryId}&page=${page}&per_page=${perPage}&_embed=1&orderby=date&order=desc`,
-      { cache: 'force-cache' } // SSG: Cache during build
+      { 
+        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+      }
     );
 
     if (!response.ok) {
@@ -288,7 +290,9 @@ export const fetchCategories = async (): Promise<WordPressCategory[]> => {
   try {
     const response = await fetch(
       `${WORDPRESS_API_URL}/categories?per_page=100&orderby=count&order=desc`,
-      { cache: 'force-cache' } // SSG: Cache during build
+      { 
+        next: { revalidate: 86400 } // ISR: Revalidate every 24 hours (categories change rarely)
+      }
     );
 
     if (!response.ok) {
@@ -309,7 +313,9 @@ export const fetchPostBySlug = async (slug: string): Promise<BlogPost | null> =>
   try {
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?slug=${slug}&_embed=1`,
-      { cache: 'force-cache' } // Cache during build for SSG
+      { 
+        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+      }
     );
 
     if (!response.ok) {
@@ -334,7 +340,9 @@ export const searchPosts = async (query: string, page: number = 1, perPage: numb
   try {
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?search=${encodeURIComponent(query)}&page=${page}&per_page=${perPage}&_embed=1`,
-      { cache: 'force-cache' } // SSG: Cache during build
+      { 
+        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+      }
     );
 
     if (!response.ok) {

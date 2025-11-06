@@ -3,6 +3,9 @@ import BlogHeroSlider from '@/components/blog/BlogHeroSlider';
 import BlogPostsList from '@/components/blog/BlogPostsList';
 import BlogCTASection from '@/components/blog/BlogCTASection';
 
+// ISR: Revalidate this page every 1 hour
+export const revalidate = 3600;
+
 // Traduções padrão (podemos pegar do contexto depois)
 const translations = {
   pt: {

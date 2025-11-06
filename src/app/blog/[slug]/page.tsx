@@ -3,6 +3,12 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import BlogPostClient from '@/components/blog/BlogPostClient';
 
+// ISR: Revalidate this page every 1 hour
+export const revalidate = 3600;
+
+// Enable dynamic params - allow new posts to be generated on-demand
+export const dynamicParams = true;
+
 // Fallback translations
 const fallbackTranslations = {
   pt: {
@@ -73,34 +79,23 @@ const fallbackTranslations = {
 // Generate static params for all posts
 export async function generateStaticParams() {
   try {
-    // Fetch ALL posts (WordPress default max is 100, so we need to paginate)
-    let allSlugs: string[] = [];
-    let page = 1;
-    let hasMore = true;
+    // ISR Optimization: Only generate the most recent 10 posts at build time
+    // Other posts will be generated on-demand when first requested
+    const response = await fetch(
+      `https://mupisystems.com.br/wp-json/wp/v2/posts?per_page=10&page=1&_fields=slug`,
+      { next: { revalidate: 3600 } }
+    );
 
-    while (hasMore) {
-      const response = await fetch(
-        `https://mupisystems.com.br/wp-json/wp/v2/posts?per_page=100&page=${page}&_fields=slug`,
-        { cache: 'no-store' } // No cache during build
-      );
-
-      if (!response.ok) {
-        break;
-      }
-
-      const posts: { slug: string }[] = await response.json();
-      allSlugs = allSlugs.concat(posts.map(p => p.slug));
-
-      // Check if there are more pages
-      const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
-      hasMore = page < totalPages;
-      page++;
+    if (!response.ok) {
+      return [];
     }
 
-    console.log(`[SSG] Generating ${allSlugs.length} blog post pages...`);
+    const posts: { slug: string }[] = await response.json();
     
-    return allSlugs.map((slug) => ({
-      slug,
+    console.log(`[ISR] Pre-generating ${posts.length} most recent blog posts at build time...`);
+    
+    return posts.map((post) => ({
+      slug: post.slug,
     }));
   } catch (error) {
     console.error('Error generating static params:', error);
@@ -131,9 +126,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     },
   };
 }
-
-// Disable dynamic params - only generate pages from generateStaticParams
-export const dynamicParams = false;
 
 const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
