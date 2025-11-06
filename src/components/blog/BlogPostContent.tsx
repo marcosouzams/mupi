@@ -1,70 +1,13 @@
-'use client';
-
-import { useEffect, useRef } from 'react';
-
 interface BlogPostContentProps {
   content: string;
 }
 
 const BlogPostContent = ({ content }: BlogPostContentProps) => {
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      // Force text color on all elements
-      const allElements = contentRef.current.querySelectorAll('*');
-      allElements.forEach((element) => {
-        const el = element as HTMLElement;
-        
-        // Remove white text colors
-        if (el.style.color === 'white' || el.style.color === '#ffffff' || el.style.color === 'rgb(255, 255, 255)') {
-          el.style.color = '';
-        }
-        
-        // Force colors on specific elements
-        if (el.tagName === 'P' || el.tagName === 'LI' || el.tagName === 'SPAN') {
-          if (!el.closest('pre') && !el.closest('code')) {
-            el.style.color = '#374151'; // gray-700
-          }
-        }
-        
-        if (el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'H4' || el.tagName === 'H5' || el.tagName === 'H6') {
-          el.style.color = '#191927';
-        }
-        
-        if (el.tagName === 'STRONG' || el.tagName === 'B') {
-          el.style.color = '#191927';
-        }
-      });
-
-      // Add syntax highlighting classes
-      const codeBlocks = contentRef.current.querySelectorAll('pre code');
-      codeBlocks.forEach((block) => {
-        block.classList.add('language-javascript');
-      });
-
-      // Ensure all images are responsive
-      const images = contentRef.current.querySelectorAll('img');
-      images.forEach((img) => {
-        img.classList.add('max-w-full', 'h-auto');
-      });
-
-      // Add target="_blank" to external links
-      const links = contentRef.current.querySelectorAll('a');
-      links.forEach((link) => {
-        if (link.hostname !== window.location.hostname) {
-          link.setAttribute('target', '_blank');
-          link.setAttribute('rel', 'noopener noreferrer');
-        }
-      });
-    }
-  }, [content]);
-
   return (
     <>
       <style jsx>{`
-        .blog-content :global(*) {
-          color: inherit !important;
+        .blog-content {
+          color: #374151;
         }
         
         .blog-content :global(p),
@@ -235,10 +178,32 @@ const BlogPostContent = ({ content }: BlogPostContentProps) => {
           color: #6b7280 !important;
           margin-top: 0.5rem !important;
         }
+
+        /* Remove white/light colors that might come from WordPress */
+        .blog-content :global([style*="color: white"]),
+        .blog-content :global([style*="color: #fff"]),
+        .blog-content :global([style*="color: #ffffff"]),
+        .blog-content :global([style*="color: rgb(255, 255, 255)"]) {
+          color: #374151 !important;
+        }
+
+        /* Ensure headings are never white */
+        .blog-content :global(h1[style*="color"]),
+        .blog-content :global(h2[style*="color"]),
+        .blog-content :global(h3[style*="color"]),
+        .blog-content :global(h4[style*="color"]),
+        .blog-content :global(h5[style*="color"]),
+        .blog-content :global(h6[style*="color"]) {
+          color: #191927 !important;
+        }
+
+        /* External links get target blank via CSS can't do that, but we ensure proper styling */
+        .blog-content :global(a[href^="http"]:not([href*="mupisys"])) {
+          position: relative;
+        }
       `}</style>
       
       <div 
-        ref={contentRef}
         className="blog-content prose prose-lg max-w-none"
         dangerouslySetInnerHTML={{ __html: content }}
       />

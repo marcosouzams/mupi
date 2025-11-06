@@ -6,6 +6,7 @@ import { Tag } from 'lucide-react';
 import BlogPostHeader from '@/components/blog/BlogPostHeader';
 import BlogPostContent from '@/components/blog/BlogPostContent';
 import BlogPostSidebar from '@/components/blog/BlogPostSidebar';
+import ExternalLinksEnhancer from '@/components/blog/ExternalLinksEnhancer';
 
 // ISR: Only revalidate on-demand via webhook (no time-based revalidation)
 export const revalidate = false;
@@ -240,6 +241,9 @@ const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) =
           </div>
         </div>
       </article>
+
+      {/* Progressive Enhancement: External links open in new tab */}
+      <ExternalLinksEnhancer />
     </div>
   );
 };
