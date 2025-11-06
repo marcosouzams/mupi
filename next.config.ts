@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         hostname: 'mupisystems.com.br',
         pathname: '/wp-content/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'secure.gravatar.com',
+        pathname: '/avatar/**',
+      },
     ],
   },
   /* config options here */

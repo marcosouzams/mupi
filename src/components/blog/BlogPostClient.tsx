@@ -196,7 +196,7 @@ const BlogPostClient = ({ post, translations, readingTime, formattedDate }: Blog
                     </h3>
                   </div>
                   <div className="flex items-start gap-4">
-                    {post.author.avatar && (
+                    {post.author.avatar ? (
                       <Image
                         src={post.author.avatar}
                         alt={post.author.name}
@@ -204,6 +204,12 @@ const BlogPostClient = ({ post, translations, readingTime, formattedDate }: Blog
                         height={64}
                         className="rounded-full"
                       />
+                    ) : (
+                      <div className="w-16 h-16 rounded-full bg-[#5667fe] flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-urbancat-st font-bold text-xl">
+                          {post.author.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase()}
+                        </span>
+                      </div>
                     )}
                     <div>
                       <p className="font-urbancat-st font-bold text-[#191927] mb-1">
@@ -252,7 +258,7 @@ const BlogPostClient = ({ post, translations, readingTime, formattedDate }: Blog
                     {translations.cta.description}
                   </p>
                   <button
-                    onClick={() => router.push('/#contact')}
+                    onClick={() => router.push('/contact')}
                     className="w-full bg-white hover:bg-gray-50 text-[#5667fe] px-6 py-3 rounded-xl transition-colors font-urbancat-st font-bold text-sm flex items-center justify-center gap-2"
                   >
                     <span>{translations.cta.button}</span>
