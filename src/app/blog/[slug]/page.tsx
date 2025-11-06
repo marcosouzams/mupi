@@ -14,6 +14,9 @@ export const revalidate = false;
 // Enable dynamic params - allow new posts to be generated on-demand
 export const dynamicParams = true;
 
+// Force static rendering (no streaming) for better SEO crawler compatibility
+export const dynamic = 'force-static';
+
 // Fallback translations
 const fallbackTranslations = {
   pt: {

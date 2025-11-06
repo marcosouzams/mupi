@@ -8,15 +8,9 @@ import { Navigation, Footer } from '.';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 
 // Configuração básica do i18next para client-side
-const getStoredLanguage = () => {
-  if (typeof window !== 'undefined') {
-    return localStorage.getItem('mupi-language') || 'pt';
-  }
-  return 'pt';
-};
-
+// Sempre inicia com 'pt' para evitar hydration mismatch
 i18n.init({
-  lng: getStoredLanguage(),
+  lng: 'pt', // Sempre começa com 'pt' no servidor e cliente
   fallbackLng: 'pt',
   resources: {},
   interpolation: {
@@ -33,6 +27,14 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [isI18nReady, setIsI18nReady] = useState(false);
   const pathname = usePathname();
+
+  // Carrega o idioma salvo após montar o componente (evita hydration mismatch)
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('mupi-language');
+    if (savedLanguage && savedLanguage !== i18n.language) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, []);
 
   // Carregar recursos de tradução
   useEffect(() => {
@@ -197,6 +199,33 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
     if (pathname.startsWith('/contact')) return 'contact';
     return pathname.slice(1); // Remove a barra inicial
   };
+
+  const isBlogPage = pathname?.startsWith('/blog');
+
+  // Para páginas de blog, renderiza com LanguageProvider mas sem esperar i18n
+  // Isso permite SEO otimizado enquanto mantém funcionalidade client-side
+  if (isBlogPage) {
+    return (
+      <I18nextProvider i18n={i18n}>
+        <LanguageProvider>
+          <div className="min-h-screen text-white">
+            <Navigation 
+              scrolled={scrolled} 
+              isMenuOpen={isMenuOpen} 
+              setIsMenuOpen={setIsMenuOpen}
+              currentPage="blog"
+            />
+            
+            <main>
+              {children}
+            </main>
+            
+            <Footer />
+          </div>
+        </LanguageProvider>
+      </I18nextProvider>
+    );
+  }
 
   if (!isI18nReady) {
     return (
