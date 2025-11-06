@@ -153,3 +153,209 @@ a,
 [role="button"] {
   cursor: pointer;
 }
+
+/* ============================================
+   Blog Post Content Styles (Server-Side Rendered)
+   ============================================ */
+
+.blog-content {
+  color: #374151;
+}
+
+/* Text Elements */
+.blog-content p,
+.blog-content li,
+.blog-content td,
+.blog-content span {
+  color: #374151 !important;
+}
+
+/* Headings */
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  color: #191927 !important;
+  font-family: 'Urbancat-St', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.blog-content h1 {
+  font-size: 1.875rem !important;
+  margin-bottom: 1.5rem !important;
+  margin-top: 2rem !important;
+}
+
+.blog-content h2 {
+  font-size: 1.5rem !important;
+  margin-bottom: 1.25rem !important;
+  margin-top: 2rem !important;
+}
+
+.blog-content h3 {
+  font-size: 1.25rem !important;
+  margin-bottom: 1rem !important;
+  margin-top: 1.5rem !important;
+}
+
+.blog-content h4 {
+  font-size: 1.125rem !important;
+  margin-bottom: 0.75rem !important;
+  margin-top: 1.25rem !important;
+}
+
+.blog-content p {
+  line-height: 1.75 !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 1rem !important;
+}
+
+/* Text Formatting */
+.blog-content strong,
+.blog-content b {
+  color: #191927 !important;
+  font-weight: 700 !important;
+}
+
+.blog-content em,
+.blog-content i {
+  font-style: italic !important;
+}
+
+/* Links */
+.blog-content a {
+  color: #5667fe !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+.blog-content a:hover {
+  text-decoration: underline !important;
+}
+
+/* Lists */
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.blog-content ul {
+  list-style-type: disc !important;
+}
+
+.blog-content ol {
+  list-style-type: decimal !important;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem !important;
+  line-height: 1.75 !important;
+}
+
+/* Blockquotes */
+.blog-content blockquote {
+  border-left: 4px solid #5667fe !important;
+  padding-left: 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  font-style: italic !important;
+  color: #4b5563 !important;
+  background-color: #f9fafb !important;
+  border-radius: 0 0.5rem 0.5rem 0 !important;
+  margin: 1.5rem 0 !important;
+}
+
+/* Code */
+.blog-content code {
+  color: #5667fe !important;
+  background-color: #f3f4f6 !important;
+  padding: 0.125rem 0.5rem !important;
+  border-radius: 0.25rem !important;
+  font-size: 0.875rem !important;
+  font-family: monospace !important;
+}
+
+.blog-content pre {
+  background-color: #191927 !important;
+  color: white !important;
+  padding: 1.5rem !important;
+  border-radius: 0.75rem !important;
+  overflow-x: auto !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.blog-content pre code {
+  background-color: transparent !important;
+  color: white !important;
+  padding: 0 !important;
+}
+
+/* Images */
+.blog-content img {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+  margin: 2rem 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Horizontal Rules */
+.blog-content hr {
+  border-color: #d1d5db !important;
+  margin: 2rem 0 !important;
+}
+
+/* Tables */
+.blog-content table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin-bottom: 2rem !important;
+}
+
+.blog-content th {
+  background-color: #f3f4f6 !important;
+  text-align: left !important;
+  padding: 0.75rem !important;
+  font-weight: 700 !important;
+  color: #191927 !important;
+  border: 1px solid #d1d5db !important;
+}
+
+.blog-content td {
+  padding: 0.75rem !important;
+  border: 1px solid #d1d5db !important;
+  color: #374151 !important;
+}
+
+/* Figures */
+.blog-content figure {
+  margin: 2rem 0 !important;
+}
+
+.blog-content figcaption {
+  text-align: center !important;
+  font-size: 0.875rem !important;
+  color: #6b7280 !important;
+  margin-top: 0.5rem !important;
+}
+
+/* WordPress Color Override - Remove white/light colors */
+.blog-content [style*="color: white"],
+.blog-content [style*="color: #fff"],
+.blog-content [style*="color: #ffffff"],
+.blog-content [style*="color: rgb(255, 255, 255)"] {
+  color: #374151 !important;
+}
+
+/* Ensure headings are never white */
+.blog-content h1[style*="color"],
+.blog-content h2[style*="color"],
+.blog-content h3[style*="color"],
+.blog-content h4[style*="color"],
+.blog-content h5[style*="color"],
+.blog-content h6[style*="color"] {
+  color: #191927 !important;
+}
