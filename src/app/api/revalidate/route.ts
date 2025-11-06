@@ -98,16 +98,17 @@ export async function POST(request: NextRequest) {
 
     if (postStatus === 'publish') {
       // Post is published - revalidate both post page and listing
-      await revalidatePath(`/blog/${slug}`);
+      // Use 'page' type to ensure full page revalidation including all data fetching
+      await revalidatePath(`/blog/${slug}`, 'page');
       revalidatedPaths.push(`/blog/${slug}`);
 
-      await revalidatePath('/blog');
+      await revalidatePath('/blog', 'page');
       revalidatedPaths.push('/blog');
       
       console.log(`[Revalidate API] ✅ Published post revalidated: ${slug}`);
     } else {
       // Post is deleted, trashed, or draft - only revalidate listing
-      await revalidatePath('/blog');
+      await revalidatePath('/blog', 'page');
       revalidatedPaths.push('/blog');
       
       console.log(`[Revalidate API] ✅ Listing revalidated (post status: ${postStatus})`);
