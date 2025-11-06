@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import BlogPostClient from '@/components/blog/BlogPostClient';
 
-// ISR: Revalidate this page every 1 hour
-export const revalidate = 3600;
+// ISR: Only revalidate on-demand via webhook (no time-based revalidation)
+export const revalidate = false;
 
 // Enable dynamic params - allow new posts to be generated on-demand
 export const dynamicParams = true;
@@ -83,7 +83,7 @@ export async function generateStaticParams() {
     // Other posts will be generated on-demand when first requested
     const response = await fetch(
       `https://mupisystems.com.br/wp-json/wp/v2/posts?per_page=10&page=1&_fields=slug`,
-      { next: { revalidate: 3600 } }
+      { cache: 'force-cache' } // Cache at build time, revalidate via webhook only
     );
 
     if (!response.ok) {

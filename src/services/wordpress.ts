@@ -126,7 +126,7 @@ export const fetchPostsForListing = async (page: number = 1, perPage: number = 1
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&_fields=${fields}&orderby=date&order=desc`,
       { 
-        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+        cache: 'force-cache' // ISR: Only revalidate via webhook
       }
     );
 
@@ -185,7 +185,7 @@ export const fetchPosts = async (page: number = 1, perPage: number = 10): Promis
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&_fields=${fields}&orderby=date&order=desc`,
       { 
-        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+        cache: 'force-cache' // ISR: Only revalidate via webhook
       }
     );
 
@@ -244,7 +244,7 @@ export const fetchFeaturedPosts = async (): Promise<BlogPost[]> => {
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?sticky=true&_embed=1&_fields=${fields}&per_page=5`,
       { 
-        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+        cache: 'force-cache' // ISR: Only revalidate via webhook
       }
     );
 
@@ -266,7 +266,7 @@ export const fetchPostsByCategory = async (categoryId: number, page: number = 1,
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?categories=${categoryId}&page=${page}&per_page=${perPage}&_embed=1&orderby=date&order=desc`,
       { 
-        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+        cache: 'force-cache' // ISR: Only revalidate via webhook
       }
     );
 
@@ -291,7 +291,7 @@ export const fetchCategories = async (): Promise<WordPressCategory[]> => {
     const response = await fetch(
       `${WORDPRESS_API_URL}/categories?per_page=100&orderby=count&order=desc`,
       { 
-        next: { revalidate: 86400 } // ISR: Revalidate every 24 hours (categories change rarely)
+        cache: 'force-cache' // ISR: Only revalidate via webhook
       }
     );
 
@@ -314,7 +314,7 @@ export const fetchPostBySlug = async (slug: string): Promise<BlogPost | null> =>
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?slug=${slug}&_embed=1`,
       { 
-        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+        cache: 'force-cache' // ISR: Only revalidate via webhook
       }
     );
 
@@ -341,7 +341,7 @@ export const searchPosts = async (query: string, page: number = 1, perPage: numb
     const response = await fetch(
       `${WORDPRESS_API_URL}/posts?search=${encodeURIComponent(query)}&page=${page}&per_page=${perPage}&_embed=1`,
       { 
-        next: { revalidate: 3600 } // ISR: Revalidate every 1 hour
+        cache: 'no-store' // Search results should not be cached
       }
     );
 
