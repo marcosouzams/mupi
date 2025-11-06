@@ -192,6 +192,9 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
     if (!pathname) return 'home';
     if (pathname === '/') return 'home';
     if (pathname.startsWith('/cases')) return 'cases';
+    if (pathname.startsWith('/blog')) return 'blog';
+    if (pathname.startsWith('/about')) return 'about';
+    if (pathname.startsWith('/contact')) return 'contact';
     return pathname.slice(1); // Remove a barra inicial
   };
 
