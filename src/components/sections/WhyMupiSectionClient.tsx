@@ -4,20 +4,20 @@ import { useEffect, useState } from 'react';
 import { useClientLocale } from '@/hooks/useClientLocale';
 import { WhyMupiSectionServer } from './WhyMupiSectionServer';
 
+// Traduções padrão em português (fora do componente para SSR)
+const defaultTranslations = {
+  casesTitle: 'Nossos Cases de',
+  casesTitleHighlight: 'Sucesso',
+  casesDescription: 'Conheça alguns projetos que transformamos em histórias de sucesso, demonstrando nossa capacidade de entregar soluções excepcionais.',
+  ctaAllCases: 'Ver todos os cases'
+};
+
 export const WhyMupiSection = () => {
   const locale = useClientLocale();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [translations, setTranslations] = useState<any>(null);
+  const [translations, setTranslations] = useState<any>(defaultTranslations);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [casesTranslations, setCasesTranslations] = useState<any>(null);
-
-  // Traduções padrão em português
-  const defaultTranslations = {
-    casesTitle: 'Nossos Cases de',
-    casesTitleHighlight: 'Sucesso',
-    casesDescription: 'Conheça alguns projetos que transformamos em histórias de sucesso, demonstrando nossa capacidade de entregar soluções excepcionais.',
-    ctaAllCases: 'Ver todos os cases'
-  };
+  const [casesTranslations, setCasesTranslations] = useState<any>({});
 
   useEffect(() => {
     // Carrega as traduções de whymupi
@@ -35,8 +35,8 @@ export const WhyMupiSection = () => {
 
   return (
     <WhyMupiSectionServer 
-      translations={translations || defaultTranslations}
-      casesTranslations={casesTranslations || {}}
+      translations={translations}
+      casesTranslations={casesTranslations}
     />
   );
 };
