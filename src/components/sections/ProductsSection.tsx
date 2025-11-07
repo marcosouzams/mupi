@@ -66,6 +66,14 @@ export const ProductsSection = () => {
       url: "https://sigvirtual.com.br/",
       gradient: "from-teal-500 to-cyan-500",
       color: "#14b8a6"
+    },
+    {
+      icon: Database,
+      key: "textualiza",
+      logo: "/plataformas/TEXTUALIZA.png",
+      url: "https://textualiza.com.br/",
+      gradient: "from-violet-500 to-purple-500",
+      color: "#8b5cf6"
     }
   ];
 
@@ -106,8 +114,10 @@ export const ProductsSection = () => {
   return (
     <section 
       ref={sectionRef}
+      id="products"
       className="relative bg-gradient-to-br from-gray-50 to-white pb-20 lg:pb-32"
       style={{ height: `${products.length * 65}vh` }}
+      aria-labelledby="products-heading"
     >
       {/* Conteúdo fixo */}
       <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden pt-12 lg:pt-16">
@@ -120,9 +130,9 @@ export const ProductsSection = () => {
             <div className="hidden lg:block pr-8">
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-3xl lg:text-4xl font-urbancat-st font-bold text-[#191927] leading-tight mb-6">
+                  <h2 id="products-heading" className="text-3xl lg:text-4xl font-urbancat-st font-bold text-[#191927] leading-tight mb-6">
                     {t('products.leftSection.title')} <span className="text-[#5667fe]">{t('products.leftSection.titleHighlight')}</span>
-                  </h3>
+                  </h2>
                 </div>
                 
                 <div className="space-y-4 text-[#191927]/80 font-inter leading-relaxed">
@@ -161,10 +171,10 @@ export const ProductsSection = () => {
                 <span className="text-xs font-urbancat-st font-bold text-[#5667fe] uppercase tracking-[0.15em] mb-3 block">
                   {t('products.badge')}
                 </span>
-                <h2 className="text-2xl lg:text-3xl font-urbancat-st font-bold text-white leading-tight mb-3">
+                <h3 className="text-2xl lg:text-3xl font-urbancat-st font-bold text-white leading-tight mb-3">
                   {t('products.title')}{' '}
                   <span className="text-white">{t('products.titleHighlight')}</span>
-                </h2>
+                </h3>
                 <p className="text-sm lg:text-base text-white/70 leading-relaxed font-inter">
                   {t('products.description')}
                 </p>

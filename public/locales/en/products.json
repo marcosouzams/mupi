@@ -61,6 +61,12 @@
         "category": "Management",
         "description": "Integrated system for people management, compliance, privacy and information security.",
         "features": ["People management", "Automatic compliance", "Data security", "Integrated reports"]
+      },
+      "textualiza": {
+        "title": "Textualiza",
+        "category": "Automation",
+        "description": "Next generation document automation. Transform documents into structured data, generate content and optimize processes with AI.",
+        "features": ["Intelligent OCR", "Text Structuring", "Content Generation", "Multi-format Export"]
       }
     }
   }

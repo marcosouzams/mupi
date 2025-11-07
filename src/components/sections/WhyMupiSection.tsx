@@ -22,15 +22,15 @@ export const WhyMupiSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white" aria-labelledby="cases-heading">
       <div className="max-w-7xl mx-auto">
         {/* Cases Section */}
         <div>
           {/* Cases Header */}
           <div className="text-left mb-10">
-            <h3 className="text-2xl lg:text-3xl font-urbancat-st font-bold text-[#191927] mb-4">
+            <h2 id="cases-heading" className="text-2xl lg:text-3xl font-urbancat-st font-bold text-[#191927] mb-4">
               {t('whymupi.casesTitle')} <span className="text-[#5667fe]">{t('whymupi.casesTitleHighlight')}</span>
-            </h3>
+            </h2>
             <p className="text-base text-[#191927]/70 max-w-2xl mb-6">
               {t('whymupi.casesDescription')}
             </p>

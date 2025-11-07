@@ -1,7 +1,9 @@
 export { HeroSection } from './HeroSection';
 export { HeroContent } from './HeroContent';
+export { HeroContentServer } from './HeroContentServer';
 export { ScrollIndicator } from './ScrollIndicator';
 export { PartnersSection } from './PartnersSection';
+export { PartnersSectionServer } from './PartnersSectionServer';
 export { ProductsSection } from './ProductsSection';
 export { AboutSection } from './AboutSection';
 export { WhyMupiSection } from './WhyMupiSection';

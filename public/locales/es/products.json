@@ -61,6 +61,12 @@
         "category": "Gestión",
         "description": "Sistema integrado de gestión de personas, compliance, privacidad y seguridad de la información.",
         "features": ["Gestión de personas", "Compliance automático", "Seguridad de datos", "Informes integrados"]
+      },
+      "textualiza": {
+        "title": "Textualiza",
+        "category": "Automatización",
+        "description": "Nueva generación en automatización de documentos. Transforme documentos en datos estructurados, genere contenidos y optimice procesos con IA.",
+        "features": ["OCR Inteligente", "Estructuración de Textos", "Generación de Contenido", "Exportación en múltiples formatos"]
       }
     }
   }

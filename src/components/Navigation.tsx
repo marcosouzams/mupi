@@ -1,9 +1,10 @@
 'use client';
 
 import { Menu, X, Search, Globe, ChevronDown } from 'lucide-react';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -16,7 +17,6 @@ interface NavigationProps {
 }
 
 export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 'home', onNavigate }: NavigationProps) => {
-  const router = useRouter();
   const pathname = usePathname();
   const { t, i18n } = useTranslation('navigation');
   const { language, setLanguage } = useLanguage();
@@ -42,32 +42,13 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
     };
   }, [i18n, language, setLanguage]);
 
-  const handleNavClick = (page: string) => {
-    setIsMenuOpen(false);
-    
-    if (page === 'home') {
-      router.push('/');
-    } else if (page === 'cases') {
-      router.push('/cases');
-    } else if (page === 'blog') {
-      router.push('/blog');
-    } else if (page === 'bienal-case') {
-      router.push('/cases/bienal-livro-rio-2025');
-    } else if (page === 'careers') {
-      window.open('https://mupisys.etalentos.com.br/', '_blank');
-      return;
-    } else {
-      router.push(`/${page}`);
-    }
-    
-    if (onNavigate) {
-      onNavigate(page);
-    }
-  };
-
   const handlePlatformClick = (url: string) => {
     window.open(url, '_blank');
     setIsPlatformsMenuOpen(false);
+    setIsMenuOpen(false);
+  };
+
+  const handleMenuClose = () => {
     setIsMenuOpen(false);
   };
 
@@ -78,7 +59,8 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
     atendeaqui: 'https://atendeaqui.com.br/',
     equalifica: 'https://equalifica.com.br/',
     etalentos: 'https://etalentos.com.br/',
-    sigvirtual: 'https://sigvirtual.com.br/'
+    sigvirtual: 'https://sigvirtual.com.br/',
+    textualiza: 'https://textualiza.com.br/'
   };
 
   const handleLanguageChange = (locale: string) => {
@@ -118,42 +100,44 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center cursor-pointer" onClick={() => handleNavClick('home')}>
+          <Link href="/" className="flex items-center cursor-pointer" aria-label="MUPI Systems - Home">
             <Image
               src="/logo_mupi.png"
-              alt="Mupe Logo"
+              alt="MUPI Systems Logo - Soluções Digitais Inovadoras"
               width={120}
               height={32}
               className="h-8 w-auto transition-all duration-300 hover:scale-105"
               priority
             />
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-8">
-            <button 
-              onClick={() => handleNavClick('home')}
+            <Link 
+              href="/"
               className={`transition-all duration-300 relative group text-sm font-medium tracking-wide font-inter ${
                 activePage === 'home' ? 'text-[#5667fe]' : 'text-gray-700 hover:text-[#5667fe]'
               }`}
+              aria-label="Página inicial da MUPI Systems"
             >
               {t('nav.home')}
               <span className={`absolute -bottom-2 left-0 h-px bg-gradient-to-r from-[#5667fe] to-[#d1dafb] transition-all duration-300 ${
                 activePage === 'home' ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
-            </button>
+            </Link>
             
-            <button 
-              onClick={() => handleNavClick('about')}
+            <Link 
+              href="/about"
               className={`transition-all duration-300 relative group text-sm font-medium tracking-wide font-inter ${
                 activePage === 'about' ? 'text-[#5667fe]' : 'text-gray-700 hover:text-[#5667fe]'
               }`}
+              aria-label="Sobre a MUPI Systems"
             >
               {t('nav.about')}
               <span className={`absolute -bottom-2 left-0 h-px bg-gradient-to-r from-[#5667fe] to-[#d1dafb] transition-all duration-300 ${
                 activePage === 'about' ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
-            </button>
+            </Link>
             
             {/* Plataformas Dropdown */}
             <div className="relative">
@@ -186,41 +170,46 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
               )}
             </div>
             
-            <button 
-              onClick={() => handleNavClick('cases')}
+            <Link 
+              href="/cases"
               className={`transition-all duration-300 relative group text-sm font-medium tracking-wide font-inter ${
                 activePage === 'cases' ? 'text-[#5667fe]' : 'text-gray-700 hover:text-[#5667fe]'
               }`}
+              aria-label="Cases de sucesso da MUPI Systems"
             >
               {t('nav.cases')}
               <span className={`absolute -bottom-2 left-0 h-px bg-gradient-to-r from-[#5667fe] to-[#d1dafb] transition-all duration-300 ${
                 activePage === 'cases' ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
-            </button>
+            </Link>
             
-            <button 
-              onClick={() => handleNavClick('blog')}
+            <Link 
+              href="/blog"
               className={`transition-all duration-300 relative group text-sm font-medium tracking-wide font-inter ${
                 activePage === 'blog' ? 'text-[#5667fe]' : 'text-gray-700 hover:text-[#5667fe]'
               }`}
+              aria-label="Blog da MUPI Systems"
             >
               {t('nav.blog')}
               <span className={`absolute -bottom-2 left-0 h-px bg-gradient-to-r from-[#5667fe] to-[#d1dafb] transition-all duration-300 ${
                 activePage === 'blog' ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
-            </button>
+            </Link>
             
-            <button 
-              onClick={() => handleNavClick('careers')}
+            <a 
+              href="https://mupisys.etalentos.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`transition-all duration-300 relative group text-sm font-medium tracking-wide font-inter ${
                 activePage === 'careers' ? 'text-[#5667fe]' : 'text-gray-700 hover:text-[#5667fe]'
               }`}
+              aria-label="Trabalhe conosco - Vagas na MUPI Systems"
             >
               {t('nav.careers')}
               <span className={`absolute -bottom-2 left-0 h-px bg-gradient-to-r from-[#5667fe] to-[#d1dafb] transition-all duration-300 ${
                 activePage === 'careers' ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
-            </button>
+            </a>
           </div>
 
           {/* Right Side */}
@@ -265,12 +254,13 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
               )}
             </div>
             
-            <button 
-              onClick={() => handleNavClick('contact')}
+            <Link 
+              href="/contact"
               className="bg-[#5667fe] hover:bg-[#5667fe]/90 px-6 py-2.5 rounded-full transition-all duration-300 transform hover:scale-105 text-sm font-medium font-inter"
+              aria-label="Entre em contato com a MUPI Systems"
             >
               {t('nav.contact')}
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -295,19 +285,23 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
         isMenuOpen ? 'max-h-[32rem] opacity-100' : 'max-h-0 opacity-0'
       } overflow-hidden bg-white border-t border-gray-200`}>
         <div className="px-6 pt-6 pb-12 space-y-4">
-          <button 
-            onClick={() => handleNavClick('home')}
+          <Link 
+            href="/"
+            onClick={handleMenuClose}
             className="block text-gray-700 hover:text-[#5667fe] transition-colors duration-200 font-inter w-full text-left py-1"
+            aria-label="Página inicial"
           >
             {t('nav.home')}
-          </button>
+          </Link>
           
-          <button 
-            onClick={() => handleNavClick('about')}
+          <Link 
+            href="/about"
+            onClick={handleMenuClose}
             className="block text-gray-700 hover:text-[#5667fe] transition-colors duration-200 font-inter w-full text-left py-1"
+            aria-label="Sobre nós"
           >
             {t('nav.about')}
-          </button>
+          </Link>
           
           {/* Mobile Plataformas Dropdown */}
           <div className="space-y-2">
@@ -334,26 +328,34 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
             )}
           </div>
           
-          <button 
-            onClick={() => handleNavClick('cases')}
+          <Link 
+            href="/cases"
+            onClick={handleMenuClose}
             className="block text-gray-700 hover:text-[#5667fe] transition-colors duration-200 font-inter w-full text-left py-1"
+            aria-label="Cases de sucesso"
           >
             {t('nav.cases')}
-          </button>
+          </Link>
           
-          <button 
-            onClick={() => handleNavClick('blog')}
+          <Link 
+            href="/blog"
+            onClick={handleMenuClose}
             className="block text-gray-700 hover:text-[#5667fe] transition-colors duration-200 font-inter w-full text-left py-1"
+            aria-label="Blog"
           >
             {t('nav.blog')}
-          </button>
+          </Link>
           
-          <button 
-            onClick={() => handleNavClick('careers')}
+          <a 
+            href="https://mupisys.etalentos.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleMenuClose}
             className="block text-gray-700 hover:text-[#5667fe] transition-colors duration-200 font-inter w-full text-left py-1"
+            aria-label="Trabalhe conosco"
           >
             {t('nav.careers')}
-          </button>
+          </a>
           
           {/* Mobile Language Selector */}
           <div className="border-t border-gray-200 pt-4 pb-2">
@@ -392,12 +394,14 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
           </div>
           
           <div className="pt-2">
-            <button 
-              onClick={() => handleNavClick('contact')}
-              className="w-full bg-[#5667fe] hover:bg-[#5667fe]/90 px-6 py-3 rounded-full transition-all duration-200 text-sm font-medium font-inter"
+            <Link 
+              href="/contact"
+              onClick={handleMenuClose}
+              className="block w-full text-center bg-[#5667fe] hover:bg-[#5667fe]/90 px-6 py-3 rounded-full transition-all duration-200 text-sm font-medium font-inter"
+              aria-label="Fale conosco"
             >
               {t('nav.contact')}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

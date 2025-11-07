@@ -10,7 +10,7 @@ export const AboutSection = () => {
   const router = useRouter();
   
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#191927]">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#191927]" aria-labelledby="about-heading">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-stretch">
           {/* Lado Esquerdo - Imagem */}
@@ -20,7 +20,7 @@ export const AboutSection = () => {
               <div className="relative h-full">
                 <Image
                   src="/parceiros/lucas_praxedes.png"
-                  alt="Lucas Praxedes - Fundador da MUPI"
+                  alt="Lucas Praxedes - Fundador da MUPI Systems, líder em soluções digitais inovadoras"
                   width={600}
                   height={800}
                   className="w-full h-full object-cover shadow-xl"
@@ -28,8 +28,8 @@ export const AboutSection = () => {
               </div>
 
               {/* Elementos decorativos menores */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-white/6 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-white/6 rounded-full blur-xl" aria-hidden="true"></div>
+              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-white/10 rounded-full blur-2xl" aria-hidden="true"></div>
             </div>
           </div>
 
@@ -42,9 +42,9 @@ export const AboutSection = () => {
               </span>
             </div>
 
-            {/* Heading Principal */}
+            {/* Heading Principal com H2 semântico */}
             <div>
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-urbancat-st font-bold text-white leading-tight">
+              <h2 id="about-heading" className="text-3xl lg:text-4xl xl:text-5xl font-urbancat-st font-bold text-white leading-tight">
                 {t('about.title')}{' '}
                 <span className="text-[#5667fe]">{t('about.titleHighlight')}</span>{' '}
                 {t('about.titleEnd')}
@@ -61,9 +61,10 @@ export const AboutSection = () => {
               <button 
                 onClick={() => router.push('/about')}
                 className="group bg-white hover:bg-white/90 text-[#191927] px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-3"
+                aria-label="Saiba mais sobre a MUPI Systems"
               >
                 <span className="font-medium font-inter">{t('about.cta')}</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" aria-hidden="true" />
               </button>
             </div>
           </div>
