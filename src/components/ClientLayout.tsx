@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { I18nextProvider } from 'react-i18next';
 import i18n from 'i18next';
-import { Navigation, Footer } from '.';
+import { NavigationClient } from './Navigation';
+import { Footer } from '.';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 
 // Configuração básica do i18next para client-side
@@ -23,8 +24,6 @@ interface ClientLayoutProps {
 }
 
 const ClientLayout = ({ children }: ClientLayoutProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [isI18nReady, setIsI18nReady] = useState(false);
   const pathname = usePathname();
 
@@ -171,34 +170,10 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
     loadTranslations();
   }, []);
 
+  // Rola para o topo quando a rota muda
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  // Fecha o menu móvel quando a rota muda e rola para o topo
-  useEffect(() => {
-    setIsMenuOpen(false);
     window.scrollTo(0, 0);
   }, [pathname]);
-
-  // Determina a página atual baseada na rota
-  const getCurrentPage = () => {
-    if (!pathname) return 'home';
-    if (pathname === '/') return 'home';
-    if (pathname.startsWith('/cases')) return 'cases';
-    if (pathname.startsWith('/blog')) return 'blog';
-    if (pathname.startsWith('/about')) return 'about';
-    if (pathname.startsWith('/contact')) return 'contact';
-    return pathname.slice(1); // Remove a barra inicial
-  };
 
   const isBlogPage = pathname?.startsWith('/blog');
 
@@ -209,12 +184,7 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
       <I18nextProvider i18n={i18n}>
         <LanguageProvider>
           <div className="min-h-screen text-white">
-            <Navigation 
-              scrolled={scrolled} 
-              isMenuOpen={isMenuOpen} 
-              setIsMenuOpen={setIsMenuOpen}
-              currentPage="blog"
-            />
+            <NavigationClient />
             
             <main>
               {children}
@@ -259,12 +229,7 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
     <I18nextProvider i18n={i18n}>
       <LanguageProvider>
         <div className="min-h-screen text-white">
-          <Navigation 
-            scrolled={scrolled} 
-            isMenuOpen={isMenuOpen} 
-            setIsMenuOpen={setIsMenuOpen}
-            currentPage={getCurrentPage()}
-          />
+          <NavigationClient />
           
           <main>
             {children}

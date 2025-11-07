@@ -1,10 +1,8 @@
-export { HeroSection } from './HeroSection';
-export { HeroContent } from './HeroContent';
-export { HeroContentServer } from './HeroContentServer';
+export { HeroSection } from './HeroSectionClient';
 export { ScrollIndicator } from './ScrollIndicator';
-export { PartnersSection } from './PartnersSection';
-export { PartnersSectionServer } from './PartnersSectionServer';
-export { ProductsSection } from './ProductsSection';
-export { AboutSection } from './AboutSection';
-export { WhyMupiSection } from './WhyMupiSection';
-export { ContactSection } from './ContactSection';
+export { PartnersSection } from './PartnersSectionClient';
+export { PartnersCarousel } from './PartnersCarousel';
+export { ProductsSection } from './ProductsSectionClient';
+export { AboutSection } from './AboutSectionClient';
+export { WhyMupiSection } from './WhyMupiSectionClient';
+export { ContactSection } from './ContactSectionClient';

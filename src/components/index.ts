@@ -1,5 +1,5 @@
-export { Navigation } from './Navigation';
-export { default as Footer } from './Footer';
+export { NavigationClient } from './Navigation';
+export { Footer, FooterServer } from './Footer';
 export { default as ClientLayout } from './ClientLayout';
 
 // Sections
