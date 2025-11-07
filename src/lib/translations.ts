@@ -7,6 +7,7 @@ export type Locale = 'pt' | 'en' | 'es';
  * Carrega as traduções de um arquivo JSON específico para um idioma
  * Funciona apenas no servidor (SSR/RSC)
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function getTranslations(locale: Locale, namespace: string): Record<string, any> {
   try {
     const filePath = path.join(process.cwd(), 'public', 'locales', locale, `${namespace}.json`);
@@ -26,6 +27,7 @@ export function getTranslations(locale: Locale, namespace: string): Record<strin
  * Helper para obter valor aninhado de um objeto usando notação de ponto
  * Ex: get(obj, 'nav.home') retorna obj.nav.home
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function getNestedValue(obj: Record<string, any>, path: string): string {
   const result = path.split('.').reduce((current, key) => current?.[key], obj);
   return typeof result === 'string' ? result : path;

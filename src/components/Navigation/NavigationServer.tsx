@@ -4,12 +4,10 @@ import { Search } from 'lucide-react';
 import { LanguageSelector } from './LanguageSelector';
 import { PlatformsMenu } from './PlatformsMenu';
 import { MobileMenuButton } from './MobileMenuButton';
-import type { Locale } from '@/lib/translations';
 
 interface NavigationProps {
   isMenuOpen: boolean;
   setIsMenuOpen: (open: boolean) => void;
-  locale: Locale;
   translations: {
     nav: {
       home: string;
@@ -35,7 +33,7 @@ const platformLinks = {
   textualiza: 'https://textualiza.com.br/'
 };
 
-export function Navigation({ isMenuOpen, setIsMenuOpen, locale, translations }: NavigationProps) {
+export function Navigation({ isMenuOpen, setIsMenuOpen, translations }: NavigationProps) {
   const t = translations;
   
   const platformNames = {

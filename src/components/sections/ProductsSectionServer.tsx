@@ -2,7 +2,23 @@ import { Calendar, GraduationCap, Users, Headphones, Shield, UserCheck, Database
 import { ProductsCarouselScroll } from './ProductsCarouselScroll';
 
 interface ProductsSectionServerProps {
-  translations: any;
+  translations: {
+    products: {
+      leftSection: {
+        title: string;
+        titleHighlight: string;
+        paragraph1: string;
+        paragraph2: string;
+        tags: {
+          customerService: string;
+          hrManagement: string;
+          textAnalysis: string;
+          smartContracts: string;
+        };
+      };
+      [key: string]: unknown;
+    };
+  };
 }
 
 const products = [
@@ -81,9 +97,9 @@ export const ProductsSectionServer = ({ translations: t }: ProductsSectionServer
       aria-labelledby="products-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Lado Esquerdo - Texto sobre a empresa (SSR) */}
-          <div className="hidden lg:block pr-8 sticky top-24">
+          <div className="hidden lg:block pr-8">
             <div className="space-y-6">
               <div>
                 <h2 id="products-heading" className="text-3xl lg:text-4xl font-urbancat-st font-bold text-[#191927] leading-tight mb-6">

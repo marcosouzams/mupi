@@ -6,6 +6,7 @@ import { AboutSectionServer } from './AboutSectionServer';
 
 export const AboutSection = () => {
   const locale = useClientLocale();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [translations, setTranslations] = useState<any>(null);
 
   // Traduções padrão em português

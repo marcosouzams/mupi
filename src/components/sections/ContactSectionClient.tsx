@@ -6,6 +6,7 @@ import { ContactSectionServer } from './ContactSectionServer';
 
 export const ContactSection = () => {
   const locale = useClientLocale();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [translations, setTranslations] = useState<any>(null);
 
   // Traduções padrão em português

@@ -5,6 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import Image from 'next/image';
 
 interface Product {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon: any;
   key: string;
   logo: string;
@@ -15,6 +16,7 @@ interface Product {
 
 interface ProductsCarouselScrollProps {
   products: Product[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   translations: any;
 }
 

@@ -7,6 +7,7 @@ import { Navigation } from './NavigationServer';
 export function NavigationClient() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const locale = useClientLocale();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [translations, setTranslations] = useState<any>(null);
 
   useEffect(() => {
@@ -49,7 +50,6 @@ export function NavigationClient() {
     <Navigation 
       isMenuOpen={isMenuOpen}
       setIsMenuOpen={setIsMenuOpen}
-      locale={locale}
       translations={translations || defaultTranslations}
     />
   );

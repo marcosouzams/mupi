@@ -8,10 +8,12 @@ interface WhyMupiSectionServerProps {
     casesDescription: string;
     ctaAllCases: string;
   };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   casesTranslations: any;
 }
 
 // Função helper para traduzir cases sem usar a função t do i18next
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const translateCase = (caseItem: any, translations: any) => {
   try {
     const caseData = translations?.cases?.caseData?.[caseItem.id];

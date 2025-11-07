@@ -6,7 +6,9 @@ import { WhyMupiSectionServer } from './WhyMupiSectionServer';
 
 export const WhyMupiSection = () => {
   const locale = useClientLocale();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [translations, setTranslations] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [casesTranslations, setCasesTranslations] = useState<any>(null);
 
   // Traduções padrão em português

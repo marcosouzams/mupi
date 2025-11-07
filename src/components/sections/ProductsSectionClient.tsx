@@ -6,7 +6,23 @@ import { ProductsSectionServer } from './ProductsSectionServer';
 
 export const ProductsSection = () => {
   const locale = useClientLocale();
-  const [translations, setTranslations] = useState<any>(null);
+  const [translations, setTranslations] = useState<{
+    products: {
+      leftSection: {
+        title: string;
+        titleHighlight: string;
+        paragraph1: string;
+        paragraph2: string;
+        tags: {
+          customerService: string;
+          hrManagement: string;
+          textAnalysis: string;
+          smartContracts: string;
+        };
+      };
+      [key: string]: unknown;
+    };
+  } | null>(null);
 
   // Traduções padrão em português
   const defaultTranslations = {
