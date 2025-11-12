@@ -14,7 +14,7 @@ import { getFeaturedCases, getCasesBySector, getTranslatedSectors, getTranslated
 
 const CasesPage = () => {
   const router = useRouter();
-  const { t } = useTranslation('cases');
+  const { t, ready } = useTranslation('cases');
   const [swiperInstance, setSwiperInstance] = useState<{slidePrev: () => void, slideNext: () => void} | null>(null);
   const [selectedSector, setSelectedSector] = useState<string>('todos');
 
@@ -22,6 +22,19 @@ const CasesPage = () => {
   const [isCtaVisible, setIsCtaVisible] = useState(false);
   const [hasCtaAnimated, setHasCtaAnimated] = useState(false);
   const ctaSectionRef = useRef<HTMLElement>(null);
+
+  // Se as traduções não estiverem prontas, mostrar loading
+  if (!ready) {
+    return (
+      <div className="min-h-screen bg-[#0A0B0F] flex items-center justify-center">
+        <div className="flex space-x-2">
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0s' }}></span>
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+        </div>
+      </div>
+    );
+  }
 
   const featuredCases = getFeaturedCases();
   const translatedSectors = getTranslatedSectors(t);

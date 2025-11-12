@@ -22,7 +22,7 @@ interface FormErrors {
 }
 
 export default function ContactPage() {
-  const { t } = useTranslation('contact-page');
+  const { t, ready } = useTranslation('contact-page');
   
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -35,6 +35,19 @@ export default function ContactPage() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Se as traduções não estiverem prontas, mostrar loading
+  if (!ready) {
+    return (
+      <div className="min-h-screen bg-[#0A0B0F] flex items-center justify-center">
+        <div className="flex space-x-2">
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0s' }}></span>
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+          <span className="dot bg-white rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+        </div>
+      </div>
+    );
+  }
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};

@@ -7,11 +7,24 @@ import Image from 'next/image';
 
 const BienalCasePage = () => {
   const router = useRouter();
-  const { t } = useTranslation('bienal-case');
+  const { t, ready } = useTranslation('bienal-case');
   
   const handleBackClick = () => {
     router.push('/cases');
   };
+
+  // Aguardar as traduções carregarem
+  if (!ready) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="flex space-x-2">
+          <span className="dot bg-gray-700 rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0s' }}></span>
+          <span className="dot bg-gray-700 rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+          <span className="dot bg-gray-700 rounded-full w-3 h-3 animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
