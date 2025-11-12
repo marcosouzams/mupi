@@ -4,9 +4,15 @@ import Script from "next/script";
 import "./globals.css";
 import { ClientLayout } from "@/components";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { promises as fs } from 'fs';
-import path from 'path';
 import { cookies } from 'next/headers';
+
+// Import translations directly (better for serverless environments)
+import navPt from '@/locales/pt/navigation.json';
+import navEn from '@/locales/en/navigation.json';
+import navEs from '@/locales/es/navigation.json';
+import footerPt from '@/locales/pt/footer.json';
+import footerEn from '@/locales/en/footer.json';
+import footerEs from '@/locales/es/footer.json';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -38,16 +44,22 @@ async function getLanguageFromCookies(): Promise<'pt' | 'en' | 'es'> {
   return 'pt';
 }
 
-async function getNavigationTranslations(lang: string) {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'navigation.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+function getNavigationTranslations(lang: string) {
+  const translations = {
+    pt: navPt,
+    en: navEn,
+    es: navEs,
+  };
+  return translations[lang as keyof typeof translations] || navPt;
 }
 
-async function getFooterTranslations(lang: string) {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'footer.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+function getFooterTranslations(lang: string) {
+  const translations = {
+    pt: footerPt,
+    en: footerEn,
+    es: footerEs,
+  };
+  return translations[lang as keyof typeof translations] || footerPt;
 }
 
 export default async function RootLayout({
@@ -56,8 +68,8 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const currentLang = await getLanguageFromCookies();
-  const navTranslations = await getNavigationTranslations(currentLang);
-  const footerTranslations = await getFooterTranslations(currentLang);
+  const navTranslations = getNavigationTranslations(currentLang);
+  const footerTranslations = getFooterTranslations(currentLang);
 
   return (
     <html lang={currentLang === 'pt' ? 'pt-BR' : currentLang === 'en' ? 'en-US' : 'es-ES'}>

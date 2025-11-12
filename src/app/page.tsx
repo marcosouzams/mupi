@@ -1,8 +1,29 @@
 import { HeroSection, PartnersSection, ProductsSection, AboutSection, WhyMupiSection, ContactSection } from '@/components';
 import type { Metadata } from 'next';
-import { promises as fs } from 'fs';
-import path from 'path';
 import { cookies } from 'next/headers';
+
+// Import translations directly (better for serverless environments)
+import heroPt from '@/locales/pt/hero.json';
+import heroEn from '@/locales/en/hero.json';
+import heroEs from '@/locales/es/hero.json';
+import partnersPt from '@/locales/pt/partners.json';
+import partnersEn from '@/locales/en/partners.json';
+import partnersEs from '@/locales/es/partners.json';
+import productsPt from '@/locales/pt/products.json';
+import productsEn from '@/locales/en/products.json';
+import productsEs from '@/locales/es/products.json';
+import aboutPt from '@/locales/pt/about.json';
+import aboutEn from '@/locales/en/about.json';
+import aboutEs from '@/locales/es/about.json';
+import whymupiPt from '@/locales/pt/whymupi.json';
+import whymupiEn from '@/locales/en/whymupi.json';
+import whymupiEs from '@/locales/es/whymupi.json';
+import casesPt from '@/locales/pt/cases.json';
+import casesEn from '@/locales/en/cases.json';
+import casesEs from '@/locales/es/cases.json';
+import contactPt from '@/locales/pt/contact.json';
+import contactEn from '@/locales/en/contact.json';
+import contactEs from '@/locales/es/contact.json';
 
 interface HeroTranslations {
   hero: {
@@ -129,45 +150,38 @@ interface ContactTranslations {
 }
 
 async function getHeroTranslations(lang: string = 'pt'): Promise<HeroTranslations> {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'hero.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const translations = { pt: heroPt, en: heroEn, es: heroEs };
+  return translations[lang as keyof typeof translations] || heroPt;
 }
 
 async function getPartnersTranslations(lang: string = 'pt'): Promise<PartnersTranslations> {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'partners.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const translations = { pt: partnersPt, en: partnersEn, es: partnersEs };
+  return translations[lang as keyof typeof translations] || partnersPt;
 }
 
 async function getProductsTranslations(lang: string = 'pt'): Promise<ProductsTranslations> {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'products.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const translations = { pt: productsPt, en: productsEn, es: productsEs };
+  return translations[lang as keyof typeof translations] || productsPt;
 }
 
 async function getAboutTranslations(lang: string = 'pt'): Promise<AboutTranslations> {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'about.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const translations = { pt: aboutPt, en: aboutEn, es: aboutEs };
+  return translations[lang as keyof typeof translations] || aboutPt;
 }
 
 async function getWhyMupiTranslations(lang: string = 'pt'): Promise<WhyMupiTranslations> {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'whymupi.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const translations = { pt: whymupiPt, en: whymupiEn, es: whymupiEs };
+  return translations[lang as keyof typeof translations] || whymupiPt;
 }
 
 async function getCasesTranslations(lang: string = 'pt'): Promise<CasesTranslations> {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'cases.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const translations = { pt: casesPt, en: casesEn, es: casesEs };
+  return translations[lang as keyof typeof translations] || casesPt;
 }
 
 async function getContactTranslations(lang: string = 'pt'): Promise<ContactTranslations> {
-  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'contact.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
+  const translations = { pt: contactPt, en: contactEn, es: contactEs };
+  return translations[lang as keyof typeof translations] || contactPt;
 }
 
 // Função para ler o idioma dos cookies com fallback para 'pt'
