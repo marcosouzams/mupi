@@ -21,7 +21,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MUPI Systems - Soluções Digitais Inovadoras",
+  metadataBase: new URL('https://mupisystems.com.br'),
+  title: {
+    default: "MUPI Systems - Soluções Digitais Inovadoras",
+    template: "%s | MUPI Systems"
+  },
   description: "Transformamos ideias em soluções digitais inovadoras, oferecendo plataformas SaaS que impulsionam o crescimento dos negócios.",
   keywords: "SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems",
   authors: [{ name: "MUPI Systems" }],
@@ -30,6 +34,11 @@ export const metadata: Metadata = {
     description: "Transformamos ideias em soluções digitais inovadoras, oferecendo plataformas SaaS que impulsionam o crescimento dos negócios.",
     type: "website",
     locale: "pt_BR",
+    siteName: "MUPI Systems",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
