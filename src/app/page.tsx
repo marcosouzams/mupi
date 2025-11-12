@@ -240,11 +240,6 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     alternates: {
       canonical: '/',
-      languages: {
-        'pt-BR': '/',
-        'en': '/en',
-        'es': '/es',
-      },
     },
   };
 }
