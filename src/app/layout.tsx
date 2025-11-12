@@ -40,6 +40,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: undefined, // Add your Google Search Console verification code here
+  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 async function getLanguageFromCookies(): Promise<'pt' | 'en' | 'es'> {

@@ -197,54 +197,57 @@ async function getLanguageFromCookies(): Promise<'pt' | 'en' | 'es'> {
   return 'pt'; // Idioma padrão
 }
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://mupisystems.com.br'),
-  title: 'MUPI Systems - Soluções Digitais Inovadoras para Transformar seu Negócio',
-  description: 'Transformamos ideias em soluções digitais inovadoras. Plataformas SaaS como eAgenda, Minha Sala Virtual, Meu Atendimento, eQualifica e mais. Mais de 5000 clientes satisfeitos e 8 anos de experiência em tecnologia.',
-  keywords: 'SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems, eAgenda, Minha Sala Virtual, Meu Atendimento, gestão de atendimento, gestão educacional, agendamento online, transformação digital',
-  authors: [{ name: 'MUPI Systems' }],
-  openGraph: {
+// Generate metadata dynamically to ensure it's in <head>
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    metadataBase: new URL('https://mupisystems.com.br'),
     title: 'MUPI Systems - Soluções Digitais Inovadoras para Transformar seu Negócio',
     description: 'Transformamos ideias em soluções digitais inovadoras. Plataformas SaaS como eAgenda, Minha Sala Virtual, Meu Atendimento, eQualifica e mais. Mais de 5000 clientes satisfeitos e 8 anos de experiência em tecnologia.',
-    type: 'website',
-    locale: 'pt_BR',
-    url: '/',
-    siteName: 'MUPI Systems',
-    images: [
-      {
-        url: '/banner.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'MUPI Systems - Soluções Digitais Inovadoras',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'MUPI Systems - Soluções Digitais Inovadoras',
-    description: 'Transformamos ideias em soluções digitais inovadoras com plataformas SaaS de alta qualidade.',
-    images: ['/banner.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    keywords: 'SaaS, soluções digitais, plataformas, tecnologia, MUPI Systems, eAgenda, Minha Sala Virtual, Meu Atendimento, gestão de atendimento, gestão educacional, agendamento online, transformação digital',
+    authors: [{ name: 'MUPI Systems' }],
+    openGraph: {
+      title: 'MUPI Systems - Soluções Digitais Inovadoras para Transformar seu Negócio',
+      description: 'Transformamos ideias em soluções digitais inovadoras. Plataformas SaaS como eAgenda, Minha Sala Virtual, Meu Atendimento, eQualifica e mais. Mais de 5000 clientes satisfeitos e 8 anos de experiência em tecnologia.',
+      type: 'website',
+      locale: 'pt_BR',
+      url: '/',
+      siteName: 'MUPI Systems',
+      images: [
+        {
+          url: '/banner.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'MUPI Systems - Soluções Digitais Inovadoras',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'MUPI Systems - Soluções Digitais Inovadoras',
+      description: 'Transformamos ideias em soluções digitais inovadoras com plataformas SaaS de alta qualidade.',
+      images: ['/banner.jpg'],
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
-  },
-  alternates: {
-    canonical: '/',
-    languages: {
-      'pt-BR': '/',
-      'en': '/en',
-      'es': '/es',
+    alternates: {
+      canonical: '/',
+      languages: {
+        'pt-BR': '/',
+        'en': '/en',
+        'es': '/es',
+      },
     },
-  },
-};
+  };
+}
 
 const HomePage = async () => {
   // Lê o idioma preferido do cookie (server-side)
