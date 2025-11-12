@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { ClientLayout } from "@/components";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import { promises as fs } from 'fs';
+import path from 'path';
+import { cookies } from 'next/headers';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,13 +27,40 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+async function getLanguageFromCookies(): Promise<'pt' | 'en' | 'es'> {
+  const cookieStore = await cookies();
+  const lang = cookieStore.get('NEXT_LOCALE')?.value;
+  
+  if (lang && ['pt', 'en', 'es'].includes(lang)) {
+    return lang as 'pt' | 'en' | 'es';
+  }
+  
+  return 'pt';
+}
+
+async function getNavigationTranslations(lang: string) {
+  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'navigation.json');
+  const fileContents = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(fileContents);
+}
+
+async function getFooterTranslations(lang: string) {
+  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'footer.json');
+  const fileContents = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(fileContents);
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const currentLang = await getLanguageFromCookies();
+  const navTranslations = await getNavigationTranslations(currentLang);
+  const footerTranslations = await getFooterTranslations(currentLang);
+
   return (
-    <html lang="pt-BR">
+    <html lang={currentLang === 'pt' ? 'pt-BR' : currentLang === 'en' ? 'en-US' : 'es-ES'}>
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
@@ -52,9 +83,15 @@ export default function RootLayout({
           }}
         />
         
-        <ClientLayout>
-          {children}
-        </ClientLayout>
+        <LanguageProvider>
+          <ClientLayout 
+            navTranslations={navTranslations}
+            footerTranslations={footerTranslations}
+            initialLanguage={currentLang}
+          >
+            {children}
+          </ClientLayout>
+        </LanguageProvider>
       </body>
     </html>
   );

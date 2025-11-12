@@ -1,6 +1,6 @@
-export { Navigation } from './Navigation';
-export { default as Footer } from './Footer';
-export { default as ClientLayout } from './ClientLayout';
+export { Navigation } from './NavigationServer';
+export { default as Footer } from './FooterServer';
+export { default as ClientLayout } from './I18nClientLayout';
 
 // Sections
 export * from './sections';
