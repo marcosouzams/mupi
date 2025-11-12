@@ -1,0 +1,68 @@
+{
+  "title": "Entre em Contato",
+  "subtitle": "Descubra nossas plataformas SaaS prontas para impulsionar seu negócio",
+  "description": "Estamos aqui para ajudar você a encontrar a solução perfeita. Entre em contato conosco e conheça nossas plataformas digitais que vão transformar a gestão do seu negócio.",
+  "form": {
+    "title": "Envie sua mensagem",
+    "name": {
+      "label": "Nome completo",
+      "placeholder": "Digite seu nome completo",
+      "error": "Nome é obrigatório"
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "seu@email.com",
+      "error": "E-mail válido é obrigatório"
+    },
+    "phone": {
+      "label": "Telefone",
+      "placeholder": "(00) 00000-0000",
+      "error": "Telefone é obrigatório"
+    },
+    "company": {
+      "label": "Empresa",
+      "placeholder": "Nome da sua empresa"
+    },
+    "subject": {
+      "label": "Assunto",
+      "placeholder": "Sobre o que você gostaria de falar?",
+      "error": "Assunto é obrigatório"
+    },
+    "message": {
+      "label": "Mensagem",
+      "placeholder": "Descreva seu projeto, necessidade ou dúvida...",
+      "error": "Mensagem é obrigatória"
+    },
+    "submit": "Enviar mensagem",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
+    "error": "Erro ao enviar mensagem. Tente novamente."
+  },
+  "contact_info": {
+    "title": "Informações de Contato",
+    "email": {
+      "label": "E-mail",
+      "value": "contato@mupisystems.com.br"
+    },
+    "phone": {
+      "label": "Telefone",
+      "value": "+55 (38) 3214-4592"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "value": "+55 (11) 94252-9100"
+    },
+    "address": {
+      "label": "Endereço",
+      "value": "Rua Dom João Pimenta 701, loja 2\nMontes Claros - MG\nCEP: 39400-001"
+    },
+    "business_hours": {
+      "label": "Horário de Funcionamento",
+      "value": "Segunda a Sexta: 08h às 18h\nSábado: 08h às 12h"
+    }
+  },
+  "map": {
+    "title": "Nossa Localização",
+    "description": "Venha nos visitar em nosso escritório em Montes Claros - MG"
+  }
+}

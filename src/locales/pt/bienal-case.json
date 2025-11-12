@@ -1,0 +1,141 @@
+{
+  "bienalCase": {
+    "meta": {
+      "backButton": "Voltar para Cases",
+      "category": "Eventos",
+      "author": "Por admin",
+      "date": "26 de junho de 2025",
+      "readingTime": "8 min de leitura"
+    },
+    "header": {
+      "title": "Desafios do Agendamento na Bienal do Livro Rio 2025"
+    },
+    "overview": {
+      "title": "Visão Geral do Projeto",
+      "description1": "A Bienal do Livro Rio é um dos maiores eventos literários do Brasil, atraindo milhares de visitantes ávidos por novas histórias e experiências. Em sua edição de 2025, a Mupi Systems teve o privilégio de participar ativamente, fornecendo sua expertise em agendamento online para uma das atrações mais populares: as Escape Rooms.",
+      "description2": "Esta publicação detalha nossa contribuição, os desafios inerentes ao agendamento de alto volume em eventos de grande porte e como a plataforma eAgenda se destaca como uma solução eficiente.",
+      "description3": "Eventos como a Bienal do Livro Rio apresentam um cenário único e desafiador para o agendamento online. A alta demanda e a natureza efêmera das atrações exigem uma plataforma que não apenas gerencie agendamentos, mas que também seja capaz de lidar com picos de acesso e regras complexas.",
+      "projectInfo": {
+        "title": "Informações do Projeto",
+        "client": "Cliente:",
+        "clientName": "Bienal do Livro Rio",
+        "duration": "Duração:",
+        "durationValue": "7 dias",
+        "category": "Categoria:",
+        "categoryValue": "Eventos",
+        "solution": "Solução:",
+        "solutionValue": "eAgenda"
+      }
+    },
+    "objective": {
+      "title": "Objetivo",
+      "description": "Desenvolver uma solução de agendamento online robusta e escalável para gerenciar as Escape Rooms da Bienal do Livro Rio 2025, garantindo uma experiência fluida para milhares de visitantes simultâneos e implementando regras específicas de controle e validação."
+    },
+    "approach": {
+      "title": "Abordagem",
+      "description": "Nossa abordagem focou em criar uma arquitetura escalável capaz de lidar com picos de acesso e implementar regras complexas de negócio específicas para o evento. A plataforma eAgenda foi configurada para atender às necessidades únicas da Bienal, oferecendo soluções eficazes para cada desafio identificado.",
+      "architecture": {
+        "title": "Arquitetura Escalável",
+        "description": "Sistema preparado para suportar milhares de acessos simultâneos com estabilidade e velocidade"
+      },
+      "rules": {
+        "title": "Regras Personalizadas",
+        "description": "Implementação de validações específicas do evento e controles de acesso"
+      }
+    },
+    "challenges": {
+      "title": "Desafios Detalhados e Soluções",
+      "challenge1": {
+        "title": "1. Grande Volume de Acesso e Agendamentos Simultâneos",
+        "description": "Um dos maiores obstáculos em eventos populares é o volume massivo de acessos e agendamentos que ocorrem em um curto espaço de tempo. Milhares de usuários tentam garantir seu lugar em atrações como as Escape Rooms simultaneamente, o que pode sobrecarregar sistemas menos robustos, resultando em lentidão, erros e uma experiência frustrante para o usuário. A plataforma eAgenda foi projetada para suportar essa carga, utilizando uma arquitetura escalável que garante a estabilidade e a velocidade necessárias mesmo em momentos de pico. Isso permitiu que a Bienal do Livro Rio oferecesse um processo de agendamento fluido e eficiente, mesmo com a alta procura pelas Escape Rooms."
+      },
+      "challenge2": {
+        "title": "2. Limitação de Agendamentos por Usuário (CPF e E-mail)",
+        "description": "Para garantir que o maior número possível de visitantes tivesse a oportunidade de participar das Escape Rooms, era crucial implementar um sistema que limitasse o número de agendamentos por indivíduo. A plataforma eAgenda permitiu a configuração de regras que impediam agendamentos duplicados ou excessivos por CPF e e-mail. Essa funcionalidade é vital para evitar fraudes e garantir uma distribuição justa das vagas, assegurando que a experiência fosse acessível a um público mais amplo e que as vagas não fossem monopolizadas por poucos usuários."
+      },
+      "challenge3": {
+        "title": "3. Restrições de Idade para Participação",
+        "description": "Algumas atrações, como as Escape Rooms, podem ter restrições de idade devido ao conteúdo ou à complexidade dos desafios. O eAgenda oferece a flexibilidade de incorporar essas regras diretamente no processo de agendamento. Isso significa que, ao tentar agendar, o sistema verifica automaticamente se o participante atende aos requisitos de idade, bloqueando agendamentos de usuários que não se enquadram e garantindo a conformidade com as diretrizes do evento. Essa funcionalidade simplifica a gestão para os organizadores e evita situações de não conformidade no local da atração."
+      },
+      "challenge4": {
+        "title": "4. Gerenciamento de Lista de Espera",
+        "description": "Em eventos com alta demanda e vagas limitadas, é comum que alguns participantes não compareçam, deixando vagas ociosas. Para otimizar a ocupação e a experiência do público, o eAgenda incluiu um sistema de lista de espera. Quando todas as vagas para um determinado horário estavam preenchidas, os interessados podiam se inscrever em uma lista de espera. Em caso de desistência ou não-comparecimento, o sistema notificava automaticamente os próximos da fila, permitindo que as vagas fossem preenchidas rapidamente e minimizando perdas de oportunidade para os visitantes e para a organização do evento."
+      },
+      "challenge5": {
+        "title": "5. Agendamento com Acompanhantes e Validação de Dados",
+        "description": "Considerando que as Escape Rooms são atividades em grupo, a plataforma eAgenda foi configurada para permitir que um único agendamento incluísse múltiplos participantes. Além disso, para garantir a integridade dos dados e a participação efetiva, foi implementado um sistema de validação onde os dados completos dos acompanhantes deveriam ser informados dentro de um prazo estipulado. Caso contrário, o agendamento era automaticamente cancelado, liberando as vagas para outros interessados e otimizando a gestão das sessões."
+      }
+    },
+    "tools": {
+      "title": "Ferramentas Utilizadas",
+      "mainTechTitle": "Tecnologia Principal",
+      "eAgendaPlatform": "Plataforma eAgenda",
+      "cloudArchitecture": "Arquitetura Cloud",
+      "functionalitiesTitle": "Funcionalidades",
+      "validationSystem": "Sistema de Validação",
+      "waitingList": "Lista de Espera",
+      "mainTech": {
+        "title": "Tecnologia Principal",
+        "platform": "Plataforma eAgenda",
+        "architecture": "Arquitetura Cloud"
+      },
+      "features": {
+        "title": "Funcionalidades",
+        "validation": "Sistema de Validação",
+        "waitlist": "Lista de Espera"
+      }
+    },
+    "results": {
+      "title": "Resultados",
+      "description": "A implementação da plataforma eAgenda na Bienal do Livro Rio 2025 foi um sucesso completo, proporcionando uma gestão eficiente das Escape Rooms e uma experiência excepcional para os visitantes.",
+      "stable": {
+        "title": "Sistema Estável",
+        "description": "Zero downtime durante picos de acesso"
+      },
+      "control": {
+        "title": "Controle Eficaz",
+        "description": "Distribuição justa de vagas implementada"
+      },
+      "optimization": {
+        "title": "Otimização de Vagas",
+        "description": "Lista de espera minimizou vagas ociosas"
+      },
+      "experience": {
+        "title": "Experiência Fluida",
+        "description": "Processo de agendamento intuitivo"
+      },
+      "conclusion": {
+        "title": "Conclusão",
+        "description": "A participação da Mupi Systems na Bienal do Livro Rio 2025, através da plataforma eAgenda, demonstra a capacidade da nossa tecnologia em lidar com os desafios complexos do agendamento online em eventos de grande escala. Ao oferecer soluções para o alto volume de acessos, controle de agendamentos por usuário, restrições de idade e gerenciamento de lista de espera, a eAgenda provou ser uma ferramenta indispensável para otimizar a experiência do público e a eficiência operacional dos organizadores. Estamos orgulhosos de ter contribuído para o sucesso de uma das atrações mais procuradas da Bienal e continuamos comprometidos em desenvolver soluções inovadoras que atendam às necessidades dinâmicas do mercado de eventos."
+      }
+    },
+    "sidebar": {
+      "challengesTitle": "Principais Desafios",
+      "challenge1": {
+        "title": "Alto Volume de Acessos",
+        "description": "Milhares de usuários tentando agendar simultaneamente"
+      },
+      "challenge2": {
+        "title": "Limitação por Usuário",
+        "description": "Controle de agendamentos por CPF e e-mail"
+      },
+      "challenge3": {
+        "title": "Restrições de Idade",
+        "description": "Validação automática de requisitos etários"
+      },
+      "challenge4": {
+        "title": "Gestão de Lista de Espera",
+        "description": "Otimização de vagas em caso de desistências"
+      },
+      "challenge5": {
+        "title": "Agendamento em Grupo",
+        "description": "Validação de dados de acompanhantes"
+      }
+    },
+    "cta": {
+      "title": "Precisa de uma solução de agendamento?",
+      "description": "Entre em contato conosco e descubra como o eAgenda pode transformar a gestão do seu evento.",
+      "button": "Falar com especialista"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "products": {
+    "badge": "OUR PLATFORMS",
+    "title": "Catalog of",
+    "titleHighlight": "Solutions",
+    "description": "Explore our innovative technology platforms",
+    "leftSection": {
+      "title": "Innovation and Technology",
+      "titleHighlight": "for the Future",
+      "paragraph1": "MUPI SYSTEMS was born to revolutionize the market through scalable and innovative technology platforms. We develop solutions that not only solve real problems, but transform the way companies operate and grow in the digital environment.",
+      "paragraph2": "Our focus is on developing solutions that drive digital transformation: intelligent customer service systems, human resources management platforms (recruitment, development and training), advanced technologies for text analysis (contracts, documents, news), smart contracts and autonomous AI agents that are revolutionizing business processes.",
+      "tags": {
+        "customerService": "Customer Service",
+        "hrManagement": "HR Management",
+        "textAnalysis": "Text Analysis",
+        "smartContracts": "Smart Contracts"
+      }
+    },
+    "featuresTitle": "Key features",
+    "ctaLearnMore": "Learn more",
+    "ctaDemo": "Demo",
+    "items": {
+      "eagenda": {
+        "title": "eAgenda",
+        "category": "Scheduling",
+        "description": "General-purpose online scheduling platform to optimize appointment and schedule management.",
+        "features": ["Online scheduling", "Schedule management", "Automatic notifications", "Calendar integration"]
+      },
+      "minhaSala": {
+        "title": "Minha Sala Virtual",
+        "category": "Education",
+        "description": "E-learning platform for corporate training focused on engagement and results.",
+        "features": ["Online courses", "Gamification", "Progress reports", "Certifications"]
+      },
+      "meuAtendimento": {
+        "title": "Meu Atendimento Virtual",
+        "category": "Customer Service",
+        "description": "Intelligent queue management to improve customer experience.",
+        "features": ["Queue management", "Virtual service", "Real-time metrics", "Integrated chat"]
+      },
+      "atendeAqui": {
+        "title": "Atende Aqui",
+        "category": "Support",
+        "description": "Complete ticket management for support, sales and development in a single platform.",
+        "features": ["Ticket management", "Multichannel support", "Knowledge base", "Process automation"]
+      },
+      "eQualifica": {
+        "title": "eQualifica",
+        "category": "Qualification",
+        "description": "Platform specialized in registry qualification for secure and efficient processes.",
+        "features": ["Digital qualification", "Electronic signature", "Document validation", "Compliance"]
+      },
+      "eTalentos": {
+        "title": "eTalentos",
+        "category": "HR",
+        "description": "Complete solution for selection, recruitment and resume screening.",
+        "features": ["Digital recruitment", "Automatic screening", "Online assessments", "Candidate pipeline"]
+      },
+      "sigVirtual": {
+        "title": "SIG-Virtual",
+        "category": "Management",
+        "description": "Integrated system for people management, compliance, privacy and information security.",
+        "features": ["People management", "Automatic compliance", "Data security", "Integrated reports"]
+      },
+      "textualiza": {
+        "title": "Textualiza",
+        "category": "Automation",
+        "description": "Next generation document automation. Transform documents into structured data, generate content and optimize processes with AI.",
+        "features": ["Intelligent OCR", "Text Structuring", "Content Generation", "Multi-format Export"]
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Contact Us",
+  "subtitle": "Discover our ready-to-use SaaS platforms to boost your business",
+  "description": "We are here to help you find the perfect solution. Contact us and discover our digital platforms that will transform your business management.",
+  "form": {
+    "title": "Send your message",
+    "name": {
+      "label": "Full name",
+      "placeholder": "Enter your full name",
+      "error": "Name is required"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com",
+      "error": "Valid email is required"
+    },
+    "phone": {
+      "label": "Phone",
+      "placeholder": "+1 (000) 000-0000",
+      "error": "Phone is required"
+    },
+    "company": {
+      "label": "Company",
+      "placeholder": "Your company name"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "What would you like to talk about?",
+      "error": "Subject is required"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Describe your project, need or question...",
+      "error": "Message is required"
+    },
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We will contact you soon.",
+    "error": "Error sending message. Please try again."
+  },
+  "contact_info": {
+    "title": "Contact Information",
+    "email": {
+      "label": "Email",
+      "value": "contact@mupisystems.com.br"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "+55 (38) 3214-4592"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "value": "+55 (11) 94252-9100"
+    },
+    "address": {
+      "label": "Address",
+      "value": "Rua Dom João Pimenta 701, store 2\nMontes Claros - MG\nZIP: 39400-001"
+    },
+    "business_hours": {
+      "label": "Business Hours",
+      "value": "Monday to Friday: 8am to 6pm\nSaturday: 8am to 12pm"
+    }
+  },
+  "map": {
+    "title": "Our Location",
+    "description": "Come visit us at our office in Montes Claros - MG"
+  }
+}

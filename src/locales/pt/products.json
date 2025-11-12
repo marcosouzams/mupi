@@ -1,0 +1,73 @@
+{
+  "products": {
+    "badge": "NOSSAS PLATAFORMAS",
+    "title": "Catálogo de",
+    "titleHighlight": "Soluções",
+    "description": "Explore nossas plataformas tecnológicas inovadoras",
+    "leftSection": {
+      "title": "Inovação e Tecnologia",
+      "titleHighlight": "para o Futuro",
+      "paragraph1": "A MUPI SYSTEMS nasceu para revolucionar o mercado através de plataformas tecnológicas escaláveis e inovadoras. Desenvolvemos soluções que não apenas resolvem problemas reais, mas transformam a forma como empresas operam e crescem no ambiente digital.",
+      "paragraph2": "Nosso foco está em desenvolver soluções que impulsionam a transformação digital: sistemas inteligentes de atendimento ao cliente, plataformas de gestão de recursos humanos (recrutamento, desenvolvimento e treinamento), tecnologias avançadas para análise de textos (contratos, documentos, notícias), smart contracts e agentes de IA autônomos que estão revolucionando processos de negócio.",
+      "tags": {
+        "customerService": "Atendimento ao Cliente",
+        "hrManagement": "Gestão de RH",
+        "textAnalysis": "Análise de Textos",
+        "smartContracts": "Smart Contracts"
+      }
+    },
+    "featuresTitle": "Principais recursos",
+    "ctaLearnMore": "Saiba mais",
+    "ctaDemo": "Demonstração",
+    "items": {
+      "eagenda": {
+        "title": "eAgenda",
+        "category": "Agendamento",
+        "description": "Plataforma de agendamento online de uso geral para otimizar a gestão de compromissos e horários.",
+        "features": ["Agendamento online", "Gestão de horários", "Notificações automáticas", "Integração com calendários"]
+      },
+      "minhaSala": {
+        "title": "Minha Sala Virtual",
+        "category": "Educação",
+        "description": "Plataforma de EAD para treinamentos corporativos com foco em engajamento e resultados.",
+        "features": ["Cursos online", "Gamificação", "Relatórios de progresso", "Certificações"]
+      },
+      "meuAtendimento": {
+        "title": "Meu Atendimento Virtual",
+        "category": "Atendimento",
+        "description": "Gestão inteligente de filas de atendimento para melhorar a experiência do cliente.",
+        "features": ["Gestão de filas", "Atendimento virtual", "Métricas em tempo real", "Chat integrado"]
+      },
+      "atendeAqui": {
+        "title": "Atende Aqui",
+        "category": "Suporte",
+        "description": "Gestão completa de tickets de suporte, vendas e desenvolvimento em uma única plataforma.",
+        "features": ["Gestão de tickets", "Suporte multicanal", "Base de conhecimento", "Automação de processos"]
+      },
+      "eQualifica": {
+        "title": "eQualifica",
+        "category": "Qualificação",
+        "description": "Plataforma especializada em qualificação registral para processos seguros e eficientes.",
+        "features": ["Qualificação digital", "Assinatura eletrônica", "Validação de documentos", "Compliance"]
+      },
+      "eTalentos": {
+        "title": "eTalentos",
+        "category": "RH",
+        "description": "Solução completa para seleção, recrutamento e triagem de currículos.",
+        "features": ["Recrutamento digital", "Triagem automática", "Avaliações online", "Pipeline de candidatos"]
+      },
+      "sigVirtual": {
+        "title": "SIG-Virtual",
+        "category": "Gestão",
+        "description": "Sistema integrado de gestão de pessoas, compliance, privacidade e segurança da informação.",
+        "features": ["Gestão de pessoas", "Compliance automático", "Segurança de dados", "Relatórios integrados"]
+      },
+      "textualiza": {
+        "title": "Textualiza",
+        "category": "Automação",
+        "description": "Nova geração em automação de documentos. Transforme documentos em dados estruturados, gere conteúdos e otimize processos com IA.",
+        "features": ["OCR Inteligente", "Estruturação de Textos", "Geração de Conteúdo", "Exportação em múltiplos formatos"]
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "title": "Beyond technology, our software offers real impact",
+  "subtitle": "We develop solutions that transform processes, optimize results and generate tangible value for companies throughout Brazil",
+  "description": "We specialize in developing and offering ready-to-use SaaS platforms that revolutionize business management and boost our clients' growth.",
+  
+  "hero": {
+    "titleLine1": "beyond technology,",
+    "titleLine2": "our software offers",
+    "titleLine3": "real impact.",
+    "stats": {
+      "experience": {
+        "number": "10+",
+        "label": "Years of experience"
+      },
+      "clients": {
+        "number": "500+",
+        "label": "Clients served"
+      },
+      "platforms": {
+        "number": "8",
+        "label": "SaaS Platforms"
+      }
+    }
+  },
+
+  "nameOrigin": {
+    "badge": "NAME ORIGIN",
+    "title": "A tribute to our origins",
+    "description": "The name Mupi Systems carries in its essence a tribute to the origins of one of its creators. Inspired by the Mupi River, located in the interior of Pará, the name symbolizes resilience, connection and fluidity, values that also guide how we develop our technological solutions.",
+    "extraText": "Just as the river traces its course with constancy and purpose, Mupi Systems was created with the mission of connecting innovation, knowledge and technology, bringing robust and efficient solutions to different segments.",
+    "extraText2": "This link with the Mupi River represents more than a geographical tribute: it is a reminder that even the most technological initiatives have human roots, and that true progress is born from the balance between tradition and innovation."
+  },
+
+  "mission": {
+    "badge": "OUR MISSION",
+    "title": "We democratize access to cutting-edge technology",
+    "description": "Our mission is to make advanced technological solutions accessible to companies of all sizes, offering complete and ready-to-use SaaS platforms.",
+    "values": [
+      {
+        "title": "Constant Innovation",
+        "description": "We always seek the best technologies and market practices."
+      },
+      {
+        "title": "Customer Focus",
+        "description": "We develop solutions thinking about the real needs of our users."
+      },
+      {
+        "title": "Premium Quality",
+        "description": "We deliver robust, secure and high-performance platforms."
+      },
+      {
+        "title": "Specialized Support",
+        "description": "We offer specialized monitoring and technical support."
+      }
+    ]
+  },
+
+  "story": {
+    "badge": "OUR STORY",
+    "title": "More than technology, we deliver custom solutions",
+    "description": "More than providing software, we deliver custom solutions with high standards of quality, reliability and security. We work side by side with our clients, understanding their challenges, particularities and objectives to drive sustainable results.",
+    "extraText": "We believe that technology is a strategic ally for the growth and success of our partners. Therefore, we continuously invest in the evolution of our platforms, ensuring they keep up with market changes and offer innovation with real impact.",
+    "timeline": [
+      {
+        "year": "2014",
+        "title": "MUPI Foundation",
+        "description": "We started our journey focusing on custom software development."
+      },
+      {
+        "year": "2018",
+        "title": "First SaaS Platform",
+        "description": "We launched our first SaaS solution for business management."
+      },
+      {
+        "year": "2020",
+        "title": "National Expansion",
+        "description": "We reached clients throughout Brazil with our digital platforms."
+      },
+      {
+        "year": "2024",
+        "title": "Complete Portfolio",
+        "description": "We consolidated a portfolio of 8 specialized SaaS platforms."
+      }
+    ]
+  },
+
+  "team": {
+    "badge": "OUR TEAM",
+    "title": "Digital transformation specialists",
+    "description": "Our team consists of experienced professionals passionate about technology, always ready to deliver the best solutions.",
+    "departments": [
+      {
+        "name": "Development",
+        "description": "Specialists in modern technologies and scalable architectures"
+      },
+      {
+        "name": "UX/UI Design",
+        "description": "Focused on creating intuitive and engaging experiences"
+      },
+      {
+        "name": "Technical Support",
+        "description": "Dedicated to the success and satisfaction of our clients"
+      },
+      {
+        "name": "Business",
+        "description": "Specialists in understanding and meeting market needs"
+      }
+    ]
+  },
+
+  "values": {
+    "badge": "OUR VALUES",
+    "title": "Commitment to excellence, innovation and success",
+    "subtitle": "Our values reflect MUPI SYSTEMS' commitment to excellence, innovation and the success of our clients.",
+    "list": [
+      {
+        "number": "01",
+        "title": "Innovation",
+        "description": "We seek to go beyond technology for technology's sake. Every innovation we develop has a clear purpose: solve real problems, improve processes and add value to our clients. We create practical and transformative solutions, with direct impact on results."
+      },
+      {
+        "number": "02",
+        "title": "Customer Focus",
+        "description": "The customer is at the center of everything we do. We listen, understand their needs and adapt our solutions to generate concrete results. More than delivering technology, we seek to build lasting partnerships based on empathy, proximity and commitment to the success of each client."
+      },
+      {
+        "number": "03",
+        "title": "Knowledge",
+        "description": "We value knowledge that generates action. We unite market experience, technical expertise and process mastery to deliver efficient, well-founded and practically applicable solutions, in an agile and intelligent way."
+      },
+      {
+        "number": "04",
+        "title": "Trust and Transparency",
+        "description": "We believe in relationships based on mutual trust. We maintain open, clear and truthful communication with our clients, partners and team. Transparency is present in all stages, from planning to execution."
+      },
+      {
+        "number": "05",
+        "title": "Scalability and Efficiency",
+        "description": "Our solutions are designed to grow with the client. We develop scalable, modular and high-performance systems that accompany business evolution without compromising operational efficiency."
+      },
+      {
+        "number": "06",
+        "title": "High-Level Consultative Support",
+        "description": "More than technical support, we offer consultative support. We are alongside our clients at every stage, helping to make decisions, implement best practices and obtain maximum value from our platforms."
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Ready to transform your business?",
+    "description": "Discover how our SaaS platforms can revolutionize your company's management and boost your growth.",
+    "contactButton": "Talk to specialist",
+    "platformsButton": "Know platforms"
+  }
+}

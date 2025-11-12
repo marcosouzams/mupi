@@ -1,0 +1,54 @@
+{
+  "cases": {
+    "hero": {
+      "viewFullCase": "View Full Case"
+    },
+    "header": {
+      "subtitle": "OUR PROJECTS",
+      "title": "Our <span class=\"text-[#5667fe]\">success stories</span>",
+      "description": "Explore in detail how our solutions transformed challenges into exceptional results."
+    },
+    "filters": {
+      "filterBySector": "Filter by sector",
+      "all": "All"
+    },
+    "caseCard": {
+      "viewFullCase": "View full case"
+    },
+    "emptyState": {
+      "title": "No cases found",
+      "description": "There are no cases available for this sector at the moment.",
+      "viewAll": "View all cases"
+    },
+    "cta": {
+      "title": "Ready to transform your next project into a success story?",
+      "description": "Our expertise in scheduling and management solutions can revolutionize your business or event. Let's talk about your needs and create something extraordinary together.",
+      "contactSpecialists": "Talk to our specialists",
+      "knowSolutions": "Learn about our solutions"
+    },
+    "sectors": {
+      "todos": "All sectors",
+      "eventos": "Events",
+      "cartorio": "Notary Offices",
+      "agricultura": "Agriculture",
+      "farmaceutico": "Pharmaceutical",
+      "orgaos-publicos": "Public Agencies",
+      "educacao": "Education",
+      "saude": "Healthcare"
+    },
+    "caseData": {
+      "1": {
+        "title": "Desafios do Agendamento na Bienal do Livro Rio 2025",
+        "shortTitle": "Bienal do Livro Rio 2025",
+        "description": "Complete scheduling solution for Escape Rooms at Brazil's largest literary event.",
+        "category": "Events"
+      },
+      "2": {
+        "title": "Transformação Digital no 1º Registro de Imóveis de Montes Claros",
+        "shortTitle": "1º Registro de Imóveis de Montes Claros",
+        "description": "Complete modernization of notarial services with integrated scheduling and management solutions.",
+        "category": "Notary Offices"
+      }
+    }
+  }
+}

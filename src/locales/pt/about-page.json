@@ -1,0 +1,94 @@
+{
+  "title": "Além da tecnologia, nossos softwares oferecem impactos reais",
+  "subtitle": "Desenvolvemos soluções que transformam processos, otimizam resultados e geram valor tangível para empresas em todo o Brasil",
+  "description": "Fundada em 2017 e com sede em Montes Claros, Minas Gerais, a Mupi Systems é uma empresa especializada em tecnologia e inovação, com foco no desenvolvimento de soluções escaláveis que otimizam processos e promovem a transformação digital de organizações no Brasil e no exterior.",
+
+  "hero": {
+    "titleLine1": "além da tecnologia,",
+    "titleLine2": "nossos softwares oferecem",
+    "titleLine3": "impactos reais.",
+    "foundedYear": "2017",
+    "location": "Montes Claros, MG",
+    "focus": "Transformação Digital"
+  },
+
+  "story": {
+    "badge": "NOSSA HISTÓRIA",
+    "title": "Mais do que tecnologia, entregamos soluções sob medida",
+    "description": "Mais do que fornecer software, entregamos soluções sob medida, com alto padrão de qualidade, confiabilidade e segurança. Atuamos lado a lado com nossos clientes, entendendo seus desafios, particularidades e objetivos para impulsionar resultados de forma sustentável.",
+    "extraText": "Acreditamos que a tecnologia é um aliado estratégico para o crescimento e sucesso de nossos parceiros. Por isso, investimos continuamente na evolução de nossas plataformas, garantindo que acompanhem as mudanças do mercado e ofereçam inovação com impacto real."
+  },
+
+  "nameOrigin": {
+    "badge": "ORIGEM DO NOME",
+    "title": "Uma homenagem às nossas origens",
+    "description": "O nome Mupi Systems carrega em sua essência uma homenagem às origens de um de seus idealizadores. Inspirado no Rio Mupi, localizado no interior do Pará, o nome simboliza resiliência, conexão e fluidez, valores que também guiam a forma como desenvolvemos nossas soluções tecnológicas.",
+    "extraText": "Assim como o rio traça seu percurso com constância e propósito, a Mupi Systems foi criada com a missão de conectar inovação, conhecimento e tecnologia, levando soluções robustas e eficientes a diferentes segmentos.",
+    "extraText2": "Esse vínculo com o Rio Mupi representa mais do que um tributo geográfico: é um lembrete de que mesmo as iniciativas mais tecnológicas têm raízes humanas, e que o progresso verdadeiro nasce do equilíbrio entre tradição e inovação."
+  },
+
+  "mission": {
+    "badge": "NOSSA MISSÃO",
+    "title": "Transformar a forma como nossos clientes operam",
+    "description": "Investir em soluções tecnológicas escaláveis e inteligentes que não apenas otimizem processos, mas transformem a forma como nossos clientes operam, crescem e inovam.",
+    "commitment": "Nosso compromisso é desenvolver plataformas robustas, acessíveis e adaptáveis que gerem valor real para organizações em diferentes contextos e segmentos, promovendo eficiência, inteligência operacional e vantagem competitiva. Acreditamos que a tecnologia deve estar a serviço das pessoas – e é com esse propósito que criamos cada solução."
+  },
+
+  "vision": {
+    "badge": "NOSSA VISÃO",
+    "title": "Ser reconhecida globalmente como referência em inovação",
+    "description": "Ser reconhecida globalmente como uma referência em inovação tecnológica, excelência em produtos e relacionamento próximo com o cliente.",
+    "future": "Buscamos construir um futuro onde a automação inteligente, a personalização e o uso estratégico de dados permitam que empresas de todos os portes e regiões operem com mais eficiência, segurança e inteligência. Queremos ser o parceiro de empresas que desejam transformar desafios em oportunidades com o apoio da tecnologia."
+  },
+
+  "values": {
+    "badge": "NOSSOS VALORES",
+    "title": "Compromisso com excelência, inovação e sucesso",
+    "subtitle": "Nossos valores refletem o compromisso da MUPI SYSTEMS com a excelência, a inovação e o sucesso dos nossos clientes.",
+    "list": [
+      {
+        "number": "01",
+        "title": "Inovação",
+        "description": "Buscamos ir além da tecnologia pela tecnologia. Toda inovação que desenvolvemos tem um propósito claro: resolver problemas reais, melhorar processos e agregar valor aos nossos clientes. Criamos soluções práticas e transformadoras, com impacto direto nos resultados."
+      },
+      {
+        "number": "02",
+        "title": "Foco no Cliente",
+        "description": "O cliente está no centro de tudo o que fazemos. Escutamos, compreendemos suas necessidades e adaptamos nossas soluções para gerar resultados concretos. Mais do que entregar tecnologia, buscamos construir parcerias duradouras com base em empatia, proximidade e compromisso com o sucesso de cada cliente."
+      },
+      {
+        "number": "03",
+        "title": "Conhecimento",
+        "description": "Valorizamos o conhecimento que gera ação. Unimos experiência de mercado, expertise técnica e domínio de processos para entregar soluções eficientes, bem fundamentadas e aplicáveis na prática, de forma ágil e inteligente."
+      },
+      {
+        "number": "04",
+        "title": "Confiança e Transparência",
+        "description": "Acreditamos em relações baseadas na confiança mútua. Mantemos uma comunicação aberta, clara e verdadeira com nossos clientes, parceiros e equipe. A transparência está presente em todas as etapas, do planejamento à execução."
+      },
+      {
+        "number": "05",
+        "title": "Escalabilidade e Eficiência",
+        "description": "Nossas soluções são pensadas para crescer com o cliente. Desenvolvemos sistemas escaláveis, modulares e de alta performance, que acompanham a evolução dos negócios sem comprometer a eficiência operacional."
+      },
+      {
+        "number": "06",
+        "title": "Suporte Consultivo de Alto Nível",
+        "description": "Mais do que atendimento técnico, oferecemos suporte consultivo. Estamos ao lado dos nossos clientes em cada etapa, ajudando a tomar decisões, implementar boas práticas e obter o máximo valor das nossas plataformas."
+      }
+    ]
+  },
+
+  "whatWeDo": {
+    "badge": "O QUE FAZEMOS",
+    "title": "Ferramentas que aprimoram processos",
+    "description": "Desenvolvemos ferramentas que ajudam empresas a aprimorar seus processos com agilidade, inteligência e escalabilidade. Nossas soluções são aplicadas em diferentes áreas como atendimento ao cliente, gestão de pessoas, compliance e inteligência artificial aplicada."
+  },
+
+  "cta": {
+    "title": "Pronto para transformar seu negócio?",
+    "description": "Descubra como nossas soluções podem revolucionar a gestão da sua empresa e impulsionar seu crescimento.",
+    "contactButton": "Falar com especialista",
+    "platformsButton": "Conhecer nossas soluções"
+  }
+}

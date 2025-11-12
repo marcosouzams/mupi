@@ -1,0 +1,73 @@
+{
+  "products": {
+    "badge": "NUESTRAS PLATAFORMAS",
+    "title": "Catálogo de",
+    "titleHighlight": "Soluciones",
+    "description": "Explora nuestras plataformas tecnológicas innovadoras",
+    "leftSection": {
+      "title": "Innovación y Tecnología",
+      "titleHighlight": "para el Futuro",
+      "paragraph1": "MUPI SYSTEMS nació para revolucionar el mercado a través de plataformas tecnológicas escalables e innovadoras. Desarrollamos soluciones que no solo resuelven problemas reales, sino que transforman la forma en que las empresas operan y crecen en el entorno digital.",
+      "paragraph2": "Nuestro enfoque está en desarrollar soluciones que impulsan la transformación digital: sistemas inteligentes de atención al cliente, plataformas de gestión de recursos humanos (reclutamiento, desarrollo y capacitación), tecnologías avanzadas para análisis de textos (contratos, documentos, noticias), contratos inteligentes y agentes de IA autónomos que están revolucionando los procesos de negocio.",
+      "tags": {
+        "customerService": "Atención al Cliente",
+        "hrManagement": "Gestión de RRHH",
+        "textAnalysis": "Análisis de Textos",
+        "smartContracts": "Contratos Inteligentes"
+      }
+    },
+    "featuresTitle": "Características principales",
+    "ctaLearnMore": "Saber más",
+    "ctaDemo": "Demostración",
+    "items": {
+      "eagenda": {
+        "title": "eAgenda",
+        "category": "Programación",
+        "description": "Plataforma de programación online de uso general para optimizar la gestión de citas y horarios.",
+        "features": ["Programación online", "Gestión de horarios", "Notificaciones automáticas", "Integración con calendarios"]
+      },
+      "minhaSala": {
+        "title": "Minha Sala Virtual",
+        "category": "Educación",
+        "description": "Plataforma de e-learning para entrenamientos corporativos con enfoque en participación y resultados.",
+        "features": ["Cursos online", "Gamificación", "Informes de progreso", "Certificaciones"]
+      },
+      "meuAtendimento": {
+        "title": "Meu Atendimento Virtual",
+        "category": "Atención",
+        "description": "Gestión inteligente de colas de atención para mejorar la experiencia del cliente.",
+        "features": ["Gestión de colas", "Atención virtual", "Métricas en tiempo real", "Chat integrado"]
+      },
+      "atendeAqui": {
+        "title": "Atende Aqui",
+        "category": "Soporte",
+        "description": "Gestión completa de tickets de soporte, ventas y desarrollo en una sola plataforma.",
+        "features": ["Gestión de tickets", "Soporte multicanal", "Base de conocimiento", "Automatización de procesos"]
+      },
+      "eQualifica": {
+        "title": "eQualifica",
+        "category": "Calificación",
+        "description": "Plataforma especializada en calificación registral para procesos seguros y eficientes.",
+        "features": ["Calificación digital", "Firma electrónica", "Validación de documentos", "Compliance"]
+      },
+      "eTalentos": {
+        "title": "eTalentos",
+        "category": "RRHH",
+        "description": "Solución completa para selección, reclutamiento y triaje de currículos.",
+        "features": ["Reclutamiento digital", "Triaje automático", "Evaluaciones online", "Pipeline de candidatos"]
+      },
+      "sigVirtual": {
+        "title": "SIG-Virtual",
+        "category": "Gestión",
+        "description": "Sistema integrado de gestión de personas, compliance, privacidad y seguridad de la información.",
+        "features": ["Gestión de personas", "Compliance automático", "Seguridad de datos", "Informes integrados"]
+      },
+      "textualiza": {
+        "title": "Textualiza",
+        "category": "Automatización",
+        "description": "Nueva generación en automatización de documentos. Transforme documentos en datos estructurados, genere contenidos y optimice procesos con IA.",
+        "features": ["OCR Inteligente", "Estructuración de Textos", "Generación de Contenido", "Exportación en múltiples formatos"]
+      }
+    }
+  }
+}

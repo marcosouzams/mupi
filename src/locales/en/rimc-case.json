@@ -1,0 +1,132 @@
+{
+  "rimcCase": {
+    "meta": {
+      "backButton": "Back to Cases",
+      "category": "Registry Offices",
+      "author": "By admin",
+      "date": "August 15, 2025",
+      "readingTime": "6 min read"
+    },
+    "header": {
+      "title": "Digital Transformation at 1st Real Estate Registry of Montes Claros"
+    },
+    "overview": {
+      "title": "Project Overview",
+      "description1": "The 1st Real Estate Registry of Montes Claros (1RIMC) is one of the most important registry institutions in the northern region of Minas Gerais, responsible for ensuring legal security for thousands of real estate transactions. Seeking modernization and improved customer experience, the registry implemented two integrated solutions from Mupi Systems.",
+      "description2": "This digital transformation involved implementing eAgenda for scheduling in-person and virtual appointments, and Meu Atendimento Virtual for in-person password management and queue control, creating a complete customer service ecosystem.",
+      "description3": "The project represents a milestone in the modernization of registry services, demonstrating how technology can transform traditional processes into efficient and customer-centered experiences.",
+      "projectInfo": {
+        "title": "Project Information",
+        "client": "Client:",
+        "clientName": "1st Real Estate Registry of Montes Claros",
+        "duration": "Duration:",
+        "durationValue": "Continuous implementation",
+        "category": "Category:",
+        "categoryValue": "Registry Offices",
+        "solution": "Solutions:",
+        "solutionValue": "eAgenda + Meu Atendimento Virtual"
+      }
+    },
+    "objective": {
+      "title": "Objective",
+      "description": "Completely modernize the 1RIMC registry service through the implementation of integrated digital solutions, enabling online scheduling of in-person and virtual appointments, while optimizing queue and password control to provide a more efficient and organized experience for clients."
+    },
+    "approach": {
+      "title": "Approach",
+      "description": "The adopted strategy was to implement a hybrid solution that combined the capabilities of eAgenda for online scheduling with Meu Atendimento Virtual for in-person management. This integrated approach allows the registry to offer multiple service modalities while maintaining efficient queue management.",
+      "hybridService": {
+        "title": "Hybrid Service",
+        "description": "Combination of online scheduling and in-person management in a single integrated platform"
+      },
+      "digitalManagement": {
+        "title": "Digital Management",
+        "description": "Digital control of passwords and queues to optimize service flow"
+      }
+    },
+    "challenges": {
+      "title": "Implemented Challenges and Solutions",
+      "challenge1": {
+        "title": "1. Multiple Platform Integration",
+        "description": "The biggest challenge was to harmoniously integrate eAgenda with Meu Atendimento Virtual, ensuring both platforms worked in a coordinated manner. It was essential that online appointments synchronized perfectly with the in-person password system, avoiding conflicts and ensuring a smooth experience. The solution involved developing custom APIs that enabled real-time communication between systems, resulting in a unified and efficient operation."
+      },
+      "challenge2": {
+        "title": "2. Management of In-Person and Virtual Services",
+        "description": "The registry needed to offer flexibility to clients, allowing both in-person and virtual appointments. eAgenda was configured to support both modalities, with different service types and specific schedules. For virtual appointments, an integrated video conferencing system was implemented, while in-person services continued using the password control of Meu Atendimento Virtual. This duality required an intuitive interface that guided clients in choosing the most suitable modality for their needs."
+      },
+      "challenge3": {
+        "title": "3. Customer Flow Control",
+        "description": "In a registry environment, precise customer flow control is fundamental to avoid crowding and ensure efficient service. Meu Atendimento Virtual was implemented with digital panels that display in real-time the called passwords, average waiting time, and position in queue. Additionally, the system allows staff to manage priorities, pause services when necessary, and redistribute workload among different counters, providing operational flexibility."
+      },
+      "challenge4": {
+        "title": "4. Modernization of Traditional Processes",
+        "description": "Registries traditionally operate with manual processes established for decades. Digitizing these processes required not only technological implementation but also staff training and adaptation of internal procedures. A training program was developed for employees, digital operational manuals were created, and new routines were established that maximized the functionality of the implemented platforms."
+      },
+      "challenge5": {
+        "title": "5. User Experience in Registry Environment",
+        "description": "Registry clients have diverse profiles, from technologically fluent young people to elderly people less familiar with technology. The eAgenda interface was adapted to be extremely intuitive, with clear options and simplified scheduling process. For Meu Atendimento Virtual, self-service totems with user-friendly touch interfaces were installed, while maintaining human assistance for those needing help, ensuring complete digital inclusion."
+      }
+    },
+    "tools": {
+      "title": "Tools Used",
+      "mainPlatformTitle": "Main Platform",
+      "eAgendaPlatform": "eAgenda - Online Scheduling",
+      "virtualService": "Meu Atendimento Virtual - Queue Management",
+      "functionalitiesTitle": "Functionalities",
+      "digitalTickets": "Digital Password System",
+      "callPanels": "Call Panels",
+      "integratedVirtual": "Integrated Virtual Service"
+    },
+    "results": {
+      "title": "Results",
+      "description": "The implementation of Mupi Systems solutions at 1RIMC resulted in a complete transformation of the service experience, positioning the registry as a reference in sector modernization.",
+      "hybridService": {
+        "title": "Hybrid Service",
+        "description": "Unified in-person and virtual appointments"
+      },
+      "efficientManagement": {
+        "title": "Efficient Management",
+        "description": "Digital password and queue control implemented"
+      },
+      "reducedWaiting": {
+        "title": "Reduced Waiting",
+        "description": "Significant optimization of service time"
+      },
+      "completeModernization": {
+        "title": "Complete Modernization",
+        "description": "Digitization of service processes"
+      },
+      "conclusion": {
+        "title": "Conclusion",
+        "description": "The project carried out at the 1st Real Estate Registry of Montes Claros represents a milestone in the modernization of Brazilian registry services. The successful integration between eAgenda and Meu Atendimento Virtual demonstrates how technological solutions can transform traditional processes without losing the quality and security that characterize the registry sector. This case serves as a model for other registries seeking to modernize their services, proving that it is possible to reconcile tradition, legal security, and technological innovation to offer a superior experience to clients."
+      }
+    },
+    "sidebar": {
+      "challengesTitle": "Main Challenges",
+      "challenge1": {
+        "title": "Platform Integration",
+        "description": "Synchronization between eAgenda and Meu Atendimento Virtual"
+      },
+      "challenge2": {
+        "title": "Hybrid Service",
+        "description": "Joint management of in-person and virtual services"
+      },
+      "challenge3": {
+        "title": "Flow Control",
+        "description": "Digital optimization of password and queue control"
+      },
+      "challenge4": {
+        "title": "Process Modernization",
+        "description": "Digitization of traditional registry procedures"
+      },
+      "challenge5": {
+        "title": "User Experience",
+        "description": "Accessible interface for diverse client profiles"
+      }
+    },
+    "cta": {
+      "title": "Modernize your registry with us",
+      "description": "Discover how our solutions can transform your registry service with cutting-edge technology.",
+      "button": "Talk to a specialist"
+    }
+  }
+}

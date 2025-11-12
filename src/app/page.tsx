@@ -129,43 +129,43 @@ interface ContactTranslations {
 }
 
 async function getHeroTranslations(lang: string = 'pt'): Promise<HeroTranslations> {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'hero.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'hero.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
 async function getPartnersTranslations(lang: string = 'pt'): Promise<PartnersTranslations> {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'partners.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'partners.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
 async function getProductsTranslations(lang: string = 'pt'): Promise<ProductsTranslations> {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'products.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'products.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
 async function getAboutTranslations(lang: string = 'pt'): Promise<AboutTranslations> {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'about.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'about.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
 async function getWhyMupiTranslations(lang: string = 'pt'): Promise<WhyMupiTranslations> {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'whymupi.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'whymupi.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
 async function getCasesTranslations(lang: string = 'pt'): Promise<CasesTranslations> {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'cases.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'cases.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
 async function getContactTranslations(lang: string = 'pt'): Promise<ContactTranslations> {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'contact.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'contact.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }

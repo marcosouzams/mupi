@@ -39,13 +39,13 @@ async function getLanguageFromCookies(): Promise<'pt' | 'en' | 'es'> {
 }
 
 async function getNavigationTranslations(lang: string) {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'navigation.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'navigation.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }
 
 async function getFooterTranslations(lang: string) {
-  const filePath = path.join(process.cwd(), 'public', 'locales', lang, 'footer.json');
+  const filePath = path.join(process.cwd(), 'src', 'locales', lang, 'footer.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
   return JSON.parse(fileContents);
 }

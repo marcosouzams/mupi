@@ -1,0 +1,54 @@
+{
+  "cases": {
+    "hero": {
+      "viewFullCase": "Ver Case Completo"
+    },
+    "header": {
+      "subtitle": "NOSSOS PROJETOS",
+      "title": "Nossos <span class=\"text-[#5667fe]\">casos de sucesso</span>",
+      "description": "Explore em detalhes como nossas soluções transformaram desafios em resultados excepcionais."
+    },
+    "filters": {
+      "filterBySector": "Filtrar por setor",
+      "all": "Todos"
+    },
+    "caseCard": {
+      "viewFullCase": "Ver case completo"
+    },
+    "emptyState": {
+      "title": "Nenhum case encontrado",
+      "description": "Não há cases disponíveis para este setor no momento.",
+      "viewAll": "Ver todos os cases"
+    },
+    "cta": {
+      "title": "Pronto para transformar seu próximo projeto em um caso de sucesso?",
+      "description": "Nossa expertise em soluções de agendamento e gestão pode revolucionar seu negócio ou evento. Vamos conversar sobre suas necessidades e criar algo extraordinário juntos.",
+      "contactSpecialists": "Falar com nossos especialistas",
+      "knowSolutions": "Conheça nossas soluções"
+    },
+    "sectors": {
+      "todos": "Todos os setores",
+      "eventos": "Eventos",
+      "cartorio": "Cartórios",
+      "agricultura": "Agricultura",
+      "farmaceutico": "Farmacêutico",
+      "orgaos-publicos": "Órgãos Públicos",
+      "educacao": "Educação",
+      "saude": "Saúde"
+    },
+    "caseData": {
+      "1": {
+        "title": "Desafios do Agendamento na Bienal do Livro Rio 2025",
+        "shortTitle": "Bienal do Livro Rio 2025",
+        "description": "Solução completa de agendamento para as Escape Rooms do maior evento literário do Brasil.",
+        "category": "Eventos"
+      },
+      "2": {
+        "title": "Transformação Digital no 1º Registro de Imóveis de Montes Claros",
+        "shortTitle": "1º Registro de Imóveis de Montes Claros",
+        "description": "Modernização completa do atendimento cartorial com soluções integradas de agendamento e gestão.",
+        "category": "Cartórios"
+      }
+    }
+  }
+}

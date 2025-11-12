@@ -1,0 +1,38 @@
+{
+  "contact": {
+    "badge": "PONTE EN CONTACTO",
+    "title": "Hablemos sobre tu",
+    "titleHighlight": "próximo proyecto",
+    "description": "Estamos listos para transformar tus ideas en soluciones digitales innovadoras. Contáctanos y descubre cómo podemos ayudar a crecer tu negocio.",
+    "info": {
+      "information": {
+        "title": "Información",
+        "value": "contacto@mupisystems.com.br"
+      },
+      "support": {
+        "title": "Soporte",
+        "value": "soporte@mupisystems.com.br"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "value": "+55 11 94252 9100"
+      },
+      "location": {
+        "title": "Dónde encontrarnos",
+        "value": "Rua Dom João Pimenta 701, tienda 2, Montes Claros-MG"
+      }
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto o necesidad...",
+      "submit": "Enviar mensaje",
+      "required": " *"
+    }
+  }
+}
