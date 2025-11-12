@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { cookies } from 'next/headers';
 import type { Metadata } from 'next';
 import { CasesPageClient } from '@/components/cases/CasesPageClient';

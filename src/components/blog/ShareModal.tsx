@@ -25,7 +25,6 @@ const ShareModal = ({ title, excerpt, onClose }: ShareModalProps) => {
   const handleSocialShare = (platform: string) => {
     const url = encodeURIComponent(window.location.href);
     const encodedTitle = encodeURIComponent(title);
-    const text = encodeURIComponent(excerpt);
 
     const shareUrls: { [key: string]: string } = {
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,

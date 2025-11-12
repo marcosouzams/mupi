@@ -57,7 +57,6 @@ const BlogPostClient = ({ post, translations, readingTime, formattedDate }: Blog
   const handleSocialShare = (platform: string) => {
     const url = encodeURIComponent(window.location.href);
     const title = encodeURIComponent(post.title);
-    const text = encodeURIComponent(post.excerpt);
     
     const shareUrls: { [key: string]: string } = {
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
