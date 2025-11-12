@@ -236,6 +236,12 @@ const HomePage = async () => {
   
   return (
     <>
+      {/* SEO: Hidden but crawlable structured data */}
+      <div className="sr-only">
+        <h1>MUPI Systems - Soluções Digitais Inovadoras e Plataformas SaaS</h1>
+        <p>Transformamos ideias em soluções digitais inovadoras. Oferecemos plataformas SaaS como eAgenda, Minha Sala Virtual, Meu Atendimento Virtual, eQualifica, eTalentos, SIG Virtual e Textualiza. Mais de 5000 clientes satisfeitos e 8 anos de experiência em tecnologia e transformação digital.</p>
+      </div>
+      
       <div className="bg-[#191927]">
         <HeroSection translations={heroTranslations.hero} />
       </div>

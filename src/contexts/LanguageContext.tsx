@@ -1,7 +1,6 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
 
 type Language = 'pt' | 'en' | 'es';
@@ -15,7 +14,6 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<Language>('pt');
-  const router = useRouter();
 
   // Carrega a linguagem do cookie na inicialização
   useEffect(() => {
@@ -27,7 +25,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     }
   }, []);
 
-  // Função para atualizar a linguagem, salvar no cookie e recarregar a página
+  // Função para atualizar a linguagem e salvar no cookie
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     if (typeof window !== 'undefined') {
@@ -35,8 +33,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       Cookies.set('NEXT_LOCALE', lang, { expires: 365 });
       // Também mantém no localStorage para compatibilidade
       localStorage.setItem('mupi-language', lang);
-      // Recarrega a página para buscar novas traduções do servidor
-      router.refresh();
     }
   };
 
