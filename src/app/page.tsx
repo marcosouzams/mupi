@@ -182,6 +182,9 @@ async function getLanguageFromCookies(): Promise<'pt' | 'en' | 'es'> {
   return 'pt'; // Idioma padrão
 }
 
+// Força renderização dinâmica (SSR) para que cookies estejam disponíveis
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'MUPI Systems - Soluções Digitais Inovadoras para Transformar seu Negócio',
   description: 'Transformamos ideias em soluções digitais inovadoras. Plataformas SaaS como eAgenda, Minha Sala Virtual, Meu Atendimento, eQualifica e mais. Mais de 5000 clientes satisfeitos e 8 anos de experiência em tecnologia.',
@@ -245,11 +248,6 @@ const HomePage = async () => {
   
   return (
     <>
-      {/* Hidden H1 for SEO - visible to crawlers */}
-      <h1 className="sr-only">
-        MUPI Systems - Soluções Digitais Inovadoras e Plataformas SaaS para Transformação Digital
-      </h1>
-      
       <div className="bg-[#191927]">
         <HeroSection translations={heroTranslations.hero} />
       </div>
