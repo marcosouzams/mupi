@@ -10,26 +10,32 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 interface CaseItem {
-  id: string | number;
+  id: number;
   slug: string;
+  title: string;
+  shortTitle: string;
+  description: string;
+  category: string;
   client: string;
+  solution: string;
   image: string;
   logo: string;
-  solution: string;
-  translatedData: {
-    title: string;
-    shortTitle: string;
-    category: string;
-    description: string;
-  };
+  featured: boolean;
 }
 
-interface WhyMupiCarouselProps {
+interface TranslatedCase {
+  title: string;
+  shortTitle: string;
+  description: string;
+  category: string;
+}
+
+interface CasesSwiperProps {
   cases: CaseItem[];
-  ctaText: string;
+  translatedCases: { [key: string]: TranslatedCase };
 }
 
-export const WhyMupiCarousel = ({ cases, ctaText }: WhyMupiCarouselProps) => {
+export const CasesSwiper = ({ cases, translatedCases }: CasesSwiperProps) => {
   const router = useRouter();
 
   const handleCaseClick = (slug: string) => {
@@ -37,39 +43,39 @@ export const WhyMupiCarousel = ({ cases, ctaText }: WhyMupiCarouselProps) => {
   };
 
   return (
-    <div>
-      {/* Cases Slider */}
-      <div className="relative">
-        <Swiper
-          modules={[Autoplay, Pagination, Navigation]}
-          spaceBetween={20}
-          slidesPerView={1}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-            dynamicBullets: true,
-          }}
-          navigation={{
-            nextEl: '.swiper-button-next-cases',
-            prevEl: '.swiper-button-prev-cases',
-          }}
-          loop={true}
-          breakpoints={{
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 24,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 32,
-            },
-          }}
-          className="cases-swiper pb-16"
-        >
-          {cases.map((caseItem) => (
+    <div className="relative">
+      <Swiper
+        modules={[Autoplay, Pagination, Navigation]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        navigation={{
+          nextEl: '.swiper-button-next-cases',
+          prevEl: '.swiper-button-prev-cases',
+        }}
+        loop={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+          },
+        }}
+        className="cases-swiper pb-16"
+      >
+        {cases.map((caseItem) => {
+          const translatedCase = translatedCases[caseItem.id.toString()];
+          return (
             <SwiperSlide key={caseItem.id}>
               <div 
                 className="relative h-64 rounded-2xl overflow-hidden cursor-pointer group shadow-lg hover:shadow-xl transition-all duration-500"
@@ -79,7 +85,7 @@ export const WhyMupiCarousel = ({ cases, ctaText }: WhyMupiCarouselProps) => {
                 <div className="absolute inset-0">
                   <Image 
                     src={caseItem.image}
-                    alt={caseItem.translatedData.title}
+                    alt={translatedCase?.title || caseItem.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -92,7 +98,7 @@ export const WhyMupiCarousel = ({ cases, ctaText }: WhyMupiCarouselProps) => {
                   {/* Category Badge */}
                   <div className="flex justify-start">
                     <span className="bg-[#5667fe] text-white px-3 py-1.5 rounded-full text-xs font-medium">
-                      {caseItem.translatedData.category}
+                      {translatedCase?.category || caseItem.category}
                     </span>
                   </div>
 
@@ -100,12 +106,12 @@ export const WhyMupiCarousel = ({ cases, ctaText }: WhyMupiCarouselProps) => {
                   <div className="space-y-3">
                     {/* Title */}
                     <h4 className="text-lg lg:text-xl font-urbancat-st font-bold text-white leading-tight">
-                      {caseItem.translatedData.shortTitle}
+                      {translatedCase?.shortTitle || caseItem.shortTitle}
                     </h4>
                     
                     {/* Description */}
                     <p className="text-white/85 text-sm leading-relaxed font-inter line-clamp-2">
-                      {caseItem.translatedData.description}
+                      {translatedCase?.description || caseItem.description}
                     </p>
 
                     {/* Tags */}
@@ -134,32 +140,18 @@ export const WhyMupiCarousel = ({ cases, ctaText }: WhyMupiCarouselProps) => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#5667fe]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+          );
+        })}
+      </Swiper>
 
-      {/* Bottom section with CTA and Navigation */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-8">
-        {/* CTA Button - Left side */}
-        <div className="flex justify-center sm:justify-start">
-          <button
-            onClick={() => router.push('/cases')}
-            className="inline-flex items-center space-x-2 bg-[#5667fe] hover:bg-[#5667fe]/90 text-white px-4 py-2.5 sm:px-6 sm:py-3 rounded-lg transition-all duration-300 font-medium group text-sm sm:text-base"
-          >
-            <span>{ctaText}</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-          </button>
-        </div>
-
-        {/* Navigation Buttons - Right side - Hidden on mobile */}
-        <div className="hidden sm:flex items-center justify-center space-x-4">
-          <button className="swiper-button-prev-cases w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-[#5667fe] transition-all duration-300">
-            <ArrowRight className="w-4 h-4 rotate-180" />
-          </button>
-          <button className="swiper-button-next-cases w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-[#5667fe] transition-all duration-300">
-            <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
+      {/* Navigation Buttons - Hidden on mobile */}
+      <div className="hidden sm:flex items-center justify-end space-x-4 mt-8">
+        <button className="swiper-button-prev-cases w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-[#5667fe] transition-all duration-300">
+          <ArrowRight className="w-4 h-4 rotate-180" />
+        </button>
+        <button className="swiper-button-next-cases w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-[#5667fe] transition-all duration-300">
+          <ArrowRight className="w-4 h-4" />
+        </button>
       </div>
     </div>
   );

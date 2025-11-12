@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { Send } from 'lucide-react';
 
 interface ContactFormProps {
@@ -26,40 +26,6 @@ export const ContactForm = ({ translations: t }: ContactFormProps) => {
     message: ''
   });
 
-  const [isVisible, setIsVisible] = useState(false);
-  const [hasAnimated, setHasAnimated] = useState(false);
-  const formRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const formElement = formRef.current;
-    
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasAnimated) {
-            setIsVisible(true);
-            setHasAnimated(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: '-50px'
-      }
-    );
-
-    if (formElement) {
-      observer.observe(formElement);
-    }
-
-    return () => {
-      if (formElement) {
-        observer.unobserve(formElement);
-      }
-    };
-  }, [hasAnimated]);
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -70,18 +36,12 @@ export const ContactForm = ({ translations: t }: ContactFormProps) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Aqui você pode adicionar a lógica de envio do formulário
     console.log('Form submitted:', formData);
   };
 
   return (
-    <div 
-      ref={formRef}
-      className={`bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 transition-all duration-1000 ease-out delay-400 ${
-        isVisible 
-          ? 'opacity-100 translate-y-0 scale-100' 
-          : 'opacity-0 translate-y-8 scale-95'
-      }`}
-    >
+    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div>

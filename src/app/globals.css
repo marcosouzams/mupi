@@ -82,19 +82,6 @@
   .rotate-y-0 {
     transform: rotateY(0deg);
   }
-
-  /* Screen Reader Only - Content visible to crawlers and screen readers but hidden visually */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
 }
 
 :root {

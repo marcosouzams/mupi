@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Cookies from 'js-cookie';
 
 interface NavigationProps {
   scrolled: boolean;
@@ -26,7 +27,9 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
   // Sincronizar com mudanças de idioma do i18next e do contexto
   useEffect(() => {
     const handleLanguageChanged = (lng: string) => {
+      // Salvar no cookie e localStorage
       if (typeof window !== 'undefined') {
+        Cookies.set('NEXT_LOCALE', lng, { expires: 365 });
         localStorage.setItem('mupi-language', lng);
       }
       // Sincronizar o contexto quando i18n mudar
@@ -64,14 +67,11 @@ export const Navigation = ({ scrolled, isMenuOpen, setIsMenuOpen, currentPage = 
   };
 
   const handleLanguageChange = (locale: string) => {
-    // Atualizar ambos: i18n e contexto
+    // Atualizar i18n (para componentes client-side)
     i18n.changeLanguage(locale);
+    // Atualizar contexto (isso salvará no cookie e fará router.refresh())
     if (['pt', 'en', 'es'].includes(locale)) {
       setLanguage(locale as 'pt' | 'en' | 'es');
-    }
-    // Salvar preferência no localStorage
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('mupi-language', locale);
     }
     setIsLangMenuOpen(false);
   };

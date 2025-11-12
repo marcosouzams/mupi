@@ -33,10 +33,10 @@ interface ContactInfoProps {
 export const ContactInfo = ({ translations: t }: ContactInfoProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
-  const infoRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const infoElement = infoRef.current;
+    const sectionElement = sectionRef.current;
     
     const observer = new IntersectionObserver(
       (entries) => {
@@ -54,20 +54,20 @@ export const ContactInfo = ({ translations: t }: ContactInfoProps) => {
       }
     );
 
-    if (infoElement) {
-      observer.observe(infoElement);
+    if (sectionElement) {
+      observer.observe(sectionElement);
     }
 
     return () => {
-      if (infoElement) {
-        observer.unobserve(infoElement);
+      if (sectionElement) {
+        observer.unobserve(sectionElement);
       }
     };
   }, [hasAnimated]);
 
   return (
     <div 
-      ref={infoRef}
+      ref={sectionRef}
       className={`space-y-8 transition-all duration-1000 ease-out ${
         isVisible 
           ? 'opacity-100 translate-y-0' 

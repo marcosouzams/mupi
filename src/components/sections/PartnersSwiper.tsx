@@ -11,12 +11,11 @@ interface Partner {
   logo: string;
 }
 
-interface PartnersCarouselProps {
+interface PartnersSwiperProps {
   partners: Partner[];
 }
 
-// Client Component - Apenas o Swiper carousel
-export const PartnersCarousel = ({ partners }: PartnersCarouselProps) => {
+export const PartnersSwiper = ({ partners }: PartnersSwiperProps) => {
   return (
     <div className="relative">
       <Swiper
@@ -58,7 +57,7 @@ export const PartnersCarousel = ({ partners }: PartnersCarouselProps) => {
               <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 h-32 flex items-center justify-center">
                 <Image
                   src={partner.logo}
-                  alt={`${partner.name} - Cliente MUPI Systems`}
+                  alt={`${partner.name} logo`}
                   width={120}
                   height={80}
                   className="max-h-20 max-w-full object-contain opacity-80"
