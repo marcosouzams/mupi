@@ -5,12 +5,13 @@ import BlogPageClient from '@/components/blog/BlogPageClient';
 export const revalidate = 3600;
 
 interface BlogPageProps {
-  searchParams: { page?: string; category?: string };
+  searchParams: Promise<{ page?: string; category?: string }>;
 }
 
 const BlogPage = async ({ searchParams }: BlogPageProps) => {
-  const currentPage = Number(searchParams.page) || 1;
-  const categoryId = searchParams.category ? Number(searchParams.category) : undefined;
+  const params = await searchParams;
+  const currentPage = Number(params.page) || 1;
+  const categoryId = params.category ? Number(params.category) : undefined;
   
   console.log('[Blog Listing] 🔄 Page rendering at:', new Date().toISOString(), {
     page: currentPage,

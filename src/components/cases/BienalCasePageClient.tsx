@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
 interface BienalCasePageClientProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   translations: any;
 }
 

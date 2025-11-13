@@ -5,11 +5,10 @@ import { useState } from 'react';
 
 interface ShareModalProps {
   title: string;
-  excerpt: string;
   onClose: () => void;
 }
 
-const ShareModal = ({ title, excerpt, onClose }: ShareModalProps) => {
+const ShareModal = ({ title, onClose }: ShareModalProps) => {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleCopyLink = async () => {

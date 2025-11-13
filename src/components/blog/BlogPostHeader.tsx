@@ -44,7 +44,6 @@ const BlogPostHeader = ({
       {isShareModalOpen && (
         <ShareModal
           title={title}
-          excerpt={excerpt}
           onClose={() => setIsShareModalOpen(false)}
         />
       )}
