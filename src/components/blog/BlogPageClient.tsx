@@ -10,7 +10,9 @@ interface BlogPageClientProps {
   featuredPosts: BlogPost[];
   posts: BlogPost[];
   categories: WordPressCategory[];
-  totalPostsCount: number;
+  currentPage: number;
+  totalPages: number;
+  selectedCategory?: number;
 }
 
 const translations = {
@@ -109,7 +111,7 @@ const translations = {
   }
 };
 
-const BlogPageClient = ({ featuredPosts, posts, categories, totalPostsCount }: BlogPageClientProps) => {
+const BlogPageClient = ({ featuredPosts, posts, categories, currentPage, totalPages, selectedCategory }: BlogPageClientProps) => {
   const { language } = useLanguage();
   const t = translations[language];
 
@@ -146,9 +148,11 @@ const BlogPageClient = ({ featuredPosts, posts, categories, totalPostsCount }: B
       {/* Posts with Filters */}
       <section className="py-16 lg:py-20">
         <BlogPostsList 
-          initialPosts={posts}
+          posts={posts}
           categories={categories}
-          totalPostsCount={totalPostsCount}
+          currentPage={currentPage}
+          totalPages={totalPages}
+          selectedCategory={selectedCategory}
           translations={{
             filterByCategory: t.filters.filterByCategory,
             all: t.filters.all,

@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'mupisystems.com.br',
+        hostname: 'blog.mupisystems.com.br',
         pathname: '/wp-content/**',
       },
       {
@@ -54,7 +54,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://fonts.gstatic.com",
-              "connect-src 'self' https://mupisystems.com.br https://www.google-analytics.com https://vitals.vercel-insights.com",
+              "connect-src 'self' https://blog.mupisystems.com.br https://www.google-analytics.com https://vitals.vercel-insights.com",
               "media-src 'self'",
               "object-src 'none'",
               "base-uri 'self'",

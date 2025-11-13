@@ -1,6 +1,6 @@
 import { WordPressPost, WordPressCategory, BlogPost } from '@/types/wordpress';
 
-const WORDPRESS_API_URL = 'https://mupisystems.com.br/wp-json/wp/v2';
+const WORDPRESS_API_URL = 'https://blog.mupisystems.com.br/wp-json/wp/v2';
 
 // Helper function to strip HTML tags and decode HTML entities
 const stripHtml = (html: string): string => {
@@ -118,13 +118,16 @@ const transformPostWithoutContent = (wpPost: WordPressPost): BlogPost => {
 };
 
 // Fetch posts for LISTING (without full content) - Optimized for ISR
-export const fetchPostsForListing = async (page: number = 1, perPage: number = 10): Promise<{ posts: BlogPost[]; totalPages: number }> => {
+export const fetchPostsForListing = async (page: number = 1, perPage: number = 10, categoryId?: number): Promise<{ posts: BlogPost[]; totalPages: number }> => {
   try {
     // Remove 'content' field to reduce payload dramatically
     const fields = 'id,slug,title,excerpt,date,sticky,_links,_embedded';
     
+    // Build URL with optional category filter
+    const categoryParam = categoryId ? `&categories=${categoryId}` : '';
+    
     const response = await fetch(
-      `${WORDPRESS_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&_fields=${fields}&orderby=date&order=desc`,
+      `${WORDPRESS_API_URL}/posts?page=${page}&per_page=${perPage}&_embed=1&_fields=${fields}&orderby=date&order=desc${categoryParam}`,
       { 
         cache: 'force-cache' // ISR: Only revalidate via webhook
       }
@@ -260,11 +263,14 @@ export const fetchFeaturedPosts = async (): Promise<BlogPost[]> => {
   }
 };
 
-// Fetch posts by category
+// Fetch posts by category (optimized - without full content for listing)
 export const fetchPostsByCategory = async (categoryId: number, page: number = 1, perPage: number = 10): Promise<{ posts: BlogPost[]; totalPages: number }> => {
   try {
+    // Remove 'content' field to reduce payload
+    const fields = 'id,slug,title,excerpt,date,sticky,_links,_embedded';
+    
     const response = await fetch(
-      `${WORDPRESS_API_URL}/posts?categories=${categoryId}&page=${page}&per_page=${perPage}&_embed=1&orderby=date&order=desc`,
+      `${WORDPRESS_API_URL}/posts?categories=${categoryId}&page=${page}&per_page=${perPage}&_embed=1&_fields=${fields}&orderby=date&order=desc`,
       { 
         cache: 'force-cache' // ISR: Only revalidate via webhook
       }
@@ -276,7 +282,7 @@ export const fetchPostsByCategory = async (categoryId: number, page: number = 1,
 
     const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '1');
     const wpPosts: WordPressPost[] = await response.json();
-    const posts = wpPosts.map(transformPost);
+    const posts = wpPosts.map(transformPostWithoutContent);
 
     return { posts, totalPages };
   } catch (error) {

@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 async function getBlogPosts() {
   try {
     const response = await fetch(
-      'https://mupisystems.com.br/wp-json/wp/v2/posts?per_page=100&_fields=slug,modified',
+      'https://blog.mupisystems.com.br/wp-json/wp/v2/posts?per_page=100&_fields=slug,modified',
       { next: { revalidate: 3600 } } // Cache for 1 hour
     )
     

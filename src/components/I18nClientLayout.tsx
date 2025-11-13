@@ -67,8 +67,10 @@ const ClientLayout = ({ children, navTranslations, footerTranslations, initialLa
   // Determina a página atual baseada na rota
   const getCurrentPage = () => {
     if (!pathname || pathname === '/') return 'home';
+    if (pathname.startsWith('/about')) return 'about';
     if (pathname.startsWith('/cases')) return 'cases';
     if (pathname.startsWith('/blog')) return 'blog';
+    if (pathname.startsWith('/contact')) return 'contact';
     return pathname.slice(1); // Remove a barra inicial
   };
 

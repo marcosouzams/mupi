@@ -10,11 +10,6 @@ export const HeroContent = () => {
   
   return (
     <div className="space-y-8 lg:space-y-12">
-      {/* Badge */}
-      <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#5667fe]/10 to-[#d1dafb]/10 border border-[#5667fe]/20 rounded-full px-6 py-3 backdrop-blur-sm">
-        <span className="text-[#d1dafb] text-sm font-medium tracking-wide font-inter uppercase">{t('hero.badge')}</span>
-      </div>
-
       {/* Título Principal */}
       <div className="space-y-2">
         <h1 className="text-3xl lg:text-5xl xl:text-6xl leading-tight tracking-wide font-urbancat-st">
