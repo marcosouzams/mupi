@@ -24,6 +24,23 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: '/api/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET, POST, PUT, DELETE, OPTIONS',
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'Content-Type, Authorization',
+          },
+        ],
+      },
+      {
         source: '/:path*',
         headers: [
           {
@@ -54,7 +71,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://fonts.gstatic.com",
-              "connect-src 'self' https://blog.mupisystems.com.br https://www.google-analytics.com https://vitals.vercel-insights.com",
+              "connect-src 'self' https://blog.mupisystems.com.br https://www.google-analytics.com https://vitals.vercel-insights.com https://api.postmarkapp.com",
               "media-src 'self'",
               "object-src 'none'",
               "base-uri 'self'",
