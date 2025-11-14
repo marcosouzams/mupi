@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, MessageSquare, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 interface FormData {
@@ -99,24 +99,6 @@ export default function ContactPageClient({ translations: t }: ContactPageClient
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [debugInfo, setDebugInfo] = useState<string>('');
-
-  // Teste da API ao carregar o componente
-  useEffect(() => {
-    const testAPI = async () => {
-      try {
-        console.log('🧪 Testando conexão com API...');
-        const response = await fetch('/api/test');
-        const data = await response.json();
-        console.log('✅ Teste da API bem-sucedido:', data);
-        setDebugInfo('API funcionando: ' + JSON.stringify(data));
-      } catch (error) {
-        console.error('❌ Teste da API falhou:', error);
-        setDebugInfo('API falhou: ' + (error instanceof Error ? error.message : 'Erro desconhecido'));
-      }
-    };
-    testAPI();
-  }, []);
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
@@ -158,14 +140,7 @@ export default function ContactPageClient({ translations: t }: ContactPageClient
     setSubmitStatus('idle');
 
     try {
-      console.log('📤 Enviando formulário para /api/contact');
-      console.log('📋 Dados do formulário:', formData);
-      
-      // Usar URL absoluta para evitar problemas com trailingSlash
-      const apiUrl = `${window.location.origin}/api/contact`;
-      console.log('🌐 URL completa:', apiUrl);
-      
-      const response = await fetch(apiUrl, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -173,17 +148,10 @@ export default function ContactPageClient({ translations: t }: ContactPageClient
         body: JSON.stringify(formData),
       });
 
-      console.log('📡 Status da resposta:', response.status);
-      
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({ error: 'Erro desconhecido' }));
-        console.error('❌ Erro na resposta:', errorData);
         throw new Error(errorData.error || 'Erro ao enviar mensagem');
       }
-
-      const data = await response.json();
-      console.log('📥 Resposta da API:', data);
-      console.log('✅ Formulário enviado com sucesso!');
       
       setSubmitStatus('success');
       setFormData({
@@ -195,20 +163,13 @@ export default function ContactPageClient({ translations: t }: ContactPageClient
         message: ''
       });
       
-      // Limpar mensagem de sucesso após 5 segundos
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
     } catch (error) {
-      console.error('❌ Erro ao enviar formulário:', error);
-      console.error('❌ Detalhes do erro:', {
-        message: error instanceof Error ? error.message : 'Erro desconhecido',
-        type: error instanceof TypeError ? 'TypeError (possível erro de rede)' : 'Outro erro',
-        stack: error instanceof Error ? error.stack : undefined
-      });
+      console.error('Erro ao enviar formulário:', error);
       setSubmitStatus('error');
       
-      // Limpar mensagem de erro após 5 segundos
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
@@ -266,13 +227,6 @@ export default function ContactPageClient({ translations: t }: ContactPageClient
                 <h2 className="text-2xl font-urbancat-st font-bold mb-6 text-white">
                   {t.form.title}
                 </h2>
-
-                {/* Debug Info */}
-                {debugInfo && (
-                  <div className="mb-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-                    <p className="text-xs text-blue-400 font-mono">{debugInfo}</p>
-                  </div>
-                )}
 
                 {submitStatus === 'success' && (
                   <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-lg flex items-center space-x-3">
